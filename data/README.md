@@ -1,0 +1,9 @@
+# Daily panel contract
+
+Provide a CSV you are permitted to use with one row per session and security. Its required columns are `date,symbol,open,high,low,close,volume`. Dates use YYYY-MM-DD. Use stable security IDs in the symbol field where available, a single currency, and consistent OHLC adjustment conventions. Optional boolean `eligible` describes point-in-time membership as known at that day's close. Missing bars are missing rows. Supply the source, license, extraction timestamp and price conventions with the run. The exact input bytes are hashed.
+
+The observed union of dates is the session calendar. Supply the correct calendar for a single market. The pipeline sorts keys, rejects duplicate keys, non-finite data and invalid OHLC bounds, and excludes zero-volume closes from features. History with missing or stale closes can lose feature eligibility. A provided open is treated as executable in the simulation. Missing entry opens leave the corresponding allocation in cash. A filled position with an unavailable exit makes that method's portfolio summary unavailable and remains visible in its ledger. Use an externally documented treatment for delistings and corporate actions before relying on a historical result.
+
+The signal is computed at close. The target is log(open[t+H+1] / open[t+1]), centered by the date median and scaled by cross-sectional population standard deviation. Missing forward returns are retained as missing, with no impact on signal-date ranking membership. Feature scaling is fitted on training rows only. Backtest return is a separate dollar-return calculation using the same timestamp convention.
+
+Raw feeds are ignored by Git. A current constituent list applied retrospectively may introduce survivorship bias. The generated panel represents simulated observations and carries no claim of real-market performance.

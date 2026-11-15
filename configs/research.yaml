@@ -1,0 +1,25 @@
+data_seed: 431
+seeds: [17, 41, 73]
+sessions: 420
+assets: 24
+lookback: 12
+horizon: 5
+width: 24
+depth: 4
+steps: 160
+eval_every: 10
+batch: 96
+time_budget: 0.12
+threshold: 0.20
+weight_decay: 0.01
+clip: 0.20
+global_clip: 5.0
+cost_bps: [0, 5, 10, 25]
+grids:
+  sgd: [0.003, 0.01, 0.03]
+  adamw: [0.0003, 0.001, 0.003]
+  muon: [0.001, 0.003, 0.01]
+  depth: [0.0003, 0.001, 0.003]
+  depth_clip: [0.0003, 0.001, 0.003]
+  depth_late: [0.0003, 0.001, 0.003]
+  depth_moments: [0.0003, 0.001, 0.003]
