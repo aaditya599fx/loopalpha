@@ -2,6 +2,23 @@
 
 LoopAlpha tests whether an optimizer can benefit from seeing the individual gradient contributions of a shared block that runs repeatedly. It benchmarks convergence on synthetic sequence regression, then measures transfer to cross-sectional return ranking on a chronological market panel.
 
+## Latest Research Findings
+
+LoopAlpha investigates whether per-depth gradient information improves optimization in shared-weight neural networks.
+
+**Key findings**
+
+- Verified that the gradients from each use of a shared parameter sum to the ordinary tied-weight gradient.
+- Benchmarked seven optimization methods across two synthetic tasks and ten evaluation seeds.
+- Muon achieved the lowest mean held-out error at every tested CPU time budget on both tasks.
+- Recovered the missing exit prices and reran all 37 final-period equity portfolios.
+- The historical experiments found no statistically reliable ranking advantage for the depth-aware methods. Every trained method had negative mean net returns in the final equity period at 10 basis points per dollar traded.
+
+**Research materials**
+
+- [Technical Research Report (PDF)](reports/followup/technical_report.pdf)
+- [Experiments, Evidence & Reproduction](reports/followup/README.md)
+
 [Experimental protocol](reports/research_plan.md) · [Generated results](reports/results.md) · [Research interpretation](reports/research_report.md) · [Market CSV contract](data/README.md) · [Historical U.S. equities benchmark](reports/historical/README.md) · [Follow-up validation and ablations](reports/followup/README.md)
 
 ## Reproduce
