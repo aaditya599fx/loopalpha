@@ -2,7 +2,7 @@
 
 LoopAlpha tests whether an optimizer can benefit from seeing the individual gradient contributions of a shared block that runs repeatedly. It benchmarks convergence on synthetic sequence regression, then measures transfer to cross-sectional return ranking on a chronological market panel.
 
-[Experimental protocol](reports/research_plan.md) · [Generated results](reports/results.md) · [Research interpretation](reports/research_report.md) · [Market CSV contract](data/README.md) · [Historical U.S. equities benchmark](reports/historical/README.md)
+[Experimental protocol](reports/research_plan.md) · [Generated results](reports/results.md) · [Research interpretation](reports/research_report.md) · [Market CSV contract](data/README.md) · [Historical U.S. equities benchmark](reports/historical/README.md) · [Follow-up validation and ablations](reports/followup/README.md)
 
 ## Reproduce
 

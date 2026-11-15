@@ -1,0 +1,10 @@
+{
+  "hardware_description": "Apple M3",
+  "physical_cpu_cores": 8,
+  "performance_cores": 4,
+  "efficiency_cores": 4,
+  "system_memory_reported": "8 GB",
+  "benchmark_cpu_threads": 1,
+  "benchmark_used_gpu": false,
+  "hardware_description_source": "macOS system_profiler SPHardwareDataType"
+}

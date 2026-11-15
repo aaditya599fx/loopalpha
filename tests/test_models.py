@@ -134,3 +134,18 @@ def test_noise_control_keeps_model_input_dtype():
     _, x, _, result, _ = fit(toy, np.arange(80), np.arange(80, 100), "noise", .003, 7, config)
     assert x.dtype == torch.float32
     assert not result["failed"]
+
+
+def test_extended_budgets_retain_the_right_checkpoints():
+    toy = toy_samples(19, 20, 8, 3)
+    config = {"width": 8, "steps": 4, "batch": 8, "depth": 2, "weight_decay": .01,
+              "eval_every": 1, "time_budget": 60., "threshold": .2, "global_clip": 5.}
+    model, _, timed, result, _ = fit(toy, np.arange(80), np.arange(80, 100),
+                                    "adamw", .003, 7, config,
+                                    step_budgets=[2, 4], time_budgets=[60.])
+    assert timed is None
+    points = result["checkpoints"]
+    assert points["step:2"]["step"] == 2
+    assert points["step:4"]["step"] == points["time:60"]["step"] == 4
+    assert not torch.equal(points["step:2"]["state"]["head.weight"], model.head.weight)
+    torch.testing.assert_close(points["step:4"]["state"]["head.weight"], model.head.weight)

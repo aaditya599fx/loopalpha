@@ -4,6 +4,8 @@ This benchmark ran the same three-seed optimizer comparison on 30 U.S.-listed eq
 
 [Historical protocol](../historical_protocol.md) · [Detailed results and figure](results.md) · [Panel audit](panel_audit.json) · [Run manifest](evidence/manifest.json)
 
+The [follow-up study](../followup/README.md) replays the frozen portfolios with verified alternate opens and prices all 37 terminal portfolios. Figures and coverage below describe the original archive-only evaluation.
+
 ## Data and execution
 
 The importer retained 44,627 bars. The explicit NYSE calendar has 1,489 sessions. There were 43 missing ticker/session pairs, including seven bars that failed OHLC checks and a full missing session on November 8, 2017. Missing prices stayed missing. The session calendar comes from `exchange-calendars` 4.13.3 and is pinned in the repository. Features use only known historical windows. Results use vendor-adjusted opens as hypothetical execution proxies, with next-open entries and five-session holding periods. Portfolio summaries are unavailable for any run that selects a position with no observable exit. When a summary is available, its cost sweep covers 0, 5, 10 and 25 basis points per traded dollar. Return calculations omit borrowing, market impact, financing and empirical slippage.

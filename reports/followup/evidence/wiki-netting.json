@@ -1,0 +1,1936 @@
+[
+  {
+    "fold": "fold-1",
+    "runs": [
+      {
+        "method": "sgd",
+        "seed": 17,
+        "cost_stress": {
+          "0": {
+            "status": "ok",
+            "net_return": 0.25284677088544694,
+            "traded_notional_per_initial_dollar": 67.02319603189666
+          },
+          "5": {
+            "status": "ok",
+            "net_return": 0.2157491176212447,
+            "traded_notional_per_initial_dollar": 66.02038093348784
+          },
+          "10": {
+            "status": "ok",
+            "net_return": 0.17969978741043802,
+            "traded_notional_per_initial_dollar": 65.03629314743019
+          },
+          "25": {
+            "status": "ok",
+            "net_return": 0.07756239432021306,
+            "traded_notional_per_initial_dollar": 62.19214046092026
+          }
+        }
+      },
+      {
+        "method": "sgd",
+        "seed": 41,
+        "cost_stress": {
+          "0": {
+            "status": "ok",
+            "net_return": -0.06401764212157302,
+            "traded_notional_per_initial_dollar": 69.46318222217099
+          },
+          "5": {
+            "status": "ok",
+            "net_return": -0.09728922204330293,
+            "traded_notional_per_initial_dollar": 68.29361967506267
+          },
+          "10": {
+            "status": "ok",
+            "net_return": -0.12943206790742046,
+            "traded_notional_per_initial_dollar": 67.1493617561415
+          },
+          "25": {
+            "status": "ok",
+            "net_return": -0.21944750430979199,
+            "traded_notional_per_initial_dollar": 63.86146765341231
+          }
+        }
+      },
+      {
+        "method": "sgd",
+        "seed": 73,
+        "cost_stress": {
+          "0": {
+            "status": "ok",
+            "net_return": -0.10957364145509507,
+            "traded_notional_per_initial_dollar": 48.39766020639357
+          },
+          "5": {
+            "status": "ok",
+            "net_return": -0.13272249331546637,
+            "traded_notional_per_initial_dollar": 47.82086799045532
+          },
+          "10": {
+            "status": "ok",
+            "net_return": -0.15529810560203228,
+            "traded_notional_per_initial_dollar": 47.253173086099935
+          },
+          "25": {
+            "status": "ok",
+            "net_return": -0.2197221479931024,
+            "traded_notional_per_initial_dollar": 45.60354328022359
+          }
+        }
+      },
+      {
+        "method": "adamw",
+        "seed": 17,
+        "cost_stress": {
+          "0": {
+            "status": "ok",
+            "net_return": 0.08483253047404782,
+            "traded_notional_per_initial_dollar": 71.37459095132954
+          },
+          "5": {
+            "status": "ok",
+            "net_return": 0.04572851536490141,
+            "traded_notional_per_initial_dollar": 70.11598904089514
+          },
+          "10": {
+            "status": "ok",
+            "net_return": 0.007970841906023596,
+            "traded_notional_per_initial_dollar": 68.88545350375287
+          },
+          "25": {
+            "status": "ok",
+            "net_return": -0.09765976434868717,
+            "traded_notional_per_initial_dollar": 65.35578552301293
+          }
+        }
+      },
+      {
+        "method": "adamw",
+        "seed": 41,
+        "cost_stress": {
+          "0": {
+            "status": "ok",
+            "net_return": 0.1235622867222883,
+            "traded_notional_per_initial_dollar": 88.70740041640981
+          },
+          "5": {
+            "status": "ok",
+            "net_return": 0.07982115636272802,
+            "traded_notional_per_initial_dollar": 87.02534787318876
+          },
+          "10": {
+            "status": "ok",
+            "net_return": 0.03770719667168465,
+            "traded_notional_per_initial_dollar": 85.38315015218802
+          },
+          "25": {
+            "status": "ok",
+            "net_return": -0.07943968302009585,
+            "traded_notional_per_initial_dollar": 80.6858031199414
+          }
+        }
+      },
+      {
+        "method": "adamw",
+        "seed": 73,
+        "cost_stress": {
+          "0": {
+            "status": "ok",
+            "net_return": 0.09392959609219353,
+            "traded_notional_per_initial_dollar": 75.19857736869267
+          },
+          "5": {
+            "status": "ok",
+            "net_return": 0.054466733785220045,
+            "traded_notional_per_initial_dollar": 73.8799912418645
+          },
+          "10": {
+            "status": "ok",
+            "net_return": 0.0163640093841948,
+            "traded_notional_per_initial_dollar": 72.59069596579539
+          },
+          "25": {
+            "status": "ok",
+            "net_return": -0.09022765653340303,
+            "traded_notional_per_initial_dollar": 68.89313896832164
+          }
+        }
+      },
+      {
+        "method": "muon",
+        "seed": 17,
+        "cost_stress": {
+          "0": {
+            "status": "ok",
+            "net_return": 0.1471158489227966,
+            "traded_notional_per_initial_dollar": 76.64392934581556
+          },
+          "5": {
+            "status": "ok",
+            "net_return": 0.10493033309887001,
+            "traded_notional_per_initial_dollar": 75.24976459701284
+          },
+          "10": {
+            "status": "ok",
+            "net_return": 0.06422695899068032,
+            "traded_notional_per_initial_dollar": 73.88742512201948
+          },
+          "25": {
+            "status": "ok",
+            "net_return": -0.049480197376149615,
+            "traded_notional_per_initial_dollar": 69.98405507477676
+          }
+        }
+      },
+      {
+        "method": "muon",
+        "seed": 41,
+        "cost_stress": {
+          "0": {
+            "status": "ok",
+            "net_return": 0.06305489690460764,
+            "traded_notional_per_initial_dollar": 79.58307496483745
+          },
+          "5": {
+            "status": "ok",
+            "net_return": 0.023119202711546327,
+            "traded_notional_per_initial_dollar": 78.1495885633232
+          },
+          "10": {
+            "status": "ok",
+            "net_return": -0.015383297823809206,
+            "traded_notional_per_initial_dollar": 76.74881160758758
+          },
+          "25": {
+            "status": "ok",
+            "net_return": -0.12277565991487516,
+            "traded_notional_per_initial_dollar": 72.73535526641727
+          }
+        }
+      },
+      {
+        "method": "muon",
+        "seed": 73,
+        "cost_stress": {
+          "0": {
+            "status": "ok",
+            "net_return": 0.12947396021360968,
+            "traded_notional_per_initial_dollar": 75.50842151369764
+          },
+          "5": {
+            "status": "ok",
+            "net_return": 0.08983819824379657,
+            "traded_notional_per_initial_dollar": 74.2162319781497
+          },
+          "10": {
+            "status": "ok",
+            "net_return": 0.051531321862503754,
+            "traded_notional_per_initial_dollar": 72.95195336783684
+          },
+          "25": {
+            "status": "ok",
+            "net_return": -0.05583630766576786,
+            "traded_notional_per_initial_dollar": 69.32082098657924
+          }
+        }
+      },
+      {
+        "method": "depth",
+        "seed": 17,
+        "cost_stress": {
+          "0": {
+            "status": "ok",
+            "net_return": 0.08483253047404782,
+            "traded_notional_per_initial_dollar": 71.37459095132954
+          },
+          "5": {
+            "status": "ok",
+            "net_return": 0.04572851536490141,
+            "traded_notional_per_initial_dollar": 70.11598904089514
+          },
+          "10": {
+            "status": "ok",
+            "net_return": 0.007970841906023596,
+            "traded_notional_per_initial_dollar": 68.88545350375287
+          },
+          "25": {
+            "status": "ok",
+            "net_return": -0.09765976434868717,
+            "traded_notional_per_initial_dollar": 65.35578552301293
+          }
+        }
+      },
+      {
+        "method": "depth",
+        "seed": 41,
+        "cost_stress": {
+          "0": {
+            "status": "ok",
+            "net_return": 0.1235622867222883,
+            "traded_notional_per_initial_dollar": 88.70740041640981
+          },
+          "5": {
+            "status": "ok",
+            "net_return": 0.07982115636272802,
+            "traded_notional_per_initial_dollar": 87.02534787318876
+          },
+          "10": {
+            "status": "ok",
+            "net_return": 0.03770719667168465,
+            "traded_notional_per_initial_dollar": 85.38315015218802
+          },
+          "25": {
+            "status": "ok",
+            "net_return": -0.07943968302009585,
+            "traded_notional_per_initial_dollar": 80.6858031199414
+          }
+        }
+      },
+      {
+        "method": "depth",
+        "seed": 73,
+        "cost_stress": {
+          "0": {
+            "status": "ok",
+            "net_return": 0.09392959609219353,
+            "traded_notional_per_initial_dollar": 75.19857736869267
+          },
+          "5": {
+            "status": "ok",
+            "net_return": 0.054466733785220045,
+            "traded_notional_per_initial_dollar": 73.8799912418645
+          },
+          "10": {
+            "status": "ok",
+            "net_return": 0.0163640093841948,
+            "traded_notional_per_initial_dollar": 72.59069596579539
+          },
+          "25": {
+            "status": "ok",
+            "net_return": -0.09022765653340303,
+            "traded_notional_per_initial_dollar": 68.89313896832164
+          }
+        }
+      },
+      {
+        "method": "depth_clip",
+        "seed": 17,
+        "cost_stress": {
+          "0": {
+            "status": "ok",
+            "net_return": 0.12189042438886322,
+            "traded_notional_per_initial_dollar": 71.77742239761616
+          },
+          "5": {
+            "status": "ok",
+            "net_return": 0.08214739007877081,
+            "traded_notional_per_initial_dollar": 70.52526153466634
+          },
+          "10": {
+            "status": "ok",
+            "net_return": 0.04374937414858837,
+            "traded_notional_per_initial_dollar": 69.30062018343459
+          },
+          "25": {
+            "status": "ok",
+            "net_return": -0.0638025754969489,
+            "traded_notional_per_initial_dollar": 65.78558617970626
+          }
+        }
+      },
+      {
+        "method": "depth_clip",
+        "seed": 41,
+        "cost_stress": {
+          "0": {
+            "status": "ok",
+            "net_return": 0.15626606772058627,
+            "traded_notional_per_initial_dollar": 86.76585481647136
+          },
+          "5": {
+            "status": "ok",
+            "net_return": 0.11164696560602505,
+            "traded_notional_per_initial_dollar": 85.13486309816196
+          },
+          "10": {
+            "status": "ok",
+            "net_return": 0.06867313967411559,
+            "traded_notional_per_initial_dollar": 83.54231404905417
+          },
+          "25": {
+            "status": "ok",
+            "net_return": -0.050946015782629805,
+            "traded_notional_per_initial_dollar": 78.98581194274395
+          }
+        }
+      },
+      {
+        "method": "depth_clip",
+        "seed": 73,
+        "cost_stress": {
+          "0": {
+            "status": "ok",
+            "net_return": 0.07570781595836062,
+            "traded_notional_per_initial_dollar": 71.97897619621581
+          },
+          "5": {
+            "status": "ok",
+            "net_return": 0.03805583417676184,
+            "traded_notional_per_initial_dollar": 70.7551682965249
+          },
+          "10": {
+            "status": "ok",
+            "net_return": 0.0016631197510832418,
+            "traded_notional_per_initial_dollar": 69.55788828082005
+          },
+          "25": {
+            "status": "ok",
+            "net_return": -0.1003589743012212,
+            "traded_notional_per_initial_dollar": 66.11961317953092
+          }
+        }
+      },
+      {
+        "method": "depth_late",
+        "seed": 17,
+        "cost_stress": {
+          "0": {
+            "status": "ok",
+            "net_return": 0.11989989847263405,
+            "traded_notional_per_initial_dollar": 71.86845084652131
+          },
+          "5": {
+            "status": "ok",
+            "net_return": 0.08021562350185896,
+            "traded_notional_per_initial_dollar": 70.6148199416787
+          },
+          "10": {
+            "status": "ok",
+            "net_return": 0.04187461642397361,
+            "traded_notional_per_initial_dollar": 69.38888709164173
+          },
+          "25": {
+            "status": "ok",
+            "net_return": -0.06551588909072237,
+            "traded_notional_per_initial_dollar": 65.86990510719765
+          }
+        }
+      },
+      {
+        "method": "depth_late",
+        "seed": 41,
+        "cost_stress": {
+          "0": {
+            "status": "ok",
+            "net_return": 0.21809617671533288,
+            "traded_notional_per_initial_dollar": 89.09165269089917
+          },
+          "5": {
+            "status": "ok",
+            "net_return": 0.17096013870932292,
+            "traded_notional_per_initial_dollar": 87.38922529447653
+          },
+          "10": {
+            "status": "ok",
+            "net_return": 0.12556715245261652,
+            "traded_notional_per_initial_dollar": 85.72736215079883
+          },
+          "25": {
+            "status": "ok",
+            "net_return": -0.0007584064748789032,
+            "traded_notional_per_initial_dollar": 80.9750463265587
+          }
+        }
+      },
+      {
+        "method": "depth_late",
+        "seed": 73,
+        "cost_stress": {
+          "0": {
+            "status": "ok",
+            "net_return": 0.06029965452171715,
+            "traded_notional_per_initial_dollar": 73.33008470686445
+          },
+          "5": {
+            "status": "ok",
+            "net_return": 0.02198868142415389,
+            "traded_notional_per_initial_dollar": 72.04310258587817
+          },
+          "10": {
+            "status": "ok",
+            "net_return": -0.014999856808997625,
+            "traded_notional_per_initial_dollar": 70.78490460342263
+          },
+          "25": {
+            "status": "ok",
+            "net_return": -0.11846123116573715,
+            "traded_notional_per_initial_dollar": 67.17593474326551
+          }
+        }
+      },
+      {
+        "method": "depth_moments",
+        "seed": 17,
+        "cost_stress": {
+          "0": {
+            "status": "ok",
+            "net_return": 0.09640936957492663,
+            "traded_notional_per_initial_dollar": 66.4993737496112
+          },
+          "5": {
+            "status": "ok",
+            "net_return": 0.059907779563062924,
+            "traded_notional_per_initial_dollar": 65.41344647420344
+          },
+          "10": {
+            "status": "ok",
+            "net_return": 0.024566842780094467,
+            "traded_notional_per_initial_dollar": 64.34997403212849
+          },
+          "25": {
+            "status": "ok",
+            "net_return": -0.07483936756144538,
+            "traded_notional_per_initial_dollar": 61.289540390357956
+          }
+        }
+      },
+      {
+        "method": "depth_moments",
+        "seed": 41,
+        "cost_stress": {
+          "0": {
+            "status": "ok",
+            "net_return": 0.11988802246847796,
+            "traded_notional_per_initial_dollar": 83.29623468575713
+          },
+          "5": {
+            "status": "ok",
+            "net_return": 0.07780140349186615,
+            "traded_notional_per_initial_dollar": 81.76825156250102
+          },
+          "10": {
+            "status": "ok",
+            "net_return": 0.037225788867174314,
+            "traded_notional_per_initial_dollar": 80.27538590505024
+          },
+          "25": {
+            "status": "ok",
+            "net_return": -0.07594413207616246,
+            "traded_notional_per_initial_dollar": 75.99898991133037
+          }
+        }
+      },
+      {
+        "method": "depth_moments",
+        "seed": 73,
+        "cost_stress": {
+          "0": {
+            "status": "ok",
+            "net_return": 0.09675530228820017,
+            "traded_notional_per_initial_dollar": 75.27584752139519
+          },
+          "5": {
+            "status": "ok",
+            "net_return": 0.05818915914970724,
+            "traded_notional_per_initial_dollar": 73.99152275038607
+          },
+          "10": {
+            "status": "ok",
+            "net_return": 0.020918743699577025,
+            "traded_notional_per_initial_dollar": 72.7351097154935
+          },
+          "25": {
+            "status": "ok",
+            "net_return": -0.08352777801226452,
+            "traded_notional_per_initial_dollar": 69.1257031972838
+          }
+        }
+      },
+      {
+        "method": "linear",
+        "seed": 17,
+        "cost_stress": {
+          "0": {
+            "status": "ok",
+            "net_return": 0.1832424461204285,
+            "traded_notional_per_initial_dollar": 68.89116610811969
+          },
+          "5": {
+            "status": "ok",
+            "net_return": 0.14669930191274072,
+            "traded_notional_per_initial_dollar": 67.83472657068214
+          },
+          "10": {
+            "status": "ok",
+            "net_return": 0.1112356052031025,
+            "traded_notional_per_initial_dollar": 66.79881946682656
+          },
+          "25": {
+            "status": "ok",
+            "net_return": 0.011017364344332536,
+            "traded_notional_per_initial_dollar": 63.810173730950225
+          }
+        }
+      },
+      {
+        "method": "linear",
+        "seed": 41,
+        "cost_stress": {
+          "0": {
+            "status": "ok",
+            "net_return": -0.13710011071630634,
+            "traded_notional_per_initial_dollar": 69.11368987098336
+          },
+          "5": {
+            "status": "ok",
+            "net_return": -0.16904683331136772,
+            "traded_notional_per_initial_dollar": 67.93702290321382
+          },
+          "10": {
+            "status": "ok",
+            "net_return": -0.1998641947590598,
+            "traded_notional_per_initial_dollar": 66.78632915000594
+          },
+          "25": {
+            "status": "ok",
+            "net_return": -0.28591554450140977,
+            "traded_notional_per_initial_dollar": 63.4843388779581
+          }
+        }
+      },
+      {
+        "method": "linear",
+        "seed": 73,
+        "cost_stress": {
+          "0": {
+            "status": "ok",
+            "net_return": -0.1898813990890973,
+            "traded_notional_per_initial_dollar": 55.60349517740804
+          },
+          "5": {
+            "status": "ok",
+            "net_return": -0.21550184032471909,
+            "traded_notional_per_initial_dollar": 54.82213834471669
+          },
+          "10": {
+            "status": "ok",
+            "net_return": -0.24035125598019347,
+            "traded_notional_per_initial_dollar": 54.05531630649609
+          },
+          "25": {
+            "status": "ok",
+            "net_return": -0.31049079956857406,
+            "traded_notional_per_initial_dollar": 51.8391511359577
+          }
+        }
+      },
+      {
+        "method": "mlp",
+        "seed": 17,
+        "cost_stress": {
+          "0": {
+            "status": "ok",
+            "net_return": 0.1830800941127344,
+            "traded_notional_per_initial_dollar": 66.12792442631854
+          },
+          "5": {
+            "status": "ok",
+            "net_return": 0.14763656871852415,
+            "traded_notional_per_initial_dollar": 65.14731267521506
+          },
+          "10": {
+            "status": "ok",
+            "net_return": 0.1132057393845518,
+            "traded_notional_per_initial_dollar": 64.18533533771628
+          },
+          "25": {
+            "status": "ok",
+            "net_return": 0.01571559954757351,
+            "traded_notional_per_initial_dollar": 61.40527245997091
+          }
+        }
+      },
+      {
+        "method": "mlp",
+        "seed": 41,
+        "cost_stress": {
+          "0": {
+            "status": "ok",
+            "net_return": 0.2635324026047976,
+            "traded_notional_per_initial_dollar": 75.9408791356875
+          },
+          "5": {
+            "status": "ok",
+            "net_return": 0.22121416018427253,
+            "traded_notional_per_initial_dollar": 74.65617253363891
+          },
+          "10": {
+            "status": "ok",
+            "net_return": 0.1802503558784483,
+            "traded_notional_per_initial_dollar": 73.39848948664603
+          },
+          "25": {
+            "status": "ok",
+            "net_return": 0.06507786978490349,
+            "traded_notional_per_initial_dollar": 69.78102870581087
+          }
+        }
+      },
+      {
+        "method": "mlp",
+        "seed": 73,
+        "cost_stress": {
+          "0": {
+            "status": "ok",
+            "net_return": 0.2576066652285529,
+            "traded_notional_per_initial_dollar": 68.67504838482513
+          },
+          "5": {
+            "status": "ok",
+            "net_return": 0.21915214910216418,
+            "traded_notional_per_initial_dollar": 67.6189918742335
+          },
+          "10": {
+            "status": "ok",
+            "net_return": 0.1818212274479658,
+            "traded_notional_per_initial_dollar": 66.58340594256757
+          },
+          "25": {
+            "status": "ok",
+            "net_return": 0.07626089647795786,
+            "traded_notional_per_initial_dollar": 63.59404919854516
+          }
+        }
+      },
+      {
+        "method": "untied",
+        "seed": 17,
+        "cost_stress": {
+          "0": {
+            "status": "ok",
+            "net_return": 0.10378874090425971,
+            "traded_notional_per_initial_dollar": 72.14390787155969
+          },
+          "5": {
+            "status": "ok",
+            "net_return": 0.06451249564152661,
+            "traded_notional_per_initial_dollar": 70.88828341653334
+          },
+          "10": {
+            "status": "ok",
+            "net_return": 0.02657086348495441,
+            "traded_notional_per_initial_dollar": 69.66027640612657
+          },
+          "25": {
+            "status": "ok",
+            "net_return": -0.07967257141004203,
+            "traded_notional_per_initial_dollar": 66.13569996423624
+          }
+        }
+      },
+      {
+        "method": "untied",
+        "seed": 41,
+        "cost_stress": {
+          "0": {
+            "status": "ok",
+            "net_return": 0.11928736582269894,
+            "traded_notional_per_initial_dollar": 84.99428065463098
+          },
+          "5": {
+            "status": "ok",
+            "net_return": 0.07662762518346433,
+            "traded_notional_per_initial_dollar": 83.4275798755386
+          },
+          "10": {
+            "status": "ok",
+            "net_return": 0.03552063148633633,
+            "traded_notional_per_initial_dollar": 81.89716599659279
+          },
+          "25": {
+            "status": "ok",
+            "net_return": -0.07901411859506235,
+            "traded_notional_per_initial_dollar": 77.51483704720594
+          }
+        }
+      },
+      {
+        "method": "untied",
+        "seed": 73,
+        "cost_stress": {
+          "0": {
+            "status": "ok",
+            "net_return": 0.07015459341488728,
+            "traded_notional_per_initial_dollar": 71.64337227319686
+          },
+          "5": {
+            "status": "ok",
+            "net_return": 0.03266920658646044,
+            "traded_notional_per_initial_dollar": 70.42923408043404
+          },
+          "10": {
+            "status": "ok",
+            "net_return": -0.003562166947258416,
+            "traded_notional_per_initial_dollar": 69.24122972451656
+          },
+          "25": {
+            "status": "ok",
+            "net_return": -0.10512771429046064,
+            "traded_notional_per_initial_dollar": 65.82862717339637
+          }
+        }
+      },
+      {
+        "method": "shuffle",
+        "seed": 17,
+        "cost_stress": {
+          "0": {
+            "status": "ok",
+            "net_return": 0.22071916967369387,
+            "traded_notional_per_initial_dollar": 83.77168618391386
+          },
+          "5": {
+            "status": "ok",
+            "net_return": 0.1752828202719785,
+            "traded_notional_per_initial_dollar": 82.22434233004904
+          },
+          "10": {
+            "status": "ok",
+            "net_return": 0.1314634810853499,
+            "traded_notional_per_initial_dollar": 80.71282515181822
+          },
+          "25": {
+            "status": "ok",
+            "net_return": 0.009165795613496952,
+            "traded_notional_per_initial_dollar": 76.38491853470256
+          }
+        }
+      },
+      {
+        "method": "shuffle",
+        "seed": 41,
+        "cost_stress": {
+          "0": {
+            "status": "ok",
+            "net_return": 0.00521526885740875,
+            "traded_notional_per_initial_dollar": 80.45120256310531
+          },
+          "5": {
+            "status": "ok",
+            "net_return": -0.031400608433080346,
+            "traded_notional_per_initial_dollar": 79.05917880992759
+          },
+          "10": {
+            "status": "ok",
+            "net_return": -0.06674023440835686,
+            "traded_notional_per_initial_dollar": 77.69754379281306
+          },
+          "25": {
+            "status": "ok",
+            "net_return": -0.16552454230484603,
+            "traded_notional_per_initial_dollar": 73.78988302591708
+          }
+        }
+      },
+      {
+        "method": "shuffle",
+        "seed": 73,
+        "cost_stress": {
+          "0": {
+            "status": "ok",
+            "net_return": 0.13533507463674121,
+            "traded_notional_per_initial_dollar": 83.65525039406502
+          },
+          "5": {
+            "status": "ok",
+            "net_return": 0.09141962336108578,
+            "traded_notional_per_initial_dollar": 82.05329530438814
+          },
+          "10": {
+            "status": "ok",
+            "net_return": 0.049127218917860205,
+            "traded_notional_per_initial_dollar": 80.48967739256918
+          },
+          "25": {
+            "status": "ok",
+            "net_return": -0.06857552881366635,
+            "traded_notional_per_initial_dollar": 76.01924391202058
+          }
+        }
+      },
+      {
+        "method": "noise",
+        "seed": 17,
+        "cost_stress": {
+          "0": {
+            "status": "ok",
+            "net_return": 0.0033098650193310597,
+            "traded_notional_per_initial_dollar": 80.06188859360977
+          },
+          "5": {
+            "status": "ok",
+            "net_return": -0.036815384720504496,
+            "traded_notional_per_initial_dollar": 78.51297266652536
+          },
+          "10": {
+            "status": "ok",
+            "net_return": -0.07540557271719073,
+            "traded_notional_per_initial_dollar": 77.00203622663989
+          },
+          "25": {
+            "status": "ok",
+            "net_return": -0.18251803522996546,
+            "traded_notional_per_initial_dollar": 72.68733931426947
+          }
+        }
+      },
+      {
+        "method": "noise",
+        "seed": 41,
+        "cost_stress": {
+          "0": {
+            "status": "ok",
+            "net_return": -0.02795025905102222,
+            "traded_notional_per_initial_dollar": 80.98430192063044
+          },
+          "5": {
+            "status": "ok",
+            "net_return": -0.06598781555491895,
+            "traded_notional_per_initial_dollar": 79.4726690529949
+          },
+          "10": {
+            "status": "ok",
+            "net_return": -0.10260199501850831,
+            "traded_notional_per_initial_dollar": 77.99675947899674
+          },
+          "25": {
+            "status": "ok",
+            "net_return": -0.20440620860630865,
+            "traded_notional_per_initial_dollar": 73.7752256845091
+          }
+        }
+      },
+      {
+        "method": "noise",
+        "seed": 73,
+        "cost_stress": {
+          "0": {
+            "status": "ok",
+            "net_return": -0.1347221719056474,
+            "traded_notional_per_initial_dollar": 73.64801198033012
+          },
+          "5": {
+            "status": "ok",
+            "net_return": -0.16846011751369938,
+            "traded_notional_per_initial_dollar": 72.3094777468898
+          },
+          "10": {
+            "status": "ok",
+            "net_return": -0.20093928965582086,
+            "traded_notional_per_initial_dollar": 71.00242229810239
+          },
+          "25": {
+            "status": "ok",
+            "net_return": -0.29127044788186596,
+            "traded_notional_per_initial_dollar": 67.26354721700386
+          }
+        }
+      },
+      {
+        "method": "momentum",
+        "seed": null,
+        "cost_stress": {
+          "0": {
+            "status": "ok",
+            "net_return": -0.27886157428575087,
+            "traded_notional_per_initial_dollar": 68.55005819241335
+          },
+          "5": {
+            "status": "ok",
+            "net_return": -0.30742871102757685,
+            "traded_notional_per_initial_dollar": 67.31031129281995
+          },
+          "10": {
+            "status": "ok",
+            "net_return": -0.3349133615643699,
+            "traded_notional_per_initial_dollar": 66.0996006557566
+          },
+          "25": {
+            "status": "ok",
+            "net_return": -0.41125749671569656,
+            "traded_notional_per_initial_dollar": 62.63441373692214
+          }
+        }
+      }
+    ]
+  },
+  {
+    "fold": "fold-2",
+    "runs": [
+      {
+        "method": "sgd",
+        "seed": 17,
+        "cost_stress": {
+          "0": {
+            "status": "ok",
+            "net_return": -0.003947878210916023,
+            "traded_notional_per_initial_dollar": 121.18768512677853
+          },
+          "5": {
+            "status": "ok",
+            "net_return": -0.06141964961996105,
+            "traded_notional_per_initial_dollar": 117.73615140607089
+          },
+          "10": {
+            "status": "ok",
+            "net_return": -0.11567019869886053,
+            "traded_notional_per_initial_dollar": 114.41057260188622
+          },
+          "25": {
+            "status": "ok",
+            "net_return": -0.2608051059568012,
+            "traded_notional_per_initial_dollar": 105.14038262197876
+          }
+        }
+      },
+      {
+        "method": "sgd",
+        "seed": 41,
+        "cost_stress": {
+          "0": {
+            "status": "ok",
+            "net_return": 0.19730984264681162,
+            "traded_notional_per_initial_dollar": 132.34990862841644
+          },
+          "5": {
+            "status": "ok",
+            "net_return": 0.12728485043095805,
+            "traded_notional_per_initial_dollar": 128.42746548428093
+          },
+          "10": {
+            "status": "ok",
+            "net_return": 0.06124295169328775,
+            "traded_notional_per_initial_dollar": 124.65282167436031
+          },
+          "25": {
+            "status": "ok",
+            "net_return": -0.11512872283396958,
+            "traded_notional_per_initial_dollar": 114.15694546594887
+          }
+        }
+      },
+      {
+        "method": "sgd",
+        "seed": 73,
+        "cost_stress": {
+          "0": {
+            "status": "ok",
+            "net_return": -0.049935189683590786,
+            "traded_notional_per_initial_dollar": 105.86177125276859
+          },
+          "5": {
+            "status": "ok",
+            "net_return": -0.10147484718908073,
+            "traded_notional_per_initial_dollar": 103.0584628733099
+          },
+          "10": {
+            "status": "ok",
+            "net_return": -0.15029951678146902,
+            "traded_notional_per_initial_dollar": 100.35106019954958
+          },
+          "25": {
+            "status": "ok",
+            "net_return": -0.28183926833174466,
+            "traded_notional_per_initial_dollar": 92.7699986967228
+          }
+        }
+      },
+      {
+        "method": "adamw",
+        "seed": 17,
+        "cost_stress": {
+          "0": {
+            "status": "ok",
+            "net_return": 0.15605871743389232,
+            "traded_notional_per_initial_dollar": 111.81007027080653
+          },
+          "5": {
+            "status": "ok",
+            "net_return": 0.0976043948671903,
+            "traded_notional_per_initial_dollar": 108.95922361743952
+          },
+          "10": {
+            "status": "ok",
+            "net_return": 0.04202229753570741,
+            "traded_notional_per_initial_dollar": 106.20047862899453
+          },
+          "25": {
+            "status": "ok",
+            "net_return": -0.10883622861604692,
+            "traded_notional_per_initial_dollar": 98.44736998303215
+          }
+        }
+      },
+      {
+        "method": "adamw",
+        "seed": 41,
+        "cost_stress": {
+          "0": {
+            "status": "ok",
+            "net_return": 0.017629248918819673,
+            "traded_notional_per_initial_dollar": 98.40412907776025
+          },
+          "5": {
+            "status": "ok",
+            "net_return": -0.029495671511616472,
+            "traded_notional_per_initial_dollar": 96.19098814634977
+          },
+          "10": {
+            "status": "ok",
+            "net_return": -0.07450281370464473,
+            "traded_notional_per_initial_dollar": 94.04234411937392
+          },
+          "25": {
+            "status": "ok",
+            "net_return": -0.19772844887854346,
+            "traded_notional_per_initial_dollar": 87.96404179000781
+          }
+        }
+      },
+      {
+        "method": "adamw",
+        "seed": 73,
+        "cost_stress": {
+          "0": {
+            "status": "ok",
+            "net_return": -0.11445380885620804,
+            "traded_notional_per_initial_dollar": 104.03860143992311
+          },
+          "5": {
+            "status": "ok",
+            "net_return": -0.16243025765695807,
+            "traded_notional_per_initial_dollar": 101.29125663021182
+          },
+          "10": {
+            "status": "ok",
+            "net_return": -0.20788092624081145,
+            "traded_notional_per_initial_dollar": 98.63803935378873
+          },
+          "25": {
+            "status": "ok",
+            "net_return": -0.3303405433764067,
+            "traded_notional_per_initial_dollar": 91.20721676911785
+          }
+        }
+      },
+      {
+        "method": "muon",
+        "seed": 17,
+        "cost_stress": {
+          "0": {
+            "status": "ok",
+            "net_return": -0.0030202703896967664,
+            "traded_notional_per_initial_dollar": 91.62141417671856
+          },
+          "5": {
+            "status": "ok",
+            "net_return": -0.04689323998948025,
+            "traded_notional_per_initial_dollar": 89.63592367834872
+          },
+          "10": {
+            "status": "ok",
+            "net_return": -0.08889092418501632,
+            "traded_notional_per_initial_dollar": 87.70560302866778
+          },
+          "25": {
+            "status": "ok",
+            "net_return": -0.2043969553331727,
+            "traded_notional_per_initial_dollar": 82.22970625442832
+          }
+        }
+      },
+      {
+        "method": "muon",
+        "seed": 41,
+        "cost_stress": {
+          "0": {
+            "status": "ok",
+            "net_return": -0.0023536373911139385,
+            "traded_notional_per_initial_dollar": 110.29922645134629
+          },
+          "5": {
+            "status": "ok",
+            "net_return": -0.05406818796929369,
+            "traded_notional_per_initial_dollar": 107.52765288606257
+          },
+          "10": {
+            "status": "ok",
+            "net_return": -0.10317974470955071,
+            "traded_notional_per_initial_dollar": 104.84630655689585
+          },
+          "25": {
+            "status": "ok",
+            "net_return": -0.23613922599755333,
+            "traded_notional_per_initial_dollar": 97.30930059842358
+          }
+        }
+      },
+      {
+        "method": "muon",
+        "seed": 73,
+        "cost_stress": {
+          "0": {
+            "status": "ok",
+            "net_return": 0.037462298496769186,
+            "traded_notional_per_initial_dollar": 103.87863325888334
+          },
+          "5": {
+            "status": "ok",
+            "net_return": -0.013826199388572546,
+            "traded_notional_per_initial_dollar": 101.31455721338628
+          },
+          "10": {
+            "status": "ok",
+            "net_return": -0.0626531186372945,
+            "traded_notional_per_initial_dollar": 98.8313819408467
+          },
+          "25": {
+            "status": "ok",
+            "net_return": -0.19548848327761825,
+            "traded_notional_per_initial_dollar": 91.83896217566245
+          }
+        }
+      },
+      {
+        "method": "depth",
+        "seed": 17,
+        "cost_stress": {
+          "0": {
+            "status": "ok",
+            "net_return": 0.15605871743389232,
+            "traded_notional_per_initial_dollar": 111.81007027080653
+          },
+          "5": {
+            "status": "ok",
+            "net_return": 0.0976043948671903,
+            "traded_notional_per_initial_dollar": 108.95922361743952
+          },
+          "10": {
+            "status": "ok",
+            "net_return": 0.04202229753570741,
+            "traded_notional_per_initial_dollar": 106.20047862899453
+          },
+          "25": {
+            "status": "ok",
+            "net_return": -0.10883622861604692,
+            "traded_notional_per_initial_dollar": 98.44736998303215
+          }
+        }
+      },
+      {
+        "method": "depth",
+        "seed": 41,
+        "cost_stress": {
+          "0": {
+            "status": "ok",
+            "net_return": 0.017629248918819673,
+            "traded_notional_per_initial_dollar": 98.40412907776025
+          },
+          "5": {
+            "status": "ok",
+            "net_return": -0.029495671511616472,
+            "traded_notional_per_initial_dollar": 96.19098814634977
+          },
+          "10": {
+            "status": "ok",
+            "net_return": -0.07450281370464473,
+            "traded_notional_per_initial_dollar": 94.04234411937392
+          },
+          "25": {
+            "status": "ok",
+            "net_return": -0.19772844887854346,
+            "traded_notional_per_initial_dollar": 87.96404179000781
+          }
+        }
+      },
+      {
+        "method": "depth",
+        "seed": 73,
+        "cost_stress": {
+          "0": {
+            "status": "ok",
+            "net_return": -0.11445380885620804,
+            "traded_notional_per_initial_dollar": 104.03860143992311
+          },
+          "5": {
+            "status": "ok",
+            "net_return": -0.16243025765695807,
+            "traded_notional_per_initial_dollar": 101.29125663021182
+          },
+          "10": {
+            "status": "ok",
+            "net_return": -0.20788092624081145,
+            "traded_notional_per_initial_dollar": 98.63803935378873
+          },
+          "25": {
+            "status": "ok",
+            "net_return": -0.3303405433764067,
+            "traded_notional_per_initial_dollar": 91.20721676911785
+          }
+        }
+      },
+      {
+        "method": "depth_clip",
+        "seed": 17,
+        "cost_stress": {
+          "0": {
+            "status": "ok",
+            "net_return": 0.10809895127084435,
+            "traded_notional_per_initial_dollar": 106.54104524447872
+          },
+          "5": {
+            "status": "ok",
+            "net_return": 0.05368972666029492,
+            "traded_notional_per_initial_dollar": 103.92712033179617
+          },
+          "10": {
+            "status": "ok",
+            "net_return": 0.0018767073472039097,
+            "traded_notional_per_initial_dollar": 101.3948491157523
+          },
+          "25": {
+            "status": "ok",
+            "net_return": -0.13916709837829744,
+            "traded_notional_per_initial_dollar": 94.26266747836931
+          }
+        }
+      },
+      {
+        "method": "depth_clip",
+        "seed": 41,
+        "cost_stress": {
+          "0": {
+            "status": "ok",
+            "net_return": -0.011907785898242151,
+            "traded_notional_per_initial_dollar": 98.22161042690065
+          },
+          "5": {
+            "status": "ok",
+            "net_return": -0.05846022758136393,
+            "traded_notional_per_initial_dollar": 95.97645345189218
+          },
+          "10": {
+            "status": "ok",
+            "net_return": -0.10288342381462057,
+            "traded_notional_per_initial_dollar": 93.79775757018865
+          },
+          "25": {
+            "status": "ok",
+            "net_return": -0.22431089495097534,
+            "traded_notional_per_initial_dollar": 87.64107705290185
+          }
+        }
+      },
+      {
+        "method": "depth_clip",
+        "seed": 73,
+        "cost_stress": {
+          "0": {
+            "status": "ok",
+            "net_return": -0.059140796687716324,
+            "traded_notional_per_initial_dollar": 104.81848757390163
+          },
+          "5": {
+            "status": "ok",
+            "net_return": -0.10993484628563077,
+            "traded_notional_per_initial_dollar": 102.04276854159977
+          },
+          "10": {
+            "status": "ok",
+            "net_return": -0.15806533870142248,
+            "traded_notional_per_initial_dollar": 99.3617848644255
+          },
+          "25": {
+            "status": "ok",
+            "net_return": -0.28780003689195,
+            "traded_notional_per_initial_dollar": 91.85330659503687
+          }
+        }
+      },
+      {
+        "method": "depth_late",
+        "seed": 17,
+        "cost_stress": {
+          "0": {
+            "status": "ok",
+            "net_return": 0.08116137518933497,
+            "traded_notional_per_initial_dollar": 104.45673025589505
+          },
+          "5": {
+            "status": "ok",
+            "net_return": 0.02838739216440822,
+            "traded_notional_per_initial_dollar": 101.91922260504107
+          },
+          "10": {
+            "status": "ok",
+            "net_return": -0.021883550914393646,
+            "traded_notional_per_initial_dollar": 99.46036267793073
+          },
+          "25": {
+            "status": "ok",
+            "net_return": -0.15881099810057764,
+            "traded_notional_per_initial_dollar": 92.53156199424278
+          }
+        }
+      },
+      {
+        "method": "depth_late",
+        "seed": 41,
+        "cost_stress": {
+          "0": {
+            "status": "ok",
+            "net_return": 0.05955687917622243,
+            "traded_notional_per_initial_dollar": 99.57871723024985
+          },
+          "5": {
+            "status": "ok",
+            "net_return": 0.010952766454174645,
+            "traded_notional_per_initial_dollar": 97.3360132440662
+          },
+          "10": {
+            "status": "ok",
+            "net_return": -0.03548776063783721,
+            "traded_notional_per_initial_dollar": 95.15856950468655
+          },
+          "25": {
+            "status": "ok",
+            "net_return": -0.16275033275444906,
+            "traded_notional_per_initial_dollar": 88.99692033199807
+          }
+        }
+      },
+      {
+        "method": "depth_late",
+        "seed": 73,
+        "cost_stress": {
+          "0": {
+            "status": "ok",
+            "net_return": -0.06221352318292661,
+            "traded_notional_per_initial_dollar": 108.09193520138965
+          },
+          "5": {
+            "status": "ok",
+            "net_return": -0.1142399002541783,
+            "traded_notional_per_initial_dollar": 105.14048614913864
+          },
+          "10": {
+            "status": "ok",
+            "net_return": -0.16346251029918457,
+            "traded_notional_per_initial_dollar": 102.29276726135859
+          },
+          "25": {
+            "status": "ok",
+            "net_return": -0.2957398583291151,
+            "traded_notional_per_initial_dollar": 94.33376504782237
+          }
+        }
+      },
+      {
+        "method": "depth_moments",
+        "seed": 17,
+        "cost_stress": {
+          "0": {
+            "status": "ok",
+            "net_return": -0.01610776003407821,
+            "traded_notional_per_initial_dollar": 107.74528565043703
+          },
+          "5": {
+            "status": "ok",
+            "net_return": -0.0687307633315829,
+            "traded_notional_per_initial_dollar": 104.91751253568866
+          },
+          "10": {
+            "status": "ok",
+            "net_return": -0.11861965338977742,
+            "traded_notional_per_initial_dollar": 102.18536157393451
+          },
+          "25": {
+            "status": "ok",
+            "net_return": -0.2532304747425096,
+            "traded_notional_per_initial_dollar": 94.52829876795967
+          }
+        }
+      },
+      {
+        "method": "depth_moments",
+        "seed": 41,
+        "cost_stress": {
+          "0": {
+            "status": "ok",
+            "net_return": 0.13218823521621426,
+            "traded_notional_per_initial_dollar": 113.41150124901
+          },
+          "5": {
+            "status": "ok",
+            "net_return": 0.07247326603319815,
+            "traded_notional_per_initial_dollar": 110.39236637807369
+          },
+          "10": {
+            "status": "ok",
+            "net_return": 0.015821153383746234,
+            "traded_notional_per_initial_dollar": 107.4756907703479
+          },
+          "25": {
+            "status": "ok",
+            "net_return": -0.13725111320683814,
+            "traded_notional_per_initial_dollar": 99.30413919941165
+          }
+        }
+      },
+      {
+        "method": "depth_moments",
+        "seed": 73,
+        "cost_stress": {
+          "0": {
+            "status": "ok",
+            "net_return": 0.004809080367744523,
+            "traded_notional_per_initial_dollar": 110.47907137824751
+          },
+          "5": {
+            "status": "ok",
+            "net_return": -0.04892986036438529,
+            "traded_notional_per_initial_dollar": 107.54075610240392
+          },
+          "10": {
+            "status": "ok",
+            "net_return": -0.09987805100259328,
+            "traded_notional_per_initial_dollar": 104.70241777463514
+          },
+          "25": {
+            "status": "ok",
+            "net_return": -0.23735049331638802,
+            "traded_notional_per_initial_dollar": 96.7503019170732
+          }
+        }
+      },
+      {
+        "method": "linear",
+        "seed": 17,
+        "cost_stress": {
+          "0": {
+            "status": "ok",
+            "net_return": 0.13975349197020392,
+            "traded_notional_per_initial_dollar": 117.4594784015711
+          },
+          "5": {
+            "status": "ok",
+            "net_return": 0.07747982646911211,
+            "traded_notional_per_initial_dollar": 114.23665063936008
+          },
+          "10": {
+            "status": "ok",
+            "net_return": 0.01851160251815398,
+            "traded_notional_per_initial_dollar": 111.12653606741652
+          },
+          "25": {
+            "status": "ok",
+            "net_return": -0.14022401356050485,
+            "traded_notional_per_initial_dollar": 102.43127091379375
+          }
+        }
+      },
+      {
+        "method": "linear",
+        "seed": 41,
+        "cost_stress": {
+          "0": {
+            "status": "ok",
+            "net_return": 0.10400014197736307,
+            "traded_notional_per_initial_dollar": 111.94225043491882
+          },
+          "5": {
+            "status": "ok",
+            "net_return": 0.046883765481628537,
+            "traded_notional_per_initial_dollar": 109.0767850180826
+          },
+          "10": {
+            "status": "ok",
+            "net_return": -0.007360593981828534,
+            "traded_notional_per_initial_dollar": 106.30578424668386
+          },
+          "25": {
+            "status": "ok",
+            "net_return": -0.1542362572538415,
+            "traded_notional_per_initial_dollar": 98.52626553509377
+          }
+        }
+      },
+      {
+        "method": "linear",
+        "seed": 73,
+        "cost_stress": {
+          "0": {
+            "status": "ok",
+            "net_return": -0.09085627244608618,
+            "traded_notional_per_initial_dollar": 92.0718834662035
+          },
+          "5": {
+            "status": "ok",
+            "net_return": -0.13412946339809095,
+            "traded_notional_per_initial_dollar": 89.97222345347957
+          },
+          "10": {
+            "status": "ok",
+            "net_return": -0.1754046935615161,
+            "traded_notional_per_initial_dollar": 87.93487652892816
+          },
+          "25": {
+            "status": "ok",
+            "net_return": -0.28811795401742935,
+            "traded_notional_per_initial_dollar": 82.17659335833706
+          }
+        }
+      },
+      {
+        "method": "mlp",
+        "seed": 17,
+        "cost_stress": {
+          "0": {
+            "status": "ok",
+            "net_return": -0.058405651101941736,
+            "traded_notional_per_initial_dollar": 97.09760084428994
+          },
+          "5": {
+            "status": "ok",
+            "net_return": -0.10628987017754532,
+            "traded_notional_per_initial_dollar": 94.65430429921976
+          },
+          "10": {
+            "status": "ok",
+            "net_return": -0.15180884752066326,
+            "traded_notional_per_initial_dollar": 92.29031821514045
+          },
+          "25": {
+            "status": "ok",
+            "net_return": -0.2752834234376702,
+            "traded_notional_per_initial_dollar": 85.64562049388435
+          }
+        }
+      },
+      {
+        "method": "mlp",
+        "seed": 41,
+        "cost_stress": {
+          "0": {
+            "status": "ok",
+            "net_return": 0.057948826240577844,
+            "traded_notional_per_initial_dollar": 100.75903709616868
+          },
+          "5": {
+            "status": "ok",
+            "net_return": 0.005772936667438611,
+            "traded_notional_per_initial_dollar": 98.31990590864584
+          },
+          "10": {
+            "status": "ok",
+            "net_return": -0.04390425906455231,
+            "traded_notional_per_initial_dollar": 95.95707195570489
+          },
+          "25": {
+            "status": "ok",
+            "net_return": -0.17908273788461826,
+            "traded_notional_per_initial_dollar": 89.30228113360891
+          }
+        }
+      },
+      {
+        "method": "mlp",
+        "seed": 73,
+        "cost_stress": {
+          "0": {
+            "status": "ok",
+            "net_return": 0.020237404291735483,
+            "traded_notional_per_initial_dollar": 114.56741657758447
+          },
+          "5": {
+            "status": "ok",
+            "net_return": -0.038469667540772745,
+            "traded_notional_per_initial_dollar": 111.26106859445792
+          },
+          "10": {
+            "status": "ok",
+            "net_return": -0.09389293837785972,
+            "traded_notional_per_initial_dollar": 108.0764974147
+          },
+          "25": {
+            "status": "ok",
+            "net_return": -0.24219780896924836,
+            "traded_notional_per_initial_dollar": 99.20582725422703
+          }
+        }
+      },
+      {
+        "method": "untied",
+        "seed": 17,
+        "cost_stress": {
+          "0": {
+            "status": "ok",
+            "net_return": 0.12332540900285038,
+            "traded_notional_per_initial_dollar": 109.26337599149947
+          },
+          "5": {
+            "status": "ok",
+            "net_return": 0.06818580511983563,
+            "traded_notional_per_initial_dollar": 106.58057142428031
+          },
+          "10": {
+            "status": "ok",
+            "net_return": 0.01567479574483066,
+            "traded_notional_per_initial_dollar": 103.98137775078024
+          },
+          "25": {
+            "status": "ok",
+            "net_return": -0.12728396517054275,
+            "traded_notional_per_initial_dollar": 96.66065349790497
+          }
+        }
+      },
+      {
+        "method": "untied",
+        "seed": 41,
+        "cost_stress": {
+          "0": {
+            "status": "ok",
+            "net_return": 0.01930326189023912,
+            "traded_notional_per_initial_dollar": 101.25741795016415
+          },
+          "5": {
+            "status": "ok",
+            "net_return": -0.02945023312666717,
+            "traded_notional_per_initial_dollar": 98.91367488510235
+          },
+          "10": {
+            "status": "ok",
+            "net_return": -0.07593967421881476,
+            "traded_notional_per_initial_dollar": 96.64028570718673
+          },
+          "25": {
+            "status": "ok",
+            "net_return": -0.2028292554001363,
+            "traded_notional_per_initial_dollar": 90.22108473576516
+          }
+        }
+      },
+      {
+        "method": "untied",
+        "seed": 73,
+        "cost_stress": {
+          "0": {
+            "status": "ok",
+            "net_return": -0.12557976089708534,
+            "traded_notional_per_initial_dollar": 105.7245167850175
+          },
+          "5": {
+            "status": "ok",
+            "net_return": -0.17367580426272122,
+            "traded_notional_per_initial_dollar": 102.89616574674221
+          },
+          "10": {
+            "status": "ok",
+            "net_return": -0.21920218414726356,
+            "traded_notional_per_initial_dollar": 100.16570560777092
+          },
+          "25": {
+            "status": "ok",
+            "net_return": -0.34166529188888095,
+            "traded_notional_per_initial_dollar": 92.52447874703836
+          }
+        }
+      },
+      {
+        "method": "shuffle",
+        "seed": 17,
+        "cost_stress": {
+          "0": {
+            "status": "ok",
+            "net_return": -0.0714546560283359,
+            "traded_notional_per_initial_dollar": 77.11298655681654
+          },
+          "5": {
+            "status": "ok",
+            "net_return": -0.10712173012543946,
+            "traded_notional_per_initial_dollar": 75.69785278200784
+          },
+          "10": {
+            "status": "ok",
+            "net_return": -0.14145893385344988,
+            "traded_notional_per_initial_dollar": 74.31699903002819
+          },
+          "25": {
+            "status": "ok",
+            "net_return": -0.23696933850943136,
+            "traded_notional_per_initial_dollar": 70.37025708250764
+          }
+        }
+      },
+      {
+        "method": "shuffle",
+        "seed": 41,
+        "cost_stress": {
+          "0": {
+            "status": "ok",
+            "net_return": -0.0001222674830996251,
+            "traded_notional_per_initial_dollar": 115.6142150631397
+          },
+          "5": {
+            "status": "ok",
+            "net_return": -0.05491977142370896,
+            "traded_notional_per_initial_dollar": 112.53765037491155
+          },
+          "10": {
+            "status": "ok",
+            "net_return": -0.10680010585204058,
+            "traded_notional_per_initial_dollar": 109.566832000458
+          },
+          "25": {
+            "status": "ok",
+            "net_return": -0.2464105970216579,
+            "traded_notional_per_initial_dollar": 101.24829695157169
+          }
+        }
+      },
+      {
+        "method": "shuffle",
+        "seed": 73,
+        "cost_stress": {
+          "0": {
+            "status": "ok",
+            "net_return": -0.032402489808782464,
+            "traded_notional_per_initial_dollar": 94.95747359383955
+          },
+          "5": {
+            "status": "ok",
+            "net_return": -0.07875925588839772,
+            "traded_notional_per_initial_dollar": 92.75670499901057
+          },
+          "10": {
+            "status": "ok",
+            "net_return": -0.12295968145574077,
+            "traded_notional_per_initial_dollar": 90.62233650962227
+          },
+          "25": {
+            "status": "ok",
+            "net_return": -0.24357852038190742,
+            "traded_notional_per_initial_dollar": 84.5971602631343
+          }
+        }
+      },
+      {
+        "method": "noise",
+        "seed": 17,
+        "cost_stress": {
+          "0": {
+            "status": "ok",
+            "net_return": -0.028316017469692478,
+            "traded_notional_per_initial_dollar": 127.48808686174004
+          },
+          "5": {
+            "status": "ok",
+            "net_return": -0.08799443649854932,
+            "traded_notional_per_initial_dollar": 123.66809200755232
+          },
+          "10": {
+            "status": "ok",
+            "net_return": -0.1441100002899547,
+            "traded_notional_per_initial_dollar": 119.99688254914135
+          },
+          "25": {
+            "status": "ok",
+            "net_return": -0.29309001024776093,
+            "traded_notional_per_initial_dollar": 109.81339887228842
+          }
+        }
+      },
+      {
+        "method": "noise",
+        "seed": 41,
+        "cost_stress": {
+          "0": {
+            "status": "ok",
+            "net_return": -0.1344561749350729,
+            "traded_notional_per_initial_dollar": 112.39826273896519
+          },
+          "5": {
+            "status": "ok",
+            "net_return": -0.18550417505344374,
+            "traded_notional_per_initial_dollar": 109.22239391015752
+          },
+          "10": {
+            "status": "ok",
+            "net_return": -0.23362676223887202,
+            "traded_notional_per_initial_dollar": 106.16375764656826
+          },
+          "25": {
+            "status": "ok",
+            "net_return": -0.3620286158848154,
+            "traded_notional_per_initial_dollar": 97.64572162426175
+          }
+        }
+      },
+      {
+        "method": "noise",
+        "seed": 73,
+        "cost_stress": {
+          "0": {
+            "status": "ok",
+            "net_return": 0.10106309551439341,
+            "traded_notional_per_initial_dollar": 123.37379074583276
+          },
+          "5": {
+            "status": "ok",
+            "net_return": 0.034511493738865306,
+            "traded_notional_per_initial_dollar": 119.68750060962714
+          },
+          "10": {
+            "status": "ok",
+            "net_return": -0.028129696795901493,
+            "traded_notional_per_initial_dollar": 116.1443936935703
+          },
+          "25": {
+            "status": "ok",
+            "net_return": -0.1947637705833415,
+            "traded_notional_per_initial_dollar": 106.31350308768954
+          }
+        }
+      },
+      {
+        "method": "momentum",
+        "seed": null,
+        "cost_stress": {
+          "0": {
+            "status": "ok",
+            "net_return": 0.15562526145298694,
+            "traded_notional_per_initial_dollar": 129.10617807274033
+          },
+          "5": {
+            "status": "ok",
+            "net_return": 0.08961223588696154,
+            "traded_notional_per_initial_dollar": 125.43659950771708
+          },
+          "10": {
+            "status": "ok",
+            "net_return": 0.027265457486004507,
+            "traded_notional_per_initial_dollar": 121.90001855519684
+          },
+          "25": {
+            "status": "ok",
+            "net_return": -0.1397046292095181,
+            "traded_notional_per_initial_dollar": 112.0368182062631
+          }
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,115 @@
+{
+  "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+  "cpu": "arm",
+  "device": "cpu",
+  "cuda_available": false,
+  "threads": 1,
+  "torch": "2.9.1",
+  "python": "3.13.7",
+  "numpy": "2.4.2",
+  "training_seeds": [
+    17,
+    41,
+    73,
+    101,
+    137,
+    173,
+    211,
+    251,
+    293,
+    337
+  ],
+  "tuning_seeds": [
+    3,
+    7
+  ],
+  "step_budgets": [
+    100,
+    300,
+    600,
+    1000
+  ],
+  "time_budgets": [
+    0.12,
+    0.3,
+    0.6,
+    1.2
+  ],
+  "config": {
+    "data_seed": 431,
+    "seeds": [
+      17,
+      41,
+      73
+    ],
+    "sessions": 420,
+    "assets": 24,
+    "lookback": 12,
+    "horizon": 5,
+    "width": 24,
+    "depth": 4,
+    "steps": 1000,
+    "eval_every": 20,
+    "batch": 96,
+    "time_budget": 1.2,
+    "threshold": 0.2,
+    "weight_decay": 0.01,
+    "clip": 0.2,
+    "global_clip": 5.0,
+    "cost_bps": [
+      0,
+      5,
+      10,
+      25
+    ],
+    "grids": {
+      "sgd": [
+        0.003,
+        0.01,
+        0.03
+      ],
+      "adamw": [
+        0.0003,
+        0.001,
+        0.003
+      ],
+      "muon": [
+        0.001,
+        0.003,
+        0.01
+      ],
+      "depth": [
+        0.0003,
+        0.001,
+        0.003
+      ],
+      "depth_clip": [
+        0.0003,
+        0.001,
+        0.003
+      ],
+      "depth_late": [
+        0.0003,
+        0.001,
+        0.003
+      ],
+      "depth_moments": [
+        0.0003,
+        0.001,
+        0.003
+      ]
+    }
+  },
+  "config_sha256": "c66628fdb6037ee4a8ad7c742cd9b17c9fd36a4738e61baeec52c2d686f3c794",
+  "source_sha256": {
+    "src/loopalpha/models.py": "4c9f66e346dd0087d8b179233a858de7b13686edab0568e1f5a250d24122e781",
+    "src/loopalpha/evaluation.py": "79952ec74417ff89d6261a59d362de3b35d5b15ae006f8611061a4630efc07db",
+    "src/loopalpha/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/loopalpha/experiment.py": "308ab3d70c10489a35235586bb1a5d2e89a8c70cf679ae64a7757e31674fe8fe",
+    "src/loopalpha/optim.py": "46e2df460528c7519c610eb678b464bb46525238244c0667f877401c13f3b38b",
+    "src/loopalpha/training.py": "5fe973f2df73144d722d1453a7393da6218aeb6d8acdce22a063e2ab1396ed33",
+    "src/loopalpha/data.py": "a458906e34b55a677f653a35d8a96fb4fd8145f1127e086b8be92f6fe71a2476",
+    "extended_benchmark.py": "b3ee3a7f3e84e11d1135d6907322f57cee8f9a9d67945dfcb4724a06bb88105b"
+  },
+  "process_peak_rss_bytes": 366133248
+}

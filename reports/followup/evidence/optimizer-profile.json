@@ -1,0 +1,72 @@
+[
+  {
+    "method": "sgd",
+    "peak_rss_bytes": 367280128,
+    "profile_total_registered_flops": 61044080,
+    "profile_steps": 20,
+    "timed_steps": 100,
+    "timed_seconds": 0.0652681669453159,
+    "probe_parameter_bytes": 0,
+    "profile_failed": false
+  },
+  {
+    "method": "adamw",
+    "peak_rss_bytes": 380289024,
+    "profile_total_registered_flops": 61010940,
+    "profile_steps": 20,
+    "timed_steps": 100,
+    "timed_seconds": 0.06688625004608184,
+    "probe_parameter_bytes": 0,
+    "profile_failed": false
+  },
+  {
+    "method": "muon",
+    "peak_rss_bytes": 381108224,
+    "profile_total_registered_flops": 77599740,
+    "profile_steps": 20,
+    "timed_steps": 100,
+    "timed_seconds": 0.08032066700980067,
+    "probe_parameter_bytes": 0,
+    "profile_failed": false
+  },
+  {
+    "method": "depth",
+    "peak_rss_bytes": 380993536,
+    "profile_total_registered_flops": 60987900,
+    "profile_steps": 20,
+    "timed_steps": 100,
+    "timed_seconds": 0.09798079205211252,
+    "probe_parameter_bytes": 19968,
+    "profile_failed": false
+  },
+  {
+    "method": "depth_clip",
+    "peak_rss_bytes": 380731392,
+    "profile_total_registered_flops": 60987980,
+    "profile_steps": 20,
+    "timed_steps": 100,
+    "timed_seconds": 0.09811191691551358,
+    "probe_parameter_bytes": 19968,
+    "profile_failed": false
+  },
+  {
+    "method": "depth_late",
+    "peak_rss_bytes": 380731392,
+    "profile_total_registered_flops": 60987980,
+    "profile_steps": 20,
+    "timed_steps": 100,
+    "timed_seconds": 0.09922804206144065,
+    "probe_parameter_bytes": 19968,
+    "profile_failed": false
+  },
+  {
+    "method": "depth_moments",
+    "peak_rss_bytes": 380796928,
+    "profile_total_registered_flops": 61186620,
+    "profile_steps": 20,
+    "timed_steps": 100,
+    "timed_seconds": 0.1114353749435395,
+    "probe_parameter_bytes": 19968,
+    "profile_failed": false
+  }
+]

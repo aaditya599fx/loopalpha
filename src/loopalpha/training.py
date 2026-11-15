@@ -11,7 +11,7 @@ from .models import LoopModel, simple_model
 from .optim import SeparateMoments, assign_depth_gradients, make_optimizers
 
 
-def fit(samples, train, val, method, lr, seed, config):
+def fit(samples, train, val, method, lr, seed, config, *, step_budgets=(), time_budgets=()):
     torch.manual_seed(seed)
     rng = np.random.default_rng(seed)
     x = samples.x
@@ -51,6 +51,7 @@ def fit(samples, train, val, method, lr, seed, config):
         optimizers = [torch.optim.AdamW([*model.encode.parameters(), *model.head.parameters()],
                                         lr=lr, weight_decay=config["weight_decay"])]
     trace = []
+    checkpoints = {}
     timed_state = None
     threshold_time = None
     threshold_step = None
@@ -104,7 +105,14 @@ def fit(samples, train, val, method, lr, seed, config):
                 failed = True
                 break
             trace.append({"step": step, "seconds": elapsed, "val_mse": val_loss})
-            if elapsed <= config["time_budget"]:
+            if step_budgets or time_budgets:
+                keys = [f"step:{step}"] if step in step_budgets else []
+                keys.extend(f"time:{budget:g}" for budget in time_budgets if elapsed <= budget)
+                if keys:
+                    snapshot = deepcopy(model.state_dict())
+                    for key in keys:
+                        checkpoints[key] = {"step": step, "seconds": elapsed, "state": snapshot}
+            elif elapsed <= config["time_budget"]:
                 timed_state = (step, deepcopy(model.state_dict()))
             if threshold_time is None and val_loss <= config["threshold"]:
                 threshold_time = elapsed
@@ -117,5 +125,7 @@ def fit(samples, train, val, method, lr, seed, config):
             "probe_parameter_bytes": model.depth * sum(p.numel() * p.element_size()
                                                        for p in model.blocks[0].parameters())
             if depth_aware else 0}
+    if step_budgets or time_budgets:
+        info["checkpoints"] = checkpoints
     transform = {"mean": torch.as_tensor(mean), "scale": torch.as_tensor(np.maximum(scale, 1e-6))}
     return model, x, timed_state, info, transform
