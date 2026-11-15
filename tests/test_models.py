@@ -125,3 +125,12 @@ def test_depth_adamw_state_roundtrip():
     advance(restored, loaded)
     for actual, expected in zip(restored.parameters(), original.parameters()):
         torch.testing.assert_close(actual, expected, rtol=0, atol=0)
+
+
+def test_noise_control_keeps_model_input_dtype():
+    toy = toy_samples(19, 20, 8, 3)
+    config = {"width": 8, "steps": 2, "batch": 8, "depth": 2, "weight_decay": .01,
+              "eval_every": 1, "time_budget": 1., "threshold": .2, "global_clip": 5., "data_seed": 19}
+    _, x, _, result, _ = fit(toy, np.arange(80), np.arange(80, 100), "noise", .003, 7, config)
+    assert x.dtype == torch.float32
+    assert not result["failed"]

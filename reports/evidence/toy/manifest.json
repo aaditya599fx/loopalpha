@@ -1,0 +1,90 @@
+{
+  "task": "toy",
+  "data": {
+    "source": "toy",
+    "seed": 431
+  },
+  "config": {
+    "data_seed": 431,
+    "seeds": [
+      17,
+      41,
+      73
+    ],
+    "sessions": 420,
+    "assets": 24,
+    "lookback": 12,
+    "horizon": 5,
+    "width": 24,
+    "depth": 4,
+    "steps": 160,
+    "eval_every": 10,
+    "batch": 96,
+    "time_budget": 0.12,
+    "threshold": 0.2,
+    "weight_decay": 0.01,
+    "clip": 0.2,
+    "global_clip": 5.0,
+    "cost_bps": [
+      0,
+      5,
+      10,
+      25
+    ],
+    "grids": {
+      "sgd": [
+        0.003,
+        0.01,
+        0.03
+      ],
+      "adamw": [
+        0.0003,
+        0.001,
+        0.003
+      ],
+      "muon": [
+        0.001,
+        0.003,
+        0.01
+      ],
+      "depth": [
+        0.0003,
+        0.001,
+        0.003
+      ],
+      "depth_clip": [
+        0.0003,
+        0.001,
+        0.003
+      ],
+      "depth_late": [
+        0.0003,
+        0.001,
+        0.003
+      ],
+      "depth_moments": [
+        0.0003,
+        0.001,
+        0.003
+      ]
+    }
+  },
+  "config_sha256": "c66628fdb6037ee4a8ad7c742cd9b17c9fd36a4738e61baeec52c2d686f3c794",
+  "code_sha256": {
+    "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "data.py": "c6125629cd8ab4b5f130c7b614b651b8fd8d514ce742956244c0878846af4e4e",
+    "evaluation.py": "79952ec74417ff89d6261a59d362de3b35d5b15ae006f8611061a4630efc07db",
+    "experiment.py": "833e5fc5168ef2b3965fdc0e08989a634778231b839f6f93d0e2497024c648b4",
+    "models.py": "4c9f66e346dd0087d8b179233a858de7b13686edab0568e1f5a250d24122e781",
+    "optim.py": "46e2df460528c7519c610eb678b464bb46525238244c0667f877401c13f3b38b",
+    "training.py": "f263b8f0cc48ee935e82825ea4f3511f7c17c89942cc6a4bc6a5f13a0d45b9fc"
+  },
+  "utc": "2026-11-15T06:22:08.717894+00:00",
+  "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+  "python": "3.13.7",
+  "torch": "2.9.1",
+  "numpy": "2.4.2",
+  "pandas": "2.3.3",
+  "device": "cpu",
+  "threads": 1
+}

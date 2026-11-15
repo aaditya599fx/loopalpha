@@ -30,10 +30,12 @@ def fmt(numbers, *, center=mean, digits=4, spread=False):
     return result
 
 
-def summarize_toy(fold):
+def summarize_toy(fold, config):
+    steps = config["steps"]
+    budget_ms = config["time_budget"] * 1000
     rows = fold["runs"]
     lines = [
-        "| Method | LR | Step-160 MSE ± SD | 120 ms MSE ± SD | Median checkpoint | Median threshold ms | Threshold hits | Run failures |",
+        f"| Method | LR | Step-{steps} MSE ± SD | {budget_ms:g} ms MSE ± SD | Median checkpoint | Median threshold ms | Threshold hits | Run failures |",
         "|---|---:|---:|---:|---:|---:|---:|---:|",
     ]
     for method in dict.fromkeys(row["method"] for row in rows):
@@ -68,7 +70,7 @@ def summarize_market(fold):
     return lines
 
 
-def convergence_figure(rows, output):
+def convergence_figure(rows, output, config):
     plt.style.use("seaborn-v0_8-whitegrid")
     fig, axes = plt.subplots(1, 2, figsize=(11, 4.4), layout="constrained")
     colors = ["#405e87", "#1b776c", "#a14824", "#704399", "#b86f05", "#5b6573", "#ba4373"]
@@ -83,9 +85,9 @@ def convergence_figure(rows, output):
             axis.plot(np.median(x, axis=0), np.median(losses, axis=0),
                       color=color, linewidth=1.8, label=method)
     for axis, xlabel in zip(axes, ["Optimizer steps", "Training wall time (ms)"]):
-        axis.axhline(.2, color="#475569", linestyle="--", linewidth=.9)
+        axis.axhline(config["threshold"], color="#475569", linestyle="--", linewidth=.9)
         axis.set(xlabel=xlabel, ylabel="Validation MSE", yscale="log")
-    axes[1].axvline(120, color="#475569", linestyle=":", linewidth=.9)
+    axes[1].axvline(config["time_budget"] * 1000, color="#475569", linestyle=":", linewidth=.9)
     axes[1].legend(frameon=False, fontsize=8)
     fig.savefig(output, dpi=170)
     plt.close(fig)
@@ -122,16 +124,16 @@ def main():
     folds = [load(p) for p in sorted(args.market.glob("fold-*/results.json"))]
     market_task = load(args.market / "manifest.json")["task"]
     toy_config = load(args.toy / "manifest.json")["config"]
-    if toy_config["steps"] != 160 or toy_config["time_budget"] != .12 or toy_config["threshold"] != .2:
-        raise ValueError("Report labels describe configs/research.yaml")
-    convergence_figure(toy["runs"], args.out / "toy_convergence.png")
+    if not folds:
+        parser.error("No completed market fold found")
+    convergence_figure(toy["runs"], args.out / "toy_convergence.png", toy_config)
     market_figure(folds, args.out / "market_rank_ic.png")
     lines = ["# LoopAlpha experiment results", "",
              f"Market input type: `{market_task}`. Results use three training seeds unless the method is deterministic.",
-             "", "## Controlled sequence task", "", *summarize_toy(toy), "",
+             "", "## Controlled sequence task", "", *summarize_toy(toy, toy_config), "",
              "![Toy validation convergence](toy_convergence.png)", "",
              "Median validation MSE across three seeds at each checkpoint. The wall-clock panel uses median "
-             "checkpoint times. The horizontal line marks the loss threshold and the vertical line marks 120 ms.",
+             "checkpoint times. The horizontal line marks the loss threshold and the vertical line marks the time budget.",
              "", "## Market panel"]
     for i, fold in enumerate(folds, 1):
         lines.extend(["", f"### Fold {i}", "",

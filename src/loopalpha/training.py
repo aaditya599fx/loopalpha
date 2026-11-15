@@ -28,7 +28,8 @@ def fit(samples, train, val, method, lr, seed, config):
     elif method == "noise":
         features = np.random.default_rng(config["data_seed"] + 1).normal(
             size=x.shape).astype(np.float32)
-        mean, scale = 0., 1.
+        mean = np.zeros(x.shape[-1], dtype=np.float32)
+        scale = np.ones(x.shape[-1], dtype=np.float32)
     batch_rng = np.random.default_rng(seed + 1)
     x = torch.from_numpy((features - mean) / np.maximum(scale, 1e-6))
     y = torch.from_numpy(labels)
