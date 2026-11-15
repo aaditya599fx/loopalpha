@@ -75,11 +75,32 @@ def validate_panel(frame):
     return frame.sort_values(["date", "symbol"])
 
 
-def market_samples(frame, lookback, horizon):
+def read_sessions(path, frame):
+    from io import BytesIO
+
+    payload = Path(path).read_bytes()
+    values = pd.read_csv(BytesIO(payload), usecols=["date"])["date"]
+    sessions = pd.DatetimeIndex(pd.to_datetime(values, format="%Y-%m-%d", errors="raise"))
+    if (sessions.empty or sessions.hasnans or sessions.has_duplicates
+            or not sessions.is_monotonic_increasing or not sessions.equals(sessions.normalize())):
+        raise ValueError("Calendar must contain unique, ascending session dates")
+    observed = pd.DatetimeIndex(frame.date.unique()).sort_values()
+    if not observed.isin(sessions).all():
+        raise ValueError("Bar dates must belong to the supplied calendar")
+    if sessions.min() != observed.min() or sessions.max() != observed.max():
+        raise ValueError("Calendar and bars must cover the same first and last sessions")
+    audit = {"calendar": "explicit session dates", "calendar_sha256": sha256(payload).hexdigest(),
+             "sessions_without_bars": sessions.difference(observed).strftime("%Y-%m-%d").tolist()}
+    return sessions, audit
+
+
+def market_samples(frame, lookback, horizon, *, sessions=None):
     if lookback < 1 or horizon < 1:
         raise ValueError("Lookback and horizon must be positive")
     pivots = {name: frame.pivot(index="date", columns="symbol", values=name)
               for name in FIELDS}
+    if sessions is not None:
+        pivots = {name: values.reindex(sessions) for name, values in pivots.items()}
     opening, high, low, close, volume = (pivots[name] for name in FIELDS)
     if len(close) < lookback + 20 + horizon + 1:
         raise ValueError("Panel has too few sessions for the lookback and horizon")
@@ -87,7 +108,7 @@ def market_samples(frame, lookback, horizon):
     tradable_open = opening
     eligible = volume.gt(0)
     if "eligible" in frame:
-        eligible &= frame.pivot(index="date", columns="symbol", values="eligible").eq(True)
+        eligible &= frame.pivot(index="date", columns="symbol", values="eligible").reindex(eligible.index).eq(True)
     close = close.where(volume.gt(0))
     returns = np.log(close).diff()
     momentum = np.log(close).diff(5)

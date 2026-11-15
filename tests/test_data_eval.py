@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import pytest
 
-from loopalpha.data import market_samples, synthetic_panel, validate_panel
+from loopalpha.data import market_samples, read_sessions, synthetic_panel, validate_panel
 from loopalpha.evaluation import block_interval, correlations, cost_metrics, portfolio
 
 
@@ -67,3 +67,31 @@ def test_backtest_entry_exit_cash_and_costs():
     assert cost_metrics(portfolio(prediction, opens, 1, 0, 3), 1, 10, 0, 3)["status"] == "unpriced_exit"
     opens.iloc[1, 3] = np.nan
     assert portfolio(prediction, opens, 1, 0, 3).weight.tolist() == [-.5, 0.]
+
+
+
+def test_explicit_calendar_preserves_a_session_missing_from_every_asset(tmp_path):
+    frame = synthetic_panel(11, 85, 8).assign(eligible=True)
+    dates = pd.DatetimeIndex(frame.date.unique())
+    missing_open = dates[51]
+    frame = validate_panel(frame.loc[frame.date.ne(missing_open)])
+    calendar = tmp_path / "dates.csv"
+    pd.DataFrame({"date": dates}).to_csv(calendar, index=False)
+    sessions, audit = read_sessions(calendar, frame)
+
+    samples = market_samples(frame, 5, 5, sessions=sessions)
+    assert audit["sessions_without_bars"] == [str(missing_open.date())]
+    assert samples.sessions == len(dates)
+    assert samples.opens.iloc[51].isna().all()
+    assert np.isnan(samples.realized[samples.date == 45]).all()
+    assert np.isfinite(samples.realized[samples.date == 44]).all()
+    assert np.isfinite(samples.realized[samples.date == 46]).all()
+
+
+def test_explicit_calendar_rejects_excluded_bar_dates(tmp_path):
+    frame = validate_panel(synthetic_panel(11, 85, 8))
+    dates = pd.DatetimeIndex(frame.date.unique()).delete(51)
+    calendar = tmp_path / "dates.csv"
+    pd.DataFrame({"date": dates}).to_csv(calendar, index=False)
+    with pytest.raises(ValueError, match="must belong"):
+        read_sessions(calendar, frame)

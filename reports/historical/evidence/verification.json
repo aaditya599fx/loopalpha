@@ -1,0 +1,14 @@
+[
+  {
+    "fold": "fold-1",
+    "models_with_verified_ledger_totals": 37,
+    "models_with_unpriced_exit": 0,
+    "trade_rows_verified": 9768
+  },
+  {
+    "fold": "fold-2",
+    "models_with_verified_ledger_totals": 7,
+    "models_with_unpriced_exit": 30,
+    "trade_rows_verified": 13986
+  }
+]

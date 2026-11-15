@@ -2,7 +2,7 @@
 
 LoopAlpha tests whether an optimizer can benefit from seeing the individual gradient contributions of a shared block that runs repeatedly. It benchmarks convergence on synthetic sequence regression, then measures transfer to cross-sectional return ranking on a chronological market panel.
 
-[Experimental protocol](reports/research_plan.md) · [Generated results](reports/results.md) · [Research interpretation](reports/research_report.md) · [Market CSV contract](data/README.md)
+[Experimental protocol](reports/research_plan.md) · [Generated results](reports/results.md) · [Research interpretation](reports/research_report.md) · [Market CSV contract](data/README.md) · [Historical U.S. equities benchmark](reports/historical/README.md)
 
 ## Reproduce
 
@@ -33,6 +33,16 @@ loopalpha market \
   --out runs/historical
 ```
 
+To reproduce the historical benchmark, download the [Quandl WIKI archive mirror](https://www.kaggle.com/datasets/marketneutral/quandl-wiki-prices-us-equites) and save it as `data/wiki-prices.zip`.
+
+```sh
+python scripts/prepare_wiki.py data/wiki-prices.zip --csv data/wiki-panel.csv --audit data/wiki-audit.json
+loopalpha market --csv data/wiki-panel.csv --calendar configs/wiki_xnys_sessions.csv --prices adjusted \
+  --source 'Quandl WIKI/PRICES public-domain archive via marketneutral Kaggle mirror; vendor split/dividend-adjusted OHLCV' \
+  --out runs/wiki-market
+python scripts/make_report.py --market runs/wiki-market --out runs/wiki-market/report
+```
+
 ## Experiment design
 
 The sequence model embeds a lookback window and repeatedly applies one LayerNorm residual MLP. The untied baseline has the same depth, width and initial forward function with independently trainable blocks. Additional baselines include momentum, linear regression and a shallow MLP.
@@ -43,6 +53,6 @@ The market experiment fits scaling on each expanding training window, selects le
 
 ## Outputs and verification
 
-Each run saves input provenance, code and configuration hashes, per-seed validation traces, selected learning rates, and inference checkpoints containing the training feature transform. Market runs also save per-date IC, predictions and position-level trade ledgers. The checked-in evidence is from generated data. The sample market ledger can be audited independently of PyTorch.
+Each run saves input provenance, code and configuration hashes, per-seed validation traces, selected learning rates, and inference checkpoints containing the training feature transform. Market runs also save per-date IC, predictions and position-level trade ledgers. The checked-in evidence includes the synthetic benchmark and a separate historical U.S. equities benchmark. The synthetic sample ledger can be audited independently of PyTorch.
 
-This is an independent portfolio project inspired by the CaCTüS looped-optimizer problem. It makes no claim of historical market performance. See the research report for the measured synthetic results and limitations.
+This is an independent portfolio project inspired by the CaCTüS looped-optimizer problem. The historical results describe a fixed stock cohort in a single archived data source. The historical report documents the source, coverage, results and execution assumptions.

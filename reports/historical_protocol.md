@@ -1,0 +1,7 @@
+# Historical experiment protocol
+
+This experiment uses archived Quandl WIKI/PRICES U.S. equities. Form a fixed cohort of 30 tickers based on median daily dollar volume in January 2012, with an 18-session positive-volume minimum. The dollar volume calculation uses raw close and raw volume. Observe the cohort from February 2012 through December 2017. Retain missing bars and keep cohort membership independent of subsequent data completeness. The initial integrity check found invalid OHLC bounds in the vendor archive. Treat invalid rows as missing and record their keys before running the benchmark. Reject duplicate keys. Use vendor split- and dividend-adjusted OHLC and adjusted volume. The archive is frozen and is not a point-in-time membership or delisting database.
+
+Align bars to the XNYS schedule from `exchange-calendars` 4.13.3, saved as `configs/wiki_xnys_sessions.csv`. The calendar audit found one session with no bars for any asset (2017-11-08). Preserve it as a missing session before building features and returns.
+
+Apply the existing research configuration, train/validation boundaries and held-out scoring without retuning the protocol after the run. Keep the two walk-forward folds and three seeds. Use the existing next-open, five-session cohort accounting, which makes adjusted opening prices proxies for the evaluation. An unpriced exit stays visible and prevents a portfolio summary for that run. Attribute the archive and report its checksum and data audit. Publish derived summaries and configuration.

@@ -55,8 +55,8 @@ def summarize_toy(fold, config):
 def summarize_market(fold):
     rows = fold["runs"]
     lines = [
-        "| Method | Test MSE ± SD | Rank IC ± SD | Rank IC > 0 | Median IC dates | Net return at 10 bps |",
-        "|---|---:|---:|---:|---:|---:|",
+        "| Method | Test MSE ± SD | Rank IC ± SD | Rank IC > 0 | Median IC dates | Net return at 10 bps | Priced runs |",
+        "|---|---:|---:|---:|---:|---:|---:|",
     ]
     for method in dict.fromkeys(row["method"] for row in rows):
         subset = [row for row in rows if row["method"] == method]
@@ -66,7 +66,7 @@ def summarize_market(fold):
                      f"{fmt(values(subset, 'rank_ic'), spread=True)} | "
                      f"{fmt(values(subset, 'rank_ic_positive'), digits=3)} | "
                      f"{fmt(values(subset, 'ic_days'), center=median, digits=0)} | "
-                     f"{fmt(returns, digits=2) + '%' if returns else '—'} |")
+                     f"{fmt(returns, digits=2) + '%' if returns else '—'} | {len(returns)}/{len(subset)} |")
     return lines
 
 
@@ -94,7 +94,8 @@ def convergence_figure(rows, output, config):
 
 
 def market_figure(folds, output):
-    fig, axes = plt.subplots(1, len(folds), figsize=(11, 5), layout="constrained", sharey=True)
+    plt.style.use("seaborn-v0_8-whitegrid")
+    fig, axes = plt.subplots(1, len(folds), figsize=(11, 5), layout="constrained", sharex=True, sharey=True)
     for i, (axis, fold) in enumerate(zip(np.atleast_1d(axes), folds), 1):
         runs = fold["runs"]
         methods = list(dict.fromkeys(row["method"] for row in runs))
@@ -115,26 +116,31 @@ def market_figure(folds, output):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--toy", type=Path, required=True)
+    parser.add_argument("--toy", type=Path, help="Include the sequence benchmark")
     parser.add_argument("--market", type=Path, required=True)
     parser.add_argument("--out", type=Path, default=Path("reports"))
     args = parser.parse_args()
     args.out.mkdir(parents=True, exist_ok=True)
-    toy = load(args.toy / "fold-1/results.json")
     folds = [load(p) for p in sorted(args.market.glob("fold-*/results.json"))]
-    market_task = load(args.market / "manifest.json")["task"]
-    toy_config = load(args.toy / "manifest.json")["config"]
+    manifest = load(args.market / "manifest.json")
+    market_task = manifest["task"]
+    market_seeds = len(manifest["config"]["seeds"])
     if not folds:
         parser.error("No completed market fold found")
-    convergence_figure(toy["runs"], args.out / "toy_convergence.png", toy_config)
     market_figure(folds, args.out / "market_rank_ic.png")
     lines = ["# LoopAlpha experiment results", "",
-             f"Market input type: `{market_task}`. Results use three training seeds unless the method is deterministic.",
-             "", "## Controlled sequence task", "", *summarize_toy(toy, toy_config), "",
-             "![Toy validation convergence](toy_convergence.png)", "",
-             "Median validation MSE across three seeds at each checkpoint. The wall-clock panel uses median "
-             "checkpoint times. The horizontal line marks the loss threshold and the vertical line marks the time budget.",
-             "", "## Market panel"]
+             f"Market input type: `{market_task}`. Market results use {market_seeds} training seeds "
+             "unless the method is deterministic."]
+    if args.toy:
+        toy = load(args.toy / "fold-1/results.json")
+        toy_config = load(args.toy / "manifest.json")["config"]
+        convergence_figure(toy["runs"], args.out / "toy_convergence.png", toy_config)
+        lines.extend(["", "## Controlled sequence task", "", *summarize_toy(toy, toy_config), "",
+                      "![Toy validation convergence](toy_convergence.png)", "",
+                      f"Median validation MSE across up to {len(toy_config['seeds'])} seeds at each checkpoint. "
+                      "The wall-clock panel uses median checkpoint times. The horizontal line marks the loss "
+                      "threshold and the vertical line marks the time budget."])
+    lines.extend(["", "## Market panel"])
     for i, fold in enumerate(folds, 1):
         lines.extend(["", f"### Fold {i}", "",
                       f"Session boundaries {fold['boundaries']}. Labeled train, validation and test counts "

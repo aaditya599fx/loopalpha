@@ -1,0 +1,4737 @@
+{
+  "boundaries": [
+    893,
+    1116,
+    1489
+  ],
+  "chosen": {
+    "sgd": 0.003,
+    "adamw": 0.003,
+    "muon": 0.01,
+    "depth": 0.003,
+    "depth_clip": 0.003,
+    "depth_late": 0.003,
+    "depth_moments": 0.003,
+    "linear": 0.003,
+    "mlp": 0.0003,
+    "untied": 0.003,
+    "shuffle": 0.003,
+    "noise": 0.003
+  },
+  "counts": {
+    "train": 25680,
+    "validation": 6510,
+    "labeled_test": 9671,
+    "test": 9755
+  },
+  "runs": [
+    {
+      "method": "sgd",
+      "seed": 17,
+      "rate": 0.003,
+      "failed": false,
+      "seconds": 0.16009949997533113,
+      "parameters": 3313,
+      "threshold_seconds": null,
+      "threshold_step": null,
+      "trace": [
+        {
+          "step": 10,
+          "seconds": 0.01020574988797307,
+          "val_mse": 1.1007455587387085
+        },
+        {
+          "step": 20,
+          "seconds": 0.020320541923865676,
+          "val_mse": 1.0595985651016235
+        },
+        {
+          "step": 30,
+          "seconds": 0.030346832936629653,
+          "val_mse": 1.0412708520889282
+        },
+        {
+          "step": 40,
+          "seconds": 0.04036783298943192,
+          "val_mse": 1.035644769668579
+        },
+        {
+          "step": 50,
+          "seconds": 0.05038020794745535,
+          "val_mse": 1.048984169960022
+        },
+        {
+          "step": 60,
+          "seconds": 0.060381999937817454,
+          "val_mse": 1.0354790687561035
+        },
+        {
+          "step": 70,
+          "seconds": 0.07039345789235085,
+          "val_mse": 1.0350078344345093
+        },
+        {
+          "step": 80,
+          "seconds": 0.08043854194693267,
+          "val_mse": 1.0453684329986572
+        },
+        {
+          "step": 90,
+          "seconds": 0.09052983298897743,
+          "val_mse": 1.044234037399292
+        },
+        {
+          "step": 100,
+          "seconds": 0.10052008298225701,
+          "val_mse": 1.029839277267456
+        },
+        {
+          "step": 110,
+          "seconds": 0.11055149999447167,
+          "val_mse": 1.0307871103286743
+        },
+        {
+          "step": 120,
+          "seconds": 0.12054345791693777,
+          "val_mse": 1.0333319902420044
+        },
+        {
+          "step": 130,
+          "seconds": 0.13042166689410806,
+          "val_mse": 1.0372262001037598
+        },
+        {
+          "step": 140,
+          "seconds": 0.14036954194307327,
+          "val_mse": 1.042150616645813
+        },
+        {
+          "step": 150,
+          "seconds": 0.15020591695792973,
+          "val_mse": 1.039530634880066
+        },
+        {
+          "step": 160,
+          "seconds": 0.16009779192972928,
+          "val_mse": 1.0433248281478882
+        }
+      ],
+      "validation_mse": 1.0433248281478882,
+      "probe_parameter_bytes": 0,
+      "test_mse": 1.0400179624557495,
+      "test_examples": 9671,
+      "ic_days": 335,
+      "rank_ic_95": [
+        -0.04470065867170589,
+        0.03441539254546229
+      ],
+      "ic": -0.0044333591269525114,
+      "rank_ic": -0.0037065053863498966,
+      "rank_ic_positive": 0.48059701492537316,
+      "rank_ic_std": 0.25687969539932726,
+      "rank_ic_ir": -0.014428954303250873,
+      "cost_stress": {
+        "0": {
+          "status": "unpriced_exit",
+          "affected_trades": 1
+        },
+        "5": {
+          "status": "unpriced_exit",
+          "affected_trades": 1
+        },
+        "10": {
+          "status": "unpriced_exit",
+          "affected_trades": 1
+        },
+        "25": {
+          "status": "unpriced_exit",
+          "affected_trades": 1
+        }
+      },
+      "time_budget_step": 110,
+      "time_budget_test_mse": 1.0323323011398315
+    },
+    {
+      "method": "sgd",
+      "seed": 41,
+      "rate": 0.003,
+      "failed": false,
+      "seconds": 0.16204112500417978,
+      "parameters": 3313,
+      "threshold_seconds": null,
+      "threshold_step": null,
+      "trace": [
+        {
+          "step": 10,
+          "seconds": 0.010546374949626625,
+          "val_mse": 1.0878894329071045
+        },
+        {
+          "step": 20,
+          "seconds": 0.020810583024285734,
+          "val_mse": 1.06548011302948
+        },
+        {
+          "step": 30,
+          "seconds": 0.031002791947685182,
+          "val_mse": 1.0594382286071777
+        },
+        {
+          "step": 40,
+          "seconds": 0.041182167013175786,
+          "val_mse": 1.0556175708770752
+        },
+        {
+          "step": 50,
+          "seconds": 0.0513414170127362,
+          "val_mse": 1.052739143371582
+        },
+        {
+          "step": 60,
+          "seconds": 0.06150512502063066,
+          "val_mse": 1.0457943677902222
+        },
+        {
+          "step": 70,
+          "seconds": 0.07162666693329811,
+          "val_mse": 1.05657160282135
+        },
+        {
+          "step": 80,
+          "seconds": 0.08177533303387463,
+          "val_mse": 1.0451909303665161
+        },
+        {
+          "step": 90,
+          "seconds": 0.09188700001686811,
+          "val_mse": 1.0369223356246948
+        },
+        {
+          "step": 100,
+          "seconds": 0.10197387496009469,
+          "val_mse": 1.051123857498169
+        },
+        {
+          "step": 110,
+          "seconds": 0.1120734999421984,
+          "val_mse": 1.0354151725769043
+        },
+        {
+          "step": 120,
+          "seconds": 0.1221934580244124,
+          "val_mse": 1.0377964973449707
+        },
+        {
+          "step": 130,
+          "seconds": 0.1321869579842314,
+          "val_mse": 1.0448942184448242
+        },
+        {
+          "step": 140,
+          "seconds": 0.1421409579925239,
+          "val_mse": 1.0483235120773315
+        },
+        {
+          "step": 150,
+          "seconds": 0.15208404196891934,
+          "val_mse": 1.0344445705413818
+        },
+        {
+          "step": 160,
+          "seconds": 0.16203941695857793,
+          "val_mse": 1.0358818769454956
+        }
+      ],
+      "validation_mse": 1.0358818769454956,
+      "probe_parameter_bytes": 0,
+      "test_mse": 1.0322587490081787,
+      "test_examples": 9671,
+      "ic_days": 335,
+      "rank_ic_95": [
+        -0.021170527271807432,
+        0.039448968553822523
+      ],
+      "ic": 0.009086005226618557,
+      "rank_ic": 0.0072727595384921365,
+      "rank_ic_positive": 0.47761194029850745,
+      "rank_ic_std": 0.2289580159803491,
+      "rank_ic_ir": 0.03176459888225246,
+      "cost_stress": {
+        "0": {
+          "status": "unpriced_exit",
+          "affected_trades": 3
+        },
+        "5": {
+          "status": "unpriced_exit",
+          "affected_trades": 3
+        },
+        "10": {
+          "status": "unpriced_exit",
+          "affected_trades": 3
+        },
+        "25": {
+          "status": "unpriced_exit",
+          "affected_trades": 3
+        }
+      },
+      "time_budget_step": 110,
+      "time_budget_test_mse": 1.0334877967834473
+    },
+    {
+      "method": "sgd",
+      "seed": 73,
+      "rate": 0.003,
+      "failed": false,
+      "seconds": 0.16275670798495412,
+      "parameters": 3313,
+      "threshold_seconds": null,
+      "threshold_step": null,
+      "trace": [
+        {
+          "step": 10,
+          "seconds": 0.010535957990214229,
+          "val_mse": 1.14631187915802
+        },
+        {
+          "step": 20,
+          "seconds": 0.020842582918703556,
+          "val_mse": 1.1133042573928833
+        },
+        {
+          "step": 30,
+          "seconds": 0.031098749954253435,
+          "val_mse": 1.0969120264053345
+        },
+        {
+          "step": 40,
+          "seconds": 0.041311166947707534,
+          "val_mse": 1.0495874881744385
+        },
+        {
+          "step": 50,
+          "seconds": 0.05155324994120747,
+          "val_mse": 1.042068362236023
+        },
+        {
+          "step": 60,
+          "seconds": 0.061759833013638854,
+          "val_mse": 1.0421726703643799
+        },
+        {
+          "step": 70,
+          "seconds": 0.07193400000687689,
+          "val_mse": 1.0326752662658691
+        },
+        {
+          "step": 80,
+          "seconds": 0.08206241694279015,
+          "val_mse": 1.0403779745101929
+        },
+        {
+          "step": 90,
+          "seconds": 0.09223691700026393,
+          "val_mse": 1.0371400117874146
+        },
+        {
+          "step": 100,
+          "seconds": 0.10241870791651309,
+          "val_mse": 1.037104845046997
+        },
+        {
+          "step": 110,
+          "seconds": 0.11258512490894645,
+          "val_mse": 1.0338175296783447
+        },
+        {
+          "step": 120,
+          "seconds": 0.1227561249397695,
+          "val_mse": 1.0341620445251465
+        },
+        {
+          "step": 130,
+          "seconds": 0.1327528749825433,
+          "val_mse": 1.0500315427780151
+        },
+        {
+          "step": 140,
+          "seconds": 0.1427505830070004,
+          "val_mse": 1.0334779024124146
+        },
+        {
+          "step": 150,
+          "seconds": 0.15274687495548278,
+          "val_mse": 1.030260682106018
+        },
+        {
+          "step": 160,
+          "seconds": 0.16275508294347674,
+          "val_mse": 1.0366274118423462
+        }
+      ],
+      "validation_mse": 1.0366274118423462,
+      "probe_parameter_bytes": 0,
+      "test_mse": 1.0317364931106567,
+      "test_examples": 9671,
+      "ic_days": 335,
+      "rank_ic_95": [
+        -0.04197139814882093,
+        0.03796508311688853
+      ],
+      "ic": -0.00025194996959395494,
+      "rank_ic": -0.0019361153626609676,
+      "rank_ic_positive": 0.5134328358208955,
+      "rank_ic_std": 0.2537720867603138,
+      "rank_ic_ir": -0.007629347212207845,
+      "cost_stress": {
+        "0": {
+          "status": "ok",
+          "cohorts": 74,
+          "gross_return": -0.0513996676966294,
+          "net_return": -0.0513996676966294,
+          "net_sharpe_rf0": -0.34278392971154914,
+          "max_drawdown": -0.11660922586945621,
+          "mean_traded_notional": 1.8379771646397625
+        },
+        "5": {
+          "status": "ok",
+          "cohorts": 74,
+          "gross_return": -0.0513996676966294,
+          "net_return": -0.1138507950060591,
+          "net_sharpe_rf0": -0.8428716766843569,
+          "max_drawdown": -0.1386275906063238,
+          "mean_traded_notional": 1.8379771646397625
+        },
+        "10": {
+          "status": "ok",
+          "cohorts": 74,
+          "gross_return": -0.0513996676966294,
+          "net_return": -0.17224701331638037,
+          "net_sharpe_rf0": -1.3415204291308485,
+          "max_drawdown": -0.18656571392411192,
+          "mean_traded_notional": 1.8379771646397625
+        },
+        "25": {
+          "status": "ok",
+          "cohorts": 74,
+          "gross_return": -0.0513996676966294,
+          "net_return": -0.32562134038189483,
+          "net_sharpe_rf0": -2.822341539406697,
+          "max_drawdown": -0.327206039192414,
+          "mean_traded_notional": 1.8379771646397625
+        }
+      },
+      "time_budget_step": 110,
+      "time_budget_test_mse": 1.0358909368515015
+    },
+    {
+      "method": "adamw",
+      "seed": 17,
+      "rate": 0.003,
+      "failed": false,
+      "seconds": 0.17328062502201647,
+      "parameters": 3313,
+      "threshold_seconds": null,
+      "threshold_step": null,
+      "trace": [
+        {
+          "step": 10,
+          "seconds": 0.01133145799394697,
+          "val_mse": 1.0880608558654785
+        },
+        {
+          "step": 20,
+          "seconds": 0.022359458031132817,
+          "val_mse": 1.0444008111953735
+        },
+        {
+          "step": 30,
+          "seconds": 0.033270583022385836,
+          "val_mse": 1.0476951599121094
+        },
+        {
+          "step": 40,
+          "seconds": 0.044166540959849954,
+          "val_mse": 1.046872615814209
+        },
+        {
+          "step": 50,
+          "seconds": 0.05509345792233944,
+          "val_mse": 1.0653553009033203
+        },
+        {
+          "step": 60,
+          "seconds": 0.06597729097120464,
+          "val_mse": 1.039997935295105
+        },
+        {
+          "step": 70,
+          "seconds": 0.07683045801240951,
+          "val_mse": 1.0325249433517456
+        },
+        {
+          "step": 80,
+          "seconds": 0.087691624998115,
+          "val_mse": 1.0328640937805176
+        },
+        {
+          "step": 90,
+          "seconds": 0.09850220801308751,
+          "val_mse": 1.036920189857483
+        },
+        {
+          "step": 100,
+          "seconds": 0.10930349992122501,
+          "val_mse": 1.0329595804214478
+        },
+        {
+          "step": 110,
+          "seconds": 0.12009587499778718,
+          "val_mse": 1.0368503332138062
+        },
+        {
+          "step": 120,
+          "seconds": 0.13072358292993158,
+          "val_mse": 1.0421215295791626
+        },
+        {
+          "step": 130,
+          "seconds": 0.14135866600554436,
+          "val_mse": 1.0469163656234741
+        },
+        {
+          "step": 140,
+          "seconds": 0.15201433293987066,
+          "val_mse": 1.0427513122558594
+        },
+        {
+          "step": 150,
+          "seconds": 0.1626396659994498,
+          "val_mse": 1.0410526990890503
+        },
+        {
+          "step": 160,
+          "seconds": 0.1732789579546079,
+          "val_mse": 1.0498358011245728
+        }
+      ],
+      "validation_mse": 1.0498358011245728,
+      "probe_parameter_bytes": 0,
+      "test_mse": 1.0435863733291626,
+      "test_examples": 9671,
+      "ic_days": 335,
+      "rank_ic_95": [
+        -0.05180809142719532,
+        0.026675176399709986
+      ],
+      "ic": -0.036055365678638734,
+      "rank_ic": -0.01138655419969394,
+      "rank_ic_positive": 0.4746268656716418,
+      "rank_ic_std": 0.2521546946929217,
+      "rank_ic_ir": -0.045157018446793866,
+      "cost_stress": {
+        "0": {
+          "status": "unpriced_exit",
+          "affected_trades": 2
+        },
+        "5": {
+          "status": "unpriced_exit",
+          "affected_trades": 2
+        },
+        "10": {
+          "status": "unpriced_exit",
+          "affected_trades": 2
+        },
+        "25": {
+          "status": "unpriced_exit",
+          "affected_trades": 2
+        }
+      },
+      "time_budget_step": 100,
+      "time_budget_test_mse": 1.037010908126831
+    },
+    {
+      "method": "adamw",
+      "seed": 41,
+      "rate": 0.003,
+      "failed": false,
+      "seconds": 0.17337879200931638,
+      "parameters": 3313,
+      "threshold_seconds": null,
+      "threshold_step": null,
+      "trace": [
+        {
+          "step": 10,
+          "seconds": 0.011321666999720037,
+          "val_mse": 1.0873124599456787
+        },
+        {
+          "step": 20,
+          "seconds": 0.02231358306016773,
+          "val_mse": 1.0533233880996704
+        },
+        {
+          "step": 30,
+          "seconds": 0.03324024996254593,
+          "val_mse": 1.0525976419448853
+        },
+        {
+          "step": 40,
+          "seconds": 0.04411516699474305,
+          "val_mse": 1.041917085647583
+        },
+        {
+          "step": 50,
+          "seconds": 0.05500358296558261,
+          "val_mse": 1.0365431308746338
+        },
+        {
+          "step": 60,
+          "seconds": 0.06589695799630135,
+          "val_mse": 1.0355854034423828
+        },
+        {
+          "step": 70,
+          "seconds": 0.0767469999846071,
+          "val_mse": 1.0356391668319702
+        },
+        {
+          "step": 80,
+          "seconds": 0.0875830000732094,
+          "val_mse": 1.0374479293823242
+        },
+        {
+          "step": 90,
+          "seconds": 0.09847824997268617,
+          "val_mse": 1.0491398572921753
+        },
+        {
+          "step": 100,
+          "seconds": 0.10928766697179526,
+          "val_mse": 1.0740432739257812
+        },
+        {
+          "step": 110,
+          "seconds": 0.120062957983464,
+          "val_mse": 1.0332461595535278
+        },
+        {
+          "step": 120,
+          "seconds": 0.1307277079904452,
+          "val_mse": 1.0305004119873047
+        },
+        {
+          "step": 130,
+          "seconds": 0.1413835829589516,
+          "val_mse": 1.040330410003662
+        },
+        {
+          "step": 140,
+          "seconds": 0.15204525005538017,
+          "val_mse": 1.0537889003753662
+        },
+        {
+          "step": 150,
+          "seconds": 0.16269745805766433,
+          "val_mse": 1.0350751876831055
+        },
+        {
+          "step": 160,
+          "seconds": 0.17337708303239197,
+          "val_mse": 1.0336049795150757
+        }
+      ],
+      "validation_mse": 1.0336049795150757,
+      "probe_parameter_bytes": 0,
+      "test_mse": 1.02838933467865,
+      "test_examples": 9671,
+      "ic_days": 335,
+      "rank_ic_95": [
+        -0.07048895808416492,
+        0.03315551702749831
+      ],
+      "ic": 0.0015972260881597796,
+      "rank_ic": -0.019736719421061602,
+      "rank_ic_positive": 0.4925373134328358,
+      "rank_ic_std": 0.2830992152284519,
+      "rank_ic_ir": -0.06971661650539974,
+      "cost_stress": {
+        "0": {
+          "status": "unpriced_exit",
+          "affected_trades": 3
+        },
+        "5": {
+          "status": "unpriced_exit",
+          "affected_trades": 3
+        },
+        "10": {
+          "status": "unpriced_exit",
+          "affected_trades": 3
+        },
+        "25": {
+          "status": "unpriced_exit",
+          "affected_trades": 3
+        }
+      },
+      "time_budget_step": 100,
+      "time_budget_test_mse": 1.0383154153823853
+    },
+    {
+      "method": "adamw",
+      "seed": 73,
+      "rate": 0.003,
+      "failed": false,
+      "seconds": 0.17360270803328604,
+      "parameters": 3313,
+      "threshold_seconds": null,
+      "threshold_step": null,
+      "trace": [
+        {
+          "step": 10,
+          "seconds": 0.01128937501925975,
+          "val_mse": 1.1384234428405762
+        },
+        {
+          "step": 20,
+          "seconds": 0.022288499982096255,
+          "val_mse": 1.0509490966796875
+        },
+        {
+          "step": 30,
+          "seconds": 0.03315150004345924,
+          "val_mse": 1.0343600511550903
+        },
+        {
+          "step": 40,
+          "seconds": 0.04400766605976969,
+          "val_mse": 1.0322351455688477
+        },
+        {
+          "step": 50,
+          "seconds": 0.05485824996139854,
+          "val_mse": 1.0634046792984009
+        },
+        {
+          "step": 60,
+          "seconds": 0.06569620803929865,
+          "val_mse": 1.0386536121368408
+        },
+        {
+          "step": 70,
+          "seconds": 0.07653008296620101,
+          "val_mse": 1.0287811756134033
+        },
+        {
+          "step": 80,
+          "seconds": 0.08744308305904269,
+          "val_mse": 1.0400676727294922
+        },
+        {
+          "step": 90,
+          "seconds": 0.09830529103055596,
+          "val_mse": 1.0318516492843628
+        },
+        {
+          "step": 100,
+          "seconds": 0.10913166601676494,
+          "val_mse": 1.0300322771072388
+        },
+        {
+          "step": 110,
+          "seconds": 0.1198858330026269,
+          "val_mse": 1.0297080278396606
+        },
+        {
+          "step": 120,
+          "seconds": 0.13070962496567518,
+          "val_mse": 1.0356377363204956
+        },
+        {
+          "step": 130,
+          "seconds": 0.14145125006325543,
+          "val_mse": 1.045842170715332
+        },
+        {
+          "step": 140,
+          "seconds": 0.1521678330609575,
+          "val_mse": 1.0343387126922607
+        },
+        {
+          "step": 150,
+          "seconds": 0.1628913750173524,
+          "val_mse": 1.0282307863235474
+        },
+        {
+          "step": 160,
+          "seconds": 0.1736008330481127,
+          "val_mse": 1.0321323871612549
+        }
+      ],
+      "validation_mse": 1.0321323871612549,
+      "probe_parameter_bytes": 0,
+      "test_mse": 1.0304136276245117,
+      "test_examples": 9671,
+      "ic_days": 335,
+      "rank_ic_95": [
+        -0.0552382118559094,
+        0.04713920412647768
+      ],
+      "ic": 0.002848856056741773,
+      "rank_ic": -0.005990937127110796,
+      "rank_ic_positive": 0.48059701492537316,
+      "rank_ic_std": 0.2747759533777367,
+      "rank_ic_ir": -0.02180298913884581,
+      "cost_stress": {
+        "0": {
+          "status": "ok",
+          "cohorts": 74,
+          "gross_return": -0.11625778236461437,
+          "net_return": -0.11625778236461437,
+          "net_sharpe_rf0": -0.6784652887552802,
+          "max_drawdown": -0.12045033841349384,
+          "mean_traded_notional": 1.8369010650127697
+        },
+        "5": {
+          "status": "ok",
+          "cohorts": 74,
+          "gross_return": -0.11625778236461437,
+          "net_return": -0.17446789741553603,
+          "net_sharpe_rf0": -1.082151032365731,
+          "max_drawdown": -0.1775672000485512,
+          "mean_traded_notional": 1.8369010650127697
+        },
+        "10": {
+          "status": "ok",
+          "cohorts": 74,
+          "gross_return": -0.11625778236461437,
+          "net_return": -0.22889659525525663,
+          "net_sharpe_rf0": -1.484706244772495,
+          "max_drawdown": -0.23102680969827394,
+          "mean_traded_notional": 1.8369010650127697
+        },
+        "25": {
+          "status": "ok",
+          "cohorts": 74,
+          "gross_return": -0.11625778236461437,
+          "net_return": -0.3718407971292135,
+          "net_sharpe_rf0": -2.682175859991889,
+          "max_drawdown": -0.3718407971292135,
+          "mean_traded_notional": 1.8369010650127697
+        }
+      },
+      "time_budget_step": 110,
+      "time_budget_test_mse": 1.0320677757263184
+    },
+    {
+      "method": "muon",
+      "seed": 17,
+      "rate": 0.01,
+      "failed": false,
+      "seconds": 0.1949359589489177,
+      "parameters": 3313,
+      "threshold_seconds": null,
+      "threshold_step": null,
+      "trace": [
+        {
+          "step": 10,
+          "seconds": 0.012764791958034039,
+          "val_mse": 1.088313102722168
+        },
+        {
+          "step": 20,
+          "seconds": 0.025134374969638884,
+          "val_mse": 1.0560778379440308
+        },
+        {
+          "step": 30,
+          "seconds": 0.0374112919671461,
+          "val_mse": 1.0325299501419067
+        },
+        {
+          "step": 40,
+          "seconds": 0.049663875019177794,
+          "val_mse": 1.0379815101623535
+        },
+        {
+          "step": 50,
+          "seconds": 0.06189333403017372,
+          "val_mse": 1.0446281433105469
+        },
+        {
+          "step": 60,
+          "seconds": 0.074057542020455,
+          "val_mse": 1.0463273525238037
+        },
+        {
+          "step": 70,
+          "seconds": 0.08621500001754612,
+          "val_mse": 1.0385371446609497
+        },
+        {
+          "step": 80,
+          "seconds": 0.0983738339273259,
+          "val_mse": 1.0520912408828735
+        },
+        {
+          "step": 90,
+          "seconds": 0.11050533398520201,
+          "val_mse": 1.039262294769287
+        },
+        {
+          "step": 100,
+          "seconds": 0.12267029203940183,
+          "val_mse": 1.031383752822876
+        },
+        {
+          "step": 110,
+          "seconds": 0.1346943749813363,
+          "val_mse": 1.0358669757843018
+        },
+        {
+          "step": 120,
+          "seconds": 0.14672754192724824,
+          "val_mse": 1.0423439741134644
+        },
+        {
+          "step": 130,
+          "seconds": 0.1587573749711737,
+          "val_mse": 1.050403356552124
+        },
+        {
+          "step": 140,
+          "seconds": 0.1707619170192629,
+          "val_mse": 1.0365527868270874
+        },
+        {
+          "step": 150,
+          "seconds": 0.18285812495741993,
+          "val_mse": 1.0395193099975586
+        },
+        {
+          "step": 160,
+          "seconds": 0.19493408396374434,
+          "val_mse": 1.0495260953903198
+        }
+      ],
+      "validation_mse": 1.0495260953903198,
+      "probe_parameter_bytes": 0,
+      "test_mse": 1.0389747619628906,
+      "test_examples": 9671,
+      "ic_days": 335,
+      "rank_ic_95": [
+        -0.0742328367593013,
+        0.023248681432448324
+      ],
+      "ic": -0.01800479521094728,
+      "rank_ic": -0.026121213930137863,
+      "rank_ic_positive": 0.4507462686567164,
+      "rank_ic_std": 0.26233953770429763,
+      "rank_ic_ir": -0.09957025219576708,
+      "cost_stress": {
+        "0": {
+          "status": "unpriced_exit",
+          "affected_trades": 2
+        },
+        "5": {
+          "status": "unpriced_exit",
+          "affected_trades": 2
+        },
+        "10": {
+          "status": "unpriced_exit",
+          "affected_trades": 2
+        },
+        "25": {
+          "status": "unpriced_exit",
+          "affected_trades": 2
+        }
+      },
+      "time_budget_step": 90,
+      "time_budget_test_mse": 1.0443365573883057
+    },
+    {
+      "method": "muon",
+      "seed": 41,
+      "rate": 0.01,
+      "failed": false,
+      "seconds": 0.19604054105002433,
+      "parameters": 3313,
+      "threshold_seconds": null,
+      "threshold_step": null,
+      "trace": [
+        {
+          "step": 10,
+          "seconds": 0.012801875011064112,
+          "val_mse": 1.089280128479004
+        },
+        {
+          "step": 20,
+          "seconds": 0.025213457993231714,
+          "val_mse": 1.0512218475341797
+        },
+        {
+          "step": 30,
+          "seconds": 0.037551083019934595,
+          "val_mse": 1.0707876682281494
+        },
+        {
+          "step": 40,
+          "seconds": 0.049836416030302644,
+          "val_mse": 1.0405464172363281
+        },
+        {
+          "step": 50,
+          "seconds": 0.062141707981936634,
+          "val_mse": 1.0452955961227417
+        },
+        {
+          "step": 60,
+          "seconds": 0.07442175003234297,
+          "val_mse": 1.034793734550476
+        },
+        {
+          "step": 70,
+          "seconds": 0.08671000006143004,
+          "val_mse": 1.0316399335861206
+        },
+        {
+          "step": 80,
+          "seconds": 0.09903612500056624,
+          "val_mse": 1.0374082326889038
+        },
+        {
+          "step": 90,
+          "seconds": 0.11128220800310373,
+          "val_mse": 1.033374309539795
+        },
+        {
+          "step": 100,
+          "seconds": 0.12353329104371369,
+          "val_mse": 1.040123701095581
+        },
+        {
+          "step": 110,
+          "seconds": 0.13560545805376023,
+          "val_mse": 1.0432846546173096
+        },
+        {
+          "step": 120,
+          "seconds": 0.1476515830727294,
+          "val_mse": 1.0479438304901123
+        },
+        {
+          "step": 130,
+          "seconds": 0.1597484580706805,
+          "val_mse": 1.033913254737854
+        },
+        {
+          "step": 140,
+          "seconds": 0.17181095806881785,
+          "val_mse": 1.0438575744628906
+        },
+        {
+          "step": 150,
+          "seconds": 0.18391516606789082,
+          "val_mse": 1.035557508468628
+        },
+        {
+          "step": 160,
+          "seconds": 0.19603875000029802,
+          "val_mse": 1.0308489799499512
+        }
+      ],
+      "validation_mse": 1.0308489799499512,
+      "probe_parameter_bytes": 0,
+      "test_mse": 1.0279927253723145,
+      "test_examples": 9671,
+      "ic_days": 335,
+      "rank_ic_95": [
+        -0.04037579393355137,
+        0.030710106632811058
+      ],
+      "ic": -0.01825863478662547,
+      "rank_ic": -0.005555868743263712,
+      "rank_ic_positive": 0.48656716417910445,
+      "rank_ic_std": 0.2362818573352403,
+      "rank_ic_ir": -0.023513734003626698,
+      "cost_stress": {
+        "0": {
+          "status": "unpriced_exit",
+          "affected_trades": 1
+        },
+        "5": {
+          "status": "unpriced_exit",
+          "affected_trades": 1
+        },
+        "10": {
+          "status": "unpriced_exit",
+          "affected_trades": 1
+        },
+        "25": {
+          "status": "unpriced_exit",
+          "affected_trades": 1
+        }
+      },
+      "time_budget_step": 90,
+      "time_budget_test_mse": 1.0317349433898926
+    },
+    {
+      "method": "muon",
+      "seed": 73,
+      "rate": 0.01,
+      "failed": false,
+      "seconds": 0.19378170801792294,
+      "parameters": 3313,
+      "threshold_seconds": null,
+      "threshold_step": null,
+      "trace": [
+        {
+          "step": 10,
+          "seconds": 0.012604500050656497,
+          "val_mse": 1.097028374671936
+        },
+        {
+          "step": 20,
+          "seconds": 0.02488091611303389,
+          "val_mse": 1.0773323774337769
+        },
+        {
+          "step": 30,
+          "seconds": 0.03705554106272757,
+          "val_mse": 1.0398224592208862
+        },
+        {
+          "step": 40,
+          "seconds": 0.04920987505465746,
+          "val_mse": 1.033026933670044
+        },
+        {
+          "step": 50,
+          "seconds": 0.061343958019278944,
+          "val_mse": 1.0519678592681885
+        },
+        {
+          "step": 60,
+          "seconds": 0.07349329104181379,
+          "val_mse": 1.0357470512390137
+        },
+        {
+          "step": 70,
+          "seconds": 0.08558695809915662,
+          "val_mse": 1.028849482536316
+        },
+        {
+          "step": 80,
+          "seconds": 0.09770466608460993,
+          "val_mse": 1.0429965257644653
+        },
+        {
+          "step": 90,
+          "seconds": 0.10987279110122472,
+          "val_mse": 1.0309818983078003
+        },
+        {
+          "step": 100,
+          "seconds": 0.12197475007269531,
+          "val_mse": 1.0308153629302979
+        },
+        {
+          "step": 110,
+          "seconds": 0.13392179110087454,
+          "val_mse": 1.0295027494430542
+        },
+        {
+          "step": 120,
+          "seconds": 0.14587858307641,
+          "val_mse": 1.0293858051300049
+        },
+        {
+          "step": 130,
+          "seconds": 0.15786083310376853,
+          "val_mse": 1.032012701034546
+        },
+        {
+          "step": 140,
+          "seconds": 0.16984033305197954,
+          "val_mse": 1.0321269035339355
+        },
+        {
+          "step": 150,
+          "seconds": 0.181800666032359,
+          "val_mse": 1.0311652421951294
+        },
+        {
+          "step": 160,
+          "seconds": 0.19377991603687406,
+          "val_mse": 1.0321139097213745
+        }
+      ],
+      "validation_mse": 1.0321139097213745,
+      "probe_parameter_bytes": 0,
+      "test_mse": 1.0276488065719604,
+      "test_examples": 9671,
+      "ic_days": 335,
+      "rank_ic_95": [
+        -0.04656269125131979,
+        0.05476318475577162
+      ],
+      "ic": 0.010680558787073682,
+      "rank_ic": 0.0032090323071888435,
+      "rank_ic_positive": 0.5134328358208955,
+      "rank_ic_std": 0.27810215159812446,
+      "rank_ic_ir": 0.011539041639009331,
+      "cost_stress": {
+        "0": {
+          "status": "unpriced_exit",
+          "affected_trades": 1
+        },
+        "5": {
+          "status": "unpriced_exit",
+          "affected_trades": 1
+        },
+        "10": {
+          "status": "unpriced_exit",
+          "affected_trades": 1
+        },
+        "25": {
+          "status": "unpriced_exit",
+          "affected_trades": 1
+        }
+      },
+      "time_budget_step": 90,
+      "time_budget_test_mse": 1.0297785997390747
+    },
+    {
+      "method": "depth",
+      "seed": 17,
+      "rate": 0.003,
+      "failed": false,
+      "seconds": 0.21933487500064075,
+      "parameters": 3313,
+      "threshold_seconds": null,
+      "threshold_step": null,
+      "trace": [
+        {
+          "step": 10,
+          "seconds": 0.01428366603795439,
+          "val_mse": 1.0880608558654785
+        },
+        {
+          "step": 20,
+          "seconds": 0.028243750100955367,
+          "val_mse": 1.0444008111953735
+        },
+        {
+          "step": 30,
+          "seconds": 0.04198141605593264,
+          "val_mse": 1.047695279121399
+        },
+        {
+          "step": 40,
+          "seconds": 0.05573245801497251,
+          "val_mse": 1.046872615814209
+        },
+        {
+          "step": 50,
+          "seconds": 0.06943445804063231,
+          "val_mse": 1.0653553009033203
+        },
+        {
+          "step": 60,
+          "seconds": 0.08314816607162356,
+          "val_mse": 1.039997935295105
+        },
+        {
+          "step": 70,
+          "seconds": 0.09687883302103728,
+          "val_mse": 1.032524824142456
+        },
+        {
+          "step": 80,
+          "seconds": 0.11059179110452533,
+          "val_mse": 1.032863974571228
+        },
+        {
+          "step": 90,
+          "seconds": 0.12431879108771682,
+          "val_mse": 1.036920189857483
+        },
+        {
+          "step": 100,
+          "seconds": 0.13790779106784612,
+          "val_mse": 1.0329595804214478
+        },
+        {
+          "step": 110,
+          "seconds": 0.15148662507999688,
+          "val_mse": 1.0368503332138062
+        },
+        {
+          "step": 120,
+          "seconds": 0.16505599999800324,
+          "val_mse": 1.0421215295791626
+        },
+        {
+          "step": 130,
+          "seconds": 0.17864187504164875,
+          "val_mse": 1.0469163656234741
+        },
+        {
+          "step": 140,
+          "seconds": 0.19218854105565697,
+          "val_mse": 1.0427513122558594
+        },
+        {
+          "step": 150,
+          "seconds": 0.2057158750249073,
+          "val_mse": 1.0410526990890503
+        },
+        {
+          "step": 160,
+          "seconds": 0.21933312504552305,
+          "val_mse": 1.0498358011245728
+        }
+      ],
+      "validation_mse": 1.0498358011245728,
+      "probe_parameter_bytes": 19968,
+      "test_mse": 1.0435863733291626,
+      "test_examples": 9671,
+      "ic_days": 335,
+      "rank_ic_95": [
+        -0.05180809142719532,
+        0.026675176399709986
+      ],
+      "ic": -0.03605532256451368,
+      "rank_ic": -0.01138655419969394,
+      "rank_ic_positive": 0.4746268656716418,
+      "rank_ic_std": 0.2521546946929217,
+      "rank_ic_ir": -0.045157018446793866,
+      "cost_stress": {
+        "0": {
+          "status": "unpriced_exit",
+          "affected_trades": 2
+        },
+        "5": {
+          "status": "unpriced_exit",
+          "affected_trades": 2
+        },
+        "10": {
+          "status": "unpriced_exit",
+          "affected_trades": 2
+        },
+        "25": {
+          "status": "unpriced_exit",
+          "affected_trades": 2
+        }
+      },
+      "time_budget_step": 80,
+      "time_budget_test_mse": 1.0422037839889526
+    },
+    {
+      "method": "depth",
+      "seed": 41,
+      "rate": 0.003,
+      "failed": false,
+      "seconds": 0.21636908303480595,
+      "parameters": 3313,
+      "threshold_seconds": null,
+      "threshold_step": null,
+      "trace": [
+        {
+          "step": 10,
+          "seconds": 0.01450570800807327,
+          "val_mse": 1.0873124599456787
+        },
+        {
+          "step": 20,
+          "seconds": 0.02841070794966072,
+          "val_mse": 1.05332350730896
+        },
+        {
+          "step": 30,
+          "seconds": 0.04199283302295953,
+          "val_mse": 1.0525978803634644
+        },
+        {
+          "step": 40,
+          "seconds": 0.055537458043545485,
+          "val_mse": 1.0419169664382935
+        },
+        {
+          "step": 50,
+          "seconds": 0.06901941599790007,
+          "val_mse": 1.0365431308746338
+        },
+        {
+          "step": 60,
+          "seconds": 0.08255525003187358,
+          "val_mse": 1.0355852842330933
+        },
+        {
+          "step": 70,
+          "seconds": 0.09606462495867163,
+          "val_mse": 1.0356389284133911
+        },
+        {
+          "step": 80,
+          "seconds": 0.1095487909624353,
+          "val_mse": 1.0374476909637451
+        },
+        {
+          "step": 90,
+          "seconds": 0.12304149998817593,
+          "val_mse": 1.0491392612457275
+        },
+        {
+          "step": 100,
+          "seconds": 0.1364258750109002,
+          "val_mse": 1.0740429162979126
+        },
+        {
+          "step": 110,
+          "seconds": 0.1497753750300035,
+          "val_mse": 1.0332459211349487
+        },
+        {
+          "step": 120,
+          "seconds": 0.16309858299791813,
+          "val_mse": 1.0305004119873047
+        },
+        {
+          "step": 130,
+          "seconds": 0.17639070795848966,
+          "val_mse": 1.040330410003662
+        },
+        {
+          "step": 140,
+          "seconds": 0.18970329104922712,
+          "val_mse": 1.0537890195846558
+        },
+        {
+          "step": 150,
+          "seconds": 0.2030037499498576,
+          "val_mse": 1.035075068473816
+        },
+        {
+          "step": 160,
+          "seconds": 0.21636724995914847,
+          "val_mse": 1.0336048603057861
+        }
+      ],
+      "validation_mse": 1.0336048603057861,
+      "probe_parameter_bytes": 19968,
+      "test_mse": 1.02838933467865,
+      "test_examples": 9671,
+      "ic_days": 335,
+      "rank_ic_95": [
+        -0.07048895808416492,
+        0.03315551702749831
+      ],
+      "ic": 0.0015970308804240723,
+      "rank_ic": -0.019736719421061602,
+      "rank_ic_positive": 0.4925373134328358,
+      "rank_ic_std": 0.2830992152284519,
+      "rank_ic_ir": -0.06971661650539974,
+      "cost_stress": {
+        "0": {
+          "status": "unpriced_exit",
+          "affected_trades": 3
+        },
+        "5": {
+          "status": "unpriced_exit",
+          "affected_trades": 3
+        },
+        "10": {
+          "status": "unpriced_exit",
+          "affected_trades": 3
+        },
+        "25": {
+          "status": "unpriced_exit",
+          "affected_trades": 3
+        }
+      },
+      "time_budget_step": 80,
+      "time_budget_test_mse": 1.0305835008621216
+    },
+    {
+      "method": "depth",
+      "seed": 73,
+      "rate": 0.003,
+      "failed": false,
+      "seconds": 0.21722658397629857,
+      "parameters": 3313,
+      "threshold_seconds": null,
+      "threshold_step": null,
+      "trace": [
+        {
+          "step": 10,
+          "seconds": 0.014135917066596448,
+          "val_mse": 1.1384235620498657
+        },
+        {
+          "step": 20,
+          "seconds": 0.02787145902402699,
+          "val_mse": 1.0509490966796875
+        },
+        {
+          "step": 30,
+          "seconds": 0.041519584017805755,
+          "val_mse": 1.0343600511550903
+        },
+        {
+          "step": 40,
+          "seconds": 0.055200375034473836,
+          "val_mse": 1.0322351455688477
+        },
+        {
+          "step": 50,
+          "seconds": 0.06877595908008516,
+          "val_mse": 1.0634046792984009
+        },
+        {
+          "step": 60,
+          "seconds": 0.08235395897645503,
+          "val_mse": 1.0386536121368408
+        },
+        {
+          "step": 70,
+          "seconds": 0.09598404204007238,
+          "val_mse": 1.0287811756134033
+        },
+        {
+          "step": 80,
+          "seconds": 0.1095517500070855,
+          "val_mse": 1.0400676727294922
+        },
+        {
+          "step": 90,
+          "seconds": 0.12317958404310048,
+          "val_mse": 1.0318516492843628
+        },
+        {
+          "step": 100,
+          "seconds": 0.13657087506726384,
+          "val_mse": 1.0300322771072388
+        },
+        {
+          "step": 110,
+          "seconds": 0.149983000010252,
+          "val_mse": 1.0297080278396606
+        },
+        {
+          "step": 120,
+          "seconds": 0.16340741701424122,
+          "val_mse": 1.0356377363204956
+        },
+        {
+          "step": 130,
+          "seconds": 0.17681779200211167,
+          "val_mse": 1.0458420515060425
+        },
+        {
+          "step": 140,
+          "seconds": 0.1903429590165615,
+          "val_mse": 1.0343387126922607
+        },
+        {
+          "step": 150,
+          "seconds": 0.20375512505415827,
+          "val_mse": 1.0282307863235474
+        },
+        {
+          "step": 160,
+          "seconds": 0.21722475008573383,
+          "val_mse": 1.0321323871612549
+        }
+      ],
+      "validation_mse": 1.0321323871612549,
+      "probe_parameter_bytes": 19968,
+      "test_mse": 1.0304137468338013,
+      "test_examples": 9671,
+      "ic_days": 335,
+      "rank_ic_95": [
+        -0.0552382118559094,
+        0.04713920412647768
+      ],
+      "ic": 0.0028488182641323396,
+      "rank_ic": -0.005990937127110796,
+      "rank_ic_positive": 0.48059701492537316,
+      "rank_ic_std": 0.2747759533777367,
+      "rank_ic_ir": -0.02180298913884581,
+      "cost_stress": {
+        "0": {
+          "status": "ok",
+          "cohorts": 74,
+          "gross_return": -0.11625778236461437,
+          "net_return": -0.11625778236461437,
+          "net_sharpe_rf0": -0.6784652887552802,
+          "max_drawdown": -0.12045033841349384,
+          "mean_traded_notional": 1.8369010650127697
+        },
+        "5": {
+          "status": "ok",
+          "cohorts": 74,
+          "gross_return": -0.11625778236461437,
+          "net_return": -0.17446789741553603,
+          "net_sharpe_rf0": -1.082151032365731,
+          "max_drawdown": -0.1775672000485512,
+          "mean_traded_notional": 1.8369010650127697
+        },
+        "10": {
+          "status": "ok",
+          "cohorts": 74,
+          "gross_return": -0.11625778236461437,
+          "net_return": -0.22889659525525663,
+          "net_sharpe_rf0": -1.484706244772495,
+          "max_drawdown": -0.23102680969827394,
+          "mean_traded_notional": 1.8369010650127697
+        },
+        "25": {
+          "status": "ok",
+          "cohorts": 74,
+          "gross_return": -0.11625778236461437,
+          "net_return": -0.3718407971292135,
+          "net_sharpe_rf0": -2.682175859991889,
+          "max_drawdown": -0.3718407971292135,
+          "mean_traded_notional": 1.8369010650127697
+        }
+      },
+      "time_budget_step": 80,
+      "time_budget_test_mse": 1.0420039892196655
+    },
+    {
+      "method": "depth_clip",
+      "seed": 17,
+      "rate": 0.003,
+      "failed": false,
+      "seconds": 0.22101554099936038,
+      "parameters": 3313,
+      "threshold_seconds": null,
+      "threshold_step": null,
+      "trace": [
+        {
+          "step": 10,
+          "seconds": 0.014316083048470318,
+          "val_mse": 1.092618465423584
+        },
+        {
+          "step": 20,
+          "seconds": 0.02831108309328556,
+          "val_mse": 1.0405486822128296
+        },
+        {
+          "step": 30,
+          "seconds": 0.04213333304505795,
+          "val_mse": 1.0413380861282349
+        },
+        {
+          "step": 40,
+          "seconds": 0.05594558303710073,
+          "val_mse": 1.0455069541931152
+        },
+        {
+          "step": 50,
+          "seconds": 0.06976620806381106,
+          "val_mse": 1.0724164247512817
+        },
+        {
+          "step": 60,
+          "seconds": 0.08355758304242045,
+          "val_mse": 1.03847336769104
+        },
+        {
+          "step": 70,
+          "seconds": 0.09730050002690405,
+          "val_mse": 1.0306938886642456
+        },
+        {
+          "step": 80,
+          "seconds": 0.11112979101017118,
+          "val_mse": 1.0310993194580078
+        },
+        {
+          "step": 90,
+          "seconds": 0.12486783298663795,
+          "val_mse": 1.0361356735229492
+        },
+        {
+          "step": 100,
+          "seconds": 0.13849687506444752,
+          "val_mse": 1.0340704917907715
+        },
+        {
+          "step": 110,
+          "seconds": 0.15230445808265358,
+          "val_mse": 1.0357332229614258
+        },
+        {
+          "step": 120,
+          "seconds": 0.16648195800371468,
+          "val_mse": 1.038488745689392
+        },
+        {
+          "step": 130,
+          "seconds": 0.1801092909881845,
+          "val_mse": 1.0450961589813232
+        },
+        {
+          "step": 140,
+          "seconds": 0.19373983307741582,
+          "val_mse": 1.0447248220443726
+        },
+        {
+          "step": 150,
+          "seconds": 0.20736279105767608,
+          "val_mse": 1.0468170642852783
+        },
+        {
+          "step": 160,
+          "seconds": 0.22101383307017386,
+          "val_mse": 1.0497709512710571
+        }
+      ],
+      "validation_mse": 1.0497709512710571,
+      "probe_parameter_bytes": 19968,
+      "test_mse": 1.0461350679397583,
+      "test_examples": 9671,
+      "ic_days": 335,
+      "rank_ic_95": [
+        -0.059413388463662,
+        0.021760211580538702
+      ],
+      "ic": -0.05329094140172276,
+      "rank_ic": -0.016825577725933342,
+      "rank_ic_positive": 0.4507462686567164,
+      "rank_ic_std": 0.2562679332248582,
+      "rank_ic_ir": -0.06565619628722728,
+      "cost_stress": {
+        "0": {
+          "status": "unpriced_exit",
+          "affected_trades": 1
+        },
+        "5": {
+          "status": "unpriced_exit",
+          "affected_trades": 1
+        },
+        "10": {
+          "status": "unpriced_exit",
+          "affected_trades": 1
+        },
+        "25": {
+          "status": "unpriced_exit",
+          "affected_trades": 1
+        }
+      },
+      "time_budget_step": 80,
+      "time_budget_test_mse": 1.0388840436935425
+    },
+    {
+      "method": "depth_clip",
+      "seed": 41,
+      "rate": 0.003,
+      "failed": false,
+      "seconds": 0.22356824995949864,
+      "parameters": 3313,
+      "threshold_seconds": null,
+      "threshold_step": null,
+      "trace": [
+        {
+          "step": 10,
+          "seconds": 0.014679207932204008,
+          "val_mse": 1.0856003761291504
+        },
+        {
+          "step": 20,
+          "seconds": 0.028906832914799452,
+          "val_mse": 1.0530600547790527
+        },
+        {
+          "step": 30,
+          "seconds": 0.042986457934603095,
+          "val_mse": 1.0528544187545776
+        },
+        {
+          "step": 40,
+          "seconds": 0.05697749997489154,
+          "val_mse": 1.0393587350845337
+        },
+        {
+          "step": 50,
+          "seconds": 0.07094279199372977,
+          "val_mse": 1.0347360372543335
+        },
+        {
+          "step": 60,
+          "seconds": 0.08496262494008988,
+          "val_mse": 1.0356113910675049
+        },
+        {
+          "step": 70,
+          "seconds": 0.09891137492377311,
+          "val_mse": 1.0367451906204224
+        },
+        {
+          "step": 80,
+          "seconds": 0.11289020790718496,
+          "val_mse": 1.036981463432312
+        },
+        {
+          "step": 90,
+          "seconds": 0.12682224996387959,
+          "val_mse": 1.046728491783142
+        },
+        {
+          "step": 100,
+          "seconds": 0.1406672919401899,
+          "val_mse": 1.078948736190796
+        },
+        {
+          "step": 110,
+          "seconds": 0.15457529190462083,
+          "val_mse": 1.0335859060287476
+        },
+        {
+          "step": 120,
+          "seconds": 0.1684161250013858,
+          "val_mse": 1.0301979780197144
+        },
+        {
+          "step": 130,
+          "seconds": 0.18224391690455377,
+          "val_mse": 1.0392369031906128
+        },
+        {
+          "step": 140,
+          "seconds": 0.19603574997745454,
+          "val_mse": 1.0541974306106567
+        },
+        {
+          "step": 150,
+          "seconds": 0.20982091699261218,
+          "val_mse": 1.0326441526412964
+        },
+        {
+          "step": 160,
+          "seconds": 0.2235663749743253,
+          "val_mse": 1.0325945615768433
+        }
+      ],
+      "validation_mse": 1.0325945615768433,
+      "probe_parameter_bytes": 19968,
+      "test_mse": 1.0284011363983154,
+      "test_examples": 9671,
+      "ic_days": 335,
+      "rank_ic_95": [
+        -0.06685800443908023,
+        0.03500364055349673
+      ],
+      "ic": 6.443943924241844e-05,
+      "rank_ic": -0.016396440083053344,
+      "rank_ic_positive": 0.5044776119402985,
+      "rank_ic_std": 0.28581599652401934,
+      "rank_ic_ir": -0.05736711829449834,
+      "cost_stress": {
+        "0": {
+          "status": "unpriced_exit",
+          "affected_trades": 4
+        },
+        "5": {
+          "status": "unpriced_exit",
+          "affected_trades": 4
+        },
+        "10": {
+          "status": "unpriced_exit",
+          "affected_trades": 4
+        },
+        "25": {
+          "status": "unpriced_exit",
+          "affected_trades": 4
+        }
+      },
+      "time_budget_step": 80,
+      "time_budget_test_mse": 1.030261516571045
+    },
+    {
+      "method": "depth_clip",
+      "seed": 73,
+      "rate": 0.003,
+      "failed": false,
+      "seconds": 0.22508141701109707,
+      "parameters": 3313,
+      "threshold_seconds": null,
+      "threshold_step": null,
+      "trace": [
+        {
+          "step": 10,
+          "seconds": 0.01463191700167954,
+          "val_mse": 1.1375720500946045
+        },
+        {
+          "step": 20,
+          "seconds": 0.0288636670447886,
+          "val_mse": 1.0531423091888428
+        },
+        {
+          "step": 30,
+          "seconds": 0.042988041997887194,
+          "val_mse": 1.0308992862701416
+        },
+        {
+          "step": 40,
+          "seconds": 0.05707570805680007,
+          "val_mse": 1.0324786901474
+        },
+        {
+          "step": 50,
+          "seconds": 0.07118683308362961,
+          "val_mse": 1.0603967905044556
+        },
+        {
+          "step": 60,
+          "seconds": 0.08523391699418426,
+          "val_mse": 1.036154866218567
+        },
+        {
+          "step": 70,
+          "seconds": 0.0993493749992922,
+          "val_mse": 1.0291626453399658
+        },
+        {
+          "step": 80,
+          "seconds": 0.11348400008864701,
+          "val_mse": 1.0414228439331055
+        },
+        {
+          "step": 90,
+          "seconds": 0.1275546670658514,
+          "val_mse": 1.0307525396347046
+        },
+        {
+          "step": 100,
+          "seconds": 0.14145845803432167,
+          "val_mse": 1.0292619466781616
+        },
+        {
+          "step": 110,
+          "seconds": 0.15540883305948228,
+          "val_mse": 1.0280498266220093
+        },
+        {
+          "step": 120,
+          "seconds": 0.16935437510255724,
+          "val_mse": 1.0356394052505493
+        },
+        {
+          "step": 130,
+          "seconds": 0.18323345808312297,
+          "val_mse": 1.0425174236297607
+        },
+        {
+          "step": 140,
+          "seconds": 0.19717316702008247,
+          "val_mse": 1.0343307256698608
+        },
+        {
+          "step": 150,
+          "seconds": 0.21112495800480247,
+          "val_mse": 1.0281009674072266
+        },
+        {
+          "step": 160,
+          "seconds": 0.22507937508635223,
+          "val_mse": 1.0296988487243652
+        }
+      ],
+      "validation_mse": 1.0296988487243652,
+      "probe_parameter_bytes": 19968,
+      "test_mse": 1.0284188985824585,
+      "test_examples": 9671,
+      "ic_days": 335,
+      "rank_ic_95": [
+        -0.05450738852941195,
+        0.045150882988159495
+      ],
+      "ic": 0.0006419511002948562,
+      "rank_ic": -0.007427083674991244,
+      "rank_ic_positive": 0.4835820895522388,
+      "rank_ic_std": 0.2753750396704521,
+      "rank_ic_ir": -0.02697079475278301,
+      "cost_stress": {
+        "0": {
+          "status": "unpriced_exit",
+          "affected_trades": 1
+        },
+        "5": {
+          "status": "unpriced_exit",
+          "affected_trades": 1
+        },
+        "10": {
+          "status": "unpriced_exit",
+          "affected_trades": 1
+        },
+        "25": {
+          "status": "unpriced_exit",
+          "affected_trades": 1
+        }
+      },
+      "time_budget_step": 80,
+      "time_budget_test_mse": 1.0424507856369019
+    },
+    {
+      "method": "depth_late",
+      "seed": 17,
+      "rate": 0.003,
+      "failed": false,
+      "seconds": 0.2251573340035975,
+      "parameters": 3313,
+      "threshold_seconds": null,
+      "threshold_step": null,
+      "trace": [
+        {
+          "step": 10,
+          "seconds": 0.014631374971941113,
+          "val_mse": 1.0939158201217651
+        },
+        {
+          "step": 20,
+          "seconds": 0.028847791953012347,
+          "val_mse": 1.040677547454834
+        },
+        {
+          "step": 30,
+          "seconds": 0.04296008392702788,
+          "val_mse": 1.0412967205047607
+        },
+        {
+          "step": 40,
+          "seconds": 0.057098416960798204,
+          "val_mse": 1.0450716018676758
+        },
+        {
+          "step": 50,
+          "seconds": 0.07118287496268749,
+          "val_mse": 1.072155237197876
+        },
+        {
+          "step": 60,
+          "seconds": 0.08534604194574058,
+          "val_mse": 1.0375332832336426
+        },
+        {
+          "step": 70,
+          "seconds": 0.09948041697498411,
+          "val_mse": 1.0304031372070312
+        },
+        {
+          "step": 80,
+          "seconds": 0.11359145899768919,
+          "val_mse": 1.0309056043624878
+        },
+        {
+          "step": 90,
+          "seconds": 0.1276437919586897,
+          "val_mse": 1.0358983278274536
+        },
+        {
+          "step": 100,
+          "seconds": 0.14157266693655401,
+          "val_mse": 1.0348156690597534
+        },
+        {
+          "step": 110,
+          "seconds": 0.1555549999466166,
+          "val_mse": 1.0351464748382568
+        },
+        {
+          "step": 120,
+          "seconds": 0.1694248749408871,
+          "val_mse": 1.0394833087921143
+        },
+        {
+          "step": 130,
+          "seconds": 0.1834179589059204,
+          "val_mse": 1.0466914176940918
+        },
+        {
+          "step": 140,
+          "seconds": 0.19733454193919897,
+          "val_mse": 1.0439739227294922
+        },
+        {
+          "step": 150,
+          "seconds": 0.21121895895339549,
+          "val_mse": 1.047072172164917
+        },
+        {
+          "step": 160,
+          "seconds": 0.22515541699249297,
+          "val_mse": 1.0494033098220825
+        }
+      ],
+      "validation_mse": 1.0494033098220825,
+      "probe_parameter_bytes": 19968,
+      "test_mse": 1.0455186367034912,
+      "test_examples": 9671,
+      "ic_days": 335,
+      "rank_ic_95": [
+        -0.058435975349690646,
+        0.022929428864620145
+      ],
+      "ic": -0.052951473829209963,
+      "rank_ic": -0.015924575715270086,
+      "rank_ic_positive": 0.4507462686567164,
+      "rank_ic_std": 0.2553863138206297,
+      "rank_ic_ir": -0.06235485166387849,
+      "cost_stress": {
+        "0": {
+          "status": "unpriced_exit",
+          "affected_trades": 1
+        },
+        "5": {
+          "status": "unpriced_exit",
+          "affected_trades": 1
+        },
+        "10": {
+          "status": "unpriced_exit",
+          "affected_trades": 1
+        },
+        "25": {
+          "status": "unpriced_exit",
+          "affected_trades": 1
+        }
+      },
+      "time_budget_step": 80,
+      "time_budget_test_mse": 1.039304256439209
+    },
+    {
+      "method": "depth_late",
+      "seed": 41,
+      "rate": 0.003,
+      "failed": false,
+      "seconds": 0.22121079091448337,
+      "parameters": 3313,
+      "threshold_seconds": null,
+      "threshold_step": null,
+      "trace": [
+        {
+          "step": 10,
+          "seconds": 0.014378624968230724,
+          "val_mse": 1.087424635887146
+        },
+        {
+          "step": 20,
+          "seconds": 0.028332832967862487,
+          "val_mse": 1.0538794994354248
+        },
+        {
+          "step": 30,
+          "seconds": 0.04228362499270588,
+          "val_mse": 1.053760051727295
+        },
+        {
+          "step": 40,
+          "seconds": 0.056136790895834565,
+          "val_mse": 1.0385775566101074
+        },
+        {
+          "step": 50,
+          "seconds": 0.07001520798075944,
+          "val_mse": 1.0365443229675293
+        },
+        {
+          "step": 60,
+          "seconds": 0.08384254097472876,
+          "val_mse": 1.035910964012146
+        },
+        {
+          "step": 70,
+          "seconds": 0.09770474990364164,
+          "val_mse": 1.0375235080718994
+        },
+        {
+          "step": 80,
+          "seconds": 0.11153508292045444,
+          "val_mse": 1.037751317024231
+        },
+        {
+          "step": 90,
+          "seconds": 0.12536504096351564,
+          "val_mse": 1.048783302307129
+        },
+        {
+          "step": 100,
+          "seconds": 0.13908116589300334,
+          "val_mse": 1.0797858238220215
+        },
+        {
+          "step": 110,
+          "seconds": 0.15279233292676508,
+          "val_mse": 1.0340445041656494
+        },
+        {
+          "step": 120,
+          "seconds": 0.16651945794001222,
+          "val_mse": 1.0317612886428833
+        },
+        {
+          "step": 130,
+          "seconds": 0.1802252079360187,
+          "val_mse": 1.0426315069198608
+        },
+        {
+          "step": 140,
+          "seconds": 0.19389024993870407,
+          "val_mse": 1.0579830408096313
+        },
+        {
+          "step": 150,
+          "seconds": 0.20757908292580396,
+          "val_mse": 1.033698558807373
+        },
+        {
+          "step": 160,
+          "seconds": 0.22120908298529685,
+          "val_mse": 1.033709168434143
+        }
+      ],
+      "validation_mse": 1.033709168434143,
+      "probe_parameter_bytes": 19968,
+      "test_mse": 1.02867591381073,
+      "test_examples": 9671,
+      "ic_days": 335,
+      "rank_ic_95": [
+        -0.06983061082498014,
+        0.033702632357846006
+      ],
+      "ic": 0.0016821928042949446,
+      "rank_ic": -0.017974264154232887,
+      "rank_ic_positive": 0.4925373134328358,
+      "rank_ic_std": 0.2846565161061432,
+      "rank_ic_ir": -0.06314369472410256,
+      "cost_stress": {
+        "0": {
+          "status": "unpriced_exit",
+          "affected_trades": 3
+        },
+        "5": {
+          "status": "unpriced_exit",
+          "affected_trades": 3
+        },
+        "10": {
+          "status": "unpriced_exit",
+          "affected_trades": 3
+        },
+        "25": {
+          "status": "unpriced_exit",
+          "affected_trades": 3
+        }
+      },
+      "time_budget_step": 80,
+      "time_budget_test_mse": 1.0303683280944824
+    },
+    {
+      "method": "depth_late",
+      "seed": 73,
+      "rate": 0.003,
+      "failed": false,
+      "seconds": 0.22144799993839115,
+      "parameters": 3313,
+      "threshold_seconds": null,
+      "threshold_step": null,
+      "trace": [
+        {
+          "step": 10,
+          "seconds": 0.014362958958372474,
+          "val_mse": 1.1404612064361572
+        },
+        {
+          "step": 20,
+          "seconds": 0.02833462494891137,
+          "val_mse": 1.05379056930542
+        },
+        {
+          "step": 30,
+          "seconds": 0.042227583937346935,
+          "val_mse": 1.0308098793029785
+        },
+        {
+          "step": 40,
+          "seconds": 0.056090291938744485,
+          "val_mse": 1.0326316356658936
+        },
+        {
+          "step": 50,
+          "seconds": 0.06992554198950529,
+          "val_mse": 1.0613274574279785
+        },
+        {
+          "step": 60,
+          "seconds": 0.08380491693969816,
+          "val_mse": 1.0357803106307983
+        },
+        {
+          "step": 70,
+          "seconds": 0.09770395897794515,
+          "val_mse": 1.029262661933899
+        },
+        {
+          "step": 80,
+          "seconds": 0.11159629200119525,
+          "val_mse": 1.0419995784759521
+        },
+        {
+          "step": 90,
+          "seconds": 0.12542266689706594,
+          "val_mse": 1.0303488969802856
+        },
+        {
+          "step": 100,
+          "seconds": 0.13916995900217444,
+          "val_mse": 1.0288892984390259
+        },
+        {
+          "step": 110,
+          "seconds": 0.1529127499088645,
+          "val_mse": 1.02806556224823
+        },
+        {
+          "step": 120,
+          "seconds": 0.16662587493192405,
+          "val_mse": 1.0365686416625977
+        },
+        {
+          "step": 130,
+          "seconds": 0.1803499999223277,
+          "val_mse": 1.0432827472686768
+        },
+        {
+          "step": 140,
+          "seconds": 0.19407179194968194,
+          "val_mse": 1.0335713624954224
+        },
+        {
+          "step": 150,
+          "seconds": 0.2077632499858737,
+          "val_mse": 1.027725100517273
+        },
+        {
+          "step": 160,
+          "seconds": 0.22144637489691377,
+          "val_mse": 1.0292891263961792
+        }
+      ],
+      "validation_mse": 1.0292891263961792,
+      "probe_parameter_bytes": 19968,
+      "test_mse": 1.028408169746399,
+      "test_examples": 9671,
+      "ic_days": 335,
+      "rank_ic_95": [
+        -0.05518823345647998,
+        0.044884721457680445
+      ],
+      "ic": -2.7339507859289304e-05,
+      "rank_ic": -0.007376967320136079,
+      "rank_ic_positive": 0.48955223880597015,
+      "rank_ic_std": 0.27263581779912854,
+      "rank_ic_ir": -0.02705795364558904,
+      "cost_stress": {
+        "0": {
+          "status": "unpriced_exit",
+          "affected_trades": 1
+        },
+        "5": {
+          "status": "unpriced_exit",
+          "affected_trades": 1
+        },
+        "10": {
+          "status": "unpriced_exit",
+          "affected_trades": 1
+        },
+        "25": {
+          "status": "unpriced_exit",
+          "affected_trades": 1
+        }
+      },
+      "time_budget_step": 80,
+      "time_budget_test_mse": 1.0425890684127808
+    },
+    {
+      "method": "depth_moments",
+      "seed": 17,
+      "rate": 0.003,
+      "failed": false,
+      "seconds": 0.24371437507215887,
+      "parameters": 3313,
+      "threshold_seconds": null,
+      "threshold_step": null,
+      "trace": [
+        {
+          "step": 10,
+          "seconds": 0.015702542033977807,
+          "val_mse": 1.1014738082885742
+        },
+        {
+          "step": 20,
+          "seconds": 0.031097167055122554,
+          "val_mse": 1.0538535118103027
+        },
+        {
+          "step": 30,
+          "seconds": 0.04643654206302017,
+          "val_mse": 1.0444896221160889
+        },
+        {
+          "step": 40,
+          "seconds": 0.06168595899362117,
+          "val_mse": 1.0477521419525146
+        },
+        {
+          "step": 50,
+          "seconds": 0.07696879201103002,
+          "val_mse": 1.0873383283615112
+        },
+        {
+          "step": 60,
+          "seconds": 0.09231700003147125,
+          "val_mse": 1.044071912765503
+        },
+        {
+          "step": 70,
+          "seconds": 0.10761129204183817,
+          "val_mse": 1.0367984771728516
+        },
+        {
+          "step": 80,
+          "seconds": 0.12284995906520635,
+          "val_mse": 1.039444088935852
+        },
+        {
+          "step": 90,
+          "seconds": 0.1379613340832293,
+          "val_mse": 1.03644597530365
+        },
+        {
+          "step": 100,
+          "seconds": 0.15305895905476063,
+          "val_mse": 1.0323948860168457
+        },
+        {
+          "step": 110,
+          "seconds": 0.16817854205146432,
+          "val_mse": 1.0417845249176025
+        },
+        {
+          "step": 120,
+          "seconds": 0.183289667009376,
+          "val_mse": 1.0423671007156372
+        },
+        {
+          "step": 130,
+          "seconds": 0.19843879202380776,
+          "val_mse": 1.0548391342163086
+        },
+        {
+          "step": 140,
+          "seconds": 0.21353262499906123,
+          "val_mse": 1.0511009693145752
+        },
+        {
+          "step": 150,
+          "seconds": 0.22860904200933874,
+          "val_mse": 1.0372508764266968
+        },
+        {
+          "step": 160,
+          "seconds": 0.24371262500062585,
+          "val_mse": 1.0481053590774536
+        }
+      ],
+      "validation_mse": 1.0481053590774536,
+      "probe_parameter_bytes": 19968,
+      "test_mse": 1.044363260269165,
+      "test_examples": 9671,
+      "ic_days": 335,
+      "rank_ic_95": [
+        -0.05949070601901283,
+        0.023898756562080098
+      ],
+      "ic": -0.02181515060065995,
+      "rank_ic": -0.017610590140318867,
+      "rank_ic_positive": 0.47761194029850745,
+      "rank_ic_std": 0.2492463759313872,
+      "rank_ic_ir": -0.07065535085319245,
+      "cost_stress": {
+        "0": {
+          "status": "unpriced_exit",
+          "affected_trades": 2
+        },
+        "5": {
+          "status": "unpriced_exit",
+          "affected_trades": 2
+        },
+        "10": {
+          "status": "unpriced_exit",
+          "affected_trades": 2
+        },
+        "25": {
+          "status": "unpriced_exit",
+          "affected_trades": 2
+        }
+      },
+      "time_budget_step": 70,
+      "time_budget_test_mse": 1.0483778715133667
+    },
+    {
+      "method": "depth_moments",
+      "seed": 41,
+      "rate": 0.003,
+      "failed": false,
+      "seconds": 0.24383425002451986,
+      "parameters": 3313,
+      "threshold_seconds": null,
+      "threshold_step": null,
+      "trace": [
+        {
+          "step": 10,
+          "seconds": 0.015740167000330985,
+          "val_mse": 1.0867215394973755
+        },
+        {
+          "step": 20,
+          "seconds": 0.031135916942730546,
+          "val_mse": 1.062825083732605
+        },
+        {
+          "step": 30,
+          "seconds": 0.04648033401463181,
+          "val_mse": 1.043616533279419
+        },
+        {
+          "step": 40,
+          "seconds": 0.06179141695611179,
+          "val_mse": 1.0394763946533203
+        },
+        {
+          "step": 50,
+          "seconds": 0.07715649995952845,
+          "val_mse": 1.0455771684646606
+        },
+        {
+          "step": 60,
+          "seconds": 0.09242591692600399,
+          "val_mse": 1.0384856462478638
+        },
+        {
+          "step": 70,
+          "seconds": 0.1077255419222638,
+          "val_mse": 1.0426148176193237
+        },
+        {
+          "step": 80,
+          "seconds": 0.12298174994066358,
+          "val_mse": 1.040305495262146
+        },
+        {
+          "step": 90,
+          "seconds": 0.13807241700123996,
+          "val_mse": 1.0432690382003784
+        },
+        {
+          "step": 100,
+          "seconds": 0.15316733391955495,
+          "val_mse": 1.0542547702789307
+        },
+        {
+          "step": 110,
+          "seconds": 0.16825724998489022,
+          "val_mse": 1.0311791896820068
+        },
+        {
+          "step": 120,
+          "seconds": 0.18337045900989324,
+          "val_mse": 1.0315639972686768
+        },
+        {
+          "step": 130,
+          "seconds": 0.19845124997664243,
+          "val_mse": 1.0409042835235596
+        },
+        {
+          "step": 140,
+          "seconds": 0.2135572920087725,
+          "val_mse": 1.050640344619751
+        },
+        {
+          "step": 150,
+          "seconds": 0.22869595896918327,
+          "val_mse": 1.0340687036514282
+        },
+        {
+          "step": 160,
+          "seconds": 0.24383245897479355,
+          "val_mse": 1.0376452207565308
+        }
+      ],
+      "validation_mse": 1.0376452207565308,
+      "probe_parameter_bytes": 19968,
+      "test_mse": 1.0307213068008423,
+      "test_examples": 9671,
+      "ic_days": 335,
+      "rank_ic_95": [
+        -0.03960321413987014,
+        0.03005578847497771
+      ],
+      "ic": 0.0002762262293022301,
+      "rank_ic": -0.0053701899371135,
+      "rank_ic_positive": 0.48955223880597015,
+      "rank_ic_std": 0.22326534020103275,
+      "rank_ic_ir": -0.0240529494290429,
+      "cost_stress": {
+        "0": {
+          "status": "unpriced_exit",
+          "affected_trades": 1
+        },
+        "5": {
+          "status": "unpriced_exit",
+          "affected_trades": 1
+        },
+        "10": {
+          "status": "unpriced_exit",
+          "affected_trades": 1
+        },
+        "25": {
+          "status": "unpriced_exit",
+          "affected_trades": 1
+        }
+      },
+      "time_budget_step": 70,
+      "time_budget_test_mse": 1.032134771347046
+    },
+    {
+      "method": "depth_moments",
+      "seed": 73,
+      "rate": 0.003,
+      "failed": false,
+      "seconds": 0.2431117920204997,
+      "parameters": 3313,
+      "threshold_seconds": null,
+      "threshold_step": null,
+      "trace": [
+        {
+          "step": 10,
+          "seconds": 0.015778332948684692,
+          "val_mse": 1.1863069534301758
+        },
+        {
+          "step": 20,
+          "seconds": 0.03118154196999967,
+          "val_mse": 1.071028232574463
+        },
+        {
+          "step": 30,
+          "seconds": 0.04649404191877693,
+          "val_mse": 1.032456398010254
+        },
+        {
+          "step": 40,
+          "seconds": 0.061770624946802855,
+          "val_mse": 1.0369606018066406
+        },
+        {
+          "step": 50,
+          "seconds": 0.07701254193671048,
+          "val_mse": 1.073791265487671
+        },
+        {
+          "step": 60,
+          "seconds": 0.09218512498773634,
+          "val_mse": 1.0365126132965088
+        },
+        {
+          "step": 70,
+          "seconds": 0.1074133749352768,
+          "val_mse": 1.030321717262268
+        },
+        {
+          "step": 80,
+          "seconds": 0.1226485000224784,
+          "val_mse": 1.041705846786499
+        },
+        {
+          "step": 90,
+          "seconds": 0.13776800001505762,
+          "val_mse": 1.0268906354904175
+        },
+        {
+          "step": 100,
+          "seconds": 0.15281345800030977,
+          "val_mse": 1.0289620161056519
+        },
+        {
+          "step": 110,
+          "seconds": 0.16783716692589223,
+          "val_mse": 1.0317672491073608
+        },
+        {
+          "step": 120,
+          "seconds": 0.1829581669298932,
+          "val_mse": 1.0395270586013794
+        },
+        {
+          "step": 130,
+          "seconds": 0.19800891692284495,
+          "val_mse": 1.0502593517303467
+        },
+        {
+          "step": 140,
+          "seconds": 0.213087624986656,
+          "val_mse": 1.0332107543945312
+        },
+        {
+          "step": 150,
+          "seconds": 0.22807220800314099,
+          "val_mse": 1.0286391973495483
+        },
+        {
+          "step": 160,
+          "seconds": 0.24311012495309114,
+          "val_mse": 1.0324729681015015
+        }
+      ],
+      "validation_mse": 1.0324729681015015,
+      "probe_parameter_bytes": 19968,
+      "test_mse": 1.0319125652313232,
+      "test_examples": 9671,
+      "ic_days": 335,
+      "rank_ic_95": [
+        -0.049600276505805216,
+        0.04883588369864319
+      ],
+      "ic": 0.001097623329284379,
+      "rank_ic": -0.0012330662872364333,
+      "rank_ic_positive": 0.47761194029850745,
+      "rank_ic_std": 0.2700615503369305,
+      "rank_ic_ir": -0.0045658713196974985,
+      "cost_stress": {
+        "0": {
+          "status": "unpriced_exit",
+          "affected_trades": 1
+        },
+        "5": {
+          "status": "unpriced_exit",
+          "affected_trades": 1
+        },
+        "10": {
+          "status": "unpriced_exit",
+          "affected_trades": 1
+        },
+        "25": {
+          "status": "unpriced_exit",
+          "affected_trades": 1
+        }
+      },
+      "time_budget_step": 70,
+      "time_budget_test_mse": 1.039219856262207
+    },
+    {
+      "method": "linear",
+      "seed": 17,
+      "rate": 0.003,
+      "failed": false,
+      "seconds": 0.05645587504841387,
+      "parameters": 85,
+      "threshold_seconds": null,
+      "threshold_step": null,
+      "trace": [
+        {
+          "step": 10,
+          "seconds": 0.003940750029869378,
+          "val_mse": 1.1949515342712402
+        },
+        {
+          "step": 20,
+          "seconds": 0.007567916996777058,
+          "val_mse": 1.2610936164855957
+        },
+        {
+          "step": 30,
+          "seconds": 0.011129999998956919,
+          "val_mse": 1.1364378929138184
+        },
+        {
+          "step": 40,
+          "seconds": 0.014673874946311116,
+          "val_mse": 1.1205271482467651
+        },
+        {
+          "step": 50,
+          "seconds": 0.018140999949537218,
+          "val_mse": 1.1183412075042725
+        },
+        {
+          "step": 60,
+          "seconds": 0.021613167016766965,
+          "val_mse": 1.1194926500320435
+        },
+        {
+          "step": 70,
+          "seconds": 0.02508262498304248,
+          "val_mse": 1.0766643285751343
+        },
+        {
+          "step": 80,
+          "seconds": 0.02856445894576609,
+          "val_mse": 1.119936466217041
+        },
+        {
+          "step": 90,
+          "seconds": 0.032045917003415525,
+          "val_mse": 1.0937039852142334
+        },
+        {
+          "step": 100,
+          "seconds": 0.03552370902616531,
+          "val_mse": 1.0641920566558838
+        },
+        {
+          "step": 110,
+          "seconds": 0.03900916699785739,
+          "val_mse": 1.0795247554779053
+        },
+        {
+          "step": 120,
+          "seconds": 0.042500584037043154,
+          "val_mse": 1.0675832033157349
+        },
+        {
+          "step": 130,
+          "seconds": 0.04597245901823044,
+          "val_mse": 1.0781428813934326
+        },
+        {
+          "step": 140,
+          "seconds": 0.04944583401083946,
+          "val_mse": 1.0750248432159424
+        },
+        {
+          "step": 150,
+          "seconds": 0.052913625026121736,
+          "val_mse": 1.0685055255889893
+        },
+        {
+          "step": 160,
+          "seconds": 0.05641562503296882,
+          "val_mse": 1.0554629564285278
+        }
+      ],
+      "validation_mse": 1.0554629564285278,
+      "probe_parameter_bytes": 0,
+      "test_mse": 1.0553454160690308,
+      "test_examples": 9671,
+      "ic_days": 335,
+      "rank_ic_95": [
+        -0.052936532933578584,
+        0.01434454743172404
+      ],
+      "ic": -0.013116936755595903,
+      "rank_ic": -0.018535104947529406,
+      "rank_ic_positive": 0.49850746268656715,
+      "rank_ic_std": 0.2410344014429418,
+      "rank_ic_ir": -0.0768981723628238,
+      "cost_stress": {
+        "0": {
+          "status": "unpriced_exit",
+          "affected_trades": 1
+        },
+        "5": {
+          "status": "unpriced_exit",
+          "affected_trades": 1
+        },
+        "10": {
+          "status": "unpriced_exit",
+          "affected_trades": 1
+        },
+        "25": {
+          "status": "unpriced_exit",
+          "affected_trades": 1
+        }
+      },
+      "time_budget_step": 160,
+      "time_budget_test_mse": 1.0553452968597412
+    },
+    {
+      "method": "linear",
+      "seed": 41,
+      "rate": 0.003,
+      "failed": false,
+      "seconds": 0.05548795801587403,
+      "parameters": 85,
+      "threshold_seconds": null,
+      "threshold_step": null,
+      "trace": [
+        {
+          "step": 10,
+          "seconds": 0.0038152079796418548,
+          "val_mse": 1.3341833353042603
+        },
+        {
+          "step": 20,
+          "seconds": 0.007382667041383684,
+          "val_mse": 1.2149639129638672
+        },
+        {
+          "step": 30,
+          "seconds": 0.010879958048462868,
+          "val_mse": 1.1794524192810059
+        },
+        {
+          "step": 40,
+          "seconds": 0.014338582986965775,
+          "val_mse": 1.1384305953979492
+        },
+        {
+          "step": 50,
+          "seconds": 0.017787792021408677,
+          "val_mse": 1.1467207670211792
+        },
+        {
+          "step": 60,
+          "seconds": 0.02120270801242441,
+          "val_mse": 1.1035254001617432
+        },
+        {
+          "step": 70,
+          "seconds": 0.024609292042441666,
+          "val_mse": 1.098430871963501
+        },
+        {
+          "step": 80,
+          "seconds": 0.02800879196729511,
+          "val_mse": 1.098541021347046
+        },
+        {
+          "step": 90,
+          "seconds": 0.03144566703122109,
+          "val_mse": 1.139471411705017
+        },
+        {
+          "step": 100,
+          "seconds": 0.034881292027421296,
+          "val_mse": 1.0748487710952759
+        },
+        {
+          "step": 110,
+          "seconds": 0.038292207987979054,
+          "val_mse": 1.069480538368225
+        },
+        {
+          "step": 120,
+          "seconds": 0.04171729204244912,
+          "val_mse": 1.0894811153411865
+        },
+        {
+          "step": 130,
+          "seconds": 0.04511591698974371,
+          "val_mse": 1.0829466581344604
+        },
+        {
+          "step": 140,
+          "seconds": 0.04857362504117191,
+          "val_mse": 1.069258689880371
+        },
+        {
+          "step": 150,
+          "seconds": 0.052002000040374696,
+          "val_mse": 1.0854823589324951
+        },
+        {
+          "step": 160,
+          "seconds": 0.0554465000750497,
+          "val_mse": 1.0982428789138794
+        }
+      ],
+      "validation_mse": 1.0982428789138794,
+      "probe_parameter_bytes": 0,
+      "test_mse": 1.0366538763046265,
+      "test_examples": 9671,
+      "ic_days": 335,
+      "rank_ic_95": [
+        -0.03507563672294469,
+        0.044076176599324536
+      ],
+      "ic": 0.012623707803903882,
+      "rank_ic": 0.004413106740713063,
+      "rank_ic_positive": 0.5134328358208955,
+      "rank_ic_std": 0.249515884585543,
+      "rank_ic_ir": 0.01768667653381439,
+      "cost_stress": {
+        "0": {
+          "status": "ok",
+          "cohorts": 74,
+          "gross_return": 0.1050331444272572,
+          "net_return": 0.1050331444272572,
+          "net_sharpe_rf0": 0.6496314711826936,
+          "max_drawdown": -0.10682771946474323,
+          "mean_traded_notional": 1.8238047621829605
+        },
+        "5": {
+          "status": "ok",
+          "cohorts": 74,
+          "gross_return": 0.1050331444272572,
+          "net_return": 0.032985605824303654,
+          "net_sharpe_rf0": 0.24936642869102943,
+          "max_drawdown": -0.1128317482108715,
+          "mean_traded_notional": 1.8238047621829605
+        },
+        "10": {
+          "status": "ok",
+          "cohorts": 74,
+          "gross_return": 0.1050331444272572,
+          "net_return": -0.03442921049868153,
+          "net_sharpe_rf0": -0.1512182771136234,
+          "max_drawdown": -0.1385126351208198,
+          "mean_traded_notional": 1.8238047621829605
+        },
+        "25": {
+          "status": "ok",
+          "cohorts": 74,
+          "gross_return": 0.1050331444272572,
+          "net_return": -0.21172384925586718,
+          "net_sharpe_rf0": -1.3514026599802242,
+          "max_drawdown": -0.2762372239207205,
+          "mean_traded_notional": 1.8238047621829605
+        }
+      },
+      "time_budget_step": 160,
+      "time_budget_test_mse": 1.0366538763046265
+    },
+    {
+      "method": "linear",
+      "seed": 73,
+      "rate": 0.003,
+      "failed": false,
+      "seconds": 0.05668345803860575,
+      "parameters": 85,
+      "threshold_seconds": null,
+      "threshold_step": null,
+      "trace": [
+        {
+          "step": 10,
+          "seconds": 0.003954082960262895,
+          "val_mse": 1.3357399702072144
+        },
+        {
+          "step": 20,
+          "seconds": 0.007579957949928939,
+          "val_mse": 1.158254861831665
+        },
+        {
+          "step": 30,
+          "seconds": 0.011171082966029644,
+          "val_mse": 1.141934871673584
+        },
+        {
+          "step": 40,
+          "seconds": 0.014713875018060207,
+          "val_mse": 1.1273515224456787
+        },
+        {
+          "step": 50,
+          "seconds": 0.018223667051643133,
+          "val_mse": 1.1226232051849365
+        },
+        {
+          "step": 60,
+          "seconds": 0.021723750047385693,
+          "val_mse": 1.0933605432510376
+        },
+        {
+          "step": 70,
+          "seconds": 0.025221375050023198,
+          "val_mse": 1.0996037721633911
+        },
+        {
+          "step": 80,
+          "seconds": 0.028738082968629897,
+          "val_mse": 1.0853837728500366
+        },
+        {
+          "step": 90,
+          "seconds": 0.03224008297547698,
+          "val_mse": 1.0766130685806274
+        },
+        {
+          "step": 100,
+          "seconds": 0.035728582995943725,
+          "val_mse": 1.0912995338439941
+        },
+        {
+          "step": 110,
+          "seconds": 0.0392602919600904,
+          "val_mse": 1.0615003108978271
+        },
+        {
+          "step": 120,
+          "seconds": 0.04273983300663531,
+          "val_mse": 1.0661394596099854
+        },
+        {
+          "step": 130,
+          "seconds": 0.04625212505925447,
+          "val_mse": 1.0916954278945923
+        },
+        {
+          "step": 140,
+          "seconds": 0.0497142500244081,
+          "val_mse": 1.0648690462112427
+        },
+        {
+          "step": 150,
+          "seconds": 0.05318870802875608,
+          "val_mse": 1.0916237831115723
+        },
+        {
+          "step": 160,
+          "seconds": 0.056643082993105054,
+          "val_mse": 1.094019889831543
+        }
+      ],
+      "validation_mse": 1.094019889831543,
+      "probe_parameter_bytes": 0,
+      "test_mse": 1.0392272472381592,
+      "test_examples": 9671,
+      "ic_days": 335,
+      "rank_ic_95": [
+        -0.04294311293795947,
+        0.041556934849436046
+      ],
+      "ic": 0.0030845264257342068,
+      "rank_ic": -0.0019886979433707493,
+      "rank_ic_positive": 0.5014925373134328,
+      "rank_ic_std": 0.2700619226272598,
+      "rank_ic_ir": -0.007363859088404534,
+      "cost_stress": {
+        "0": {
+          "status": "unpriced_exit",
+          "affected_trades": 1
+        },
+        "5": {
+          "status": "unpriced_exit",
+          "affected_trades": 1
+        },
+        "10": {
+          "status": "unpriced_exit",
+          "affected_trades": 1
+        },
+        "25": {
+          "status": "unpriced_exit",
+          "affected_trades": 1
+        }
+      },
+      "time_budget_step": 160,
+      "time_budget_test_mse": 1.0392272472381592
+    },
+    {
+      "method": "mlp",
+      "seed": 17,
+      "rate": 0.0003,
+      "failed": false,
+      "seconds": 0.0751424579648301,
+      "parameters": 2065,
+      "threshold_seconds": null,
+      "threshold_step": null,
+      "trace": [
+        {
+          "step": 10,
+          "seconds": 0.005018415977247059,
+          "val_mse": 1.3432624340057373
+        },
+        {
+          "step": 20,
+          "seconds": 0.009771500015631318,
+          "val_mse": 1.2274274826049805
+        },
+        {
+          "step": 30,
+          "seconds": 0.01446950004901737,
+          "val_mse": 1.1506496667861938
+        },
+        {
+          "step": 40,
+          "seconds": 0.01914574997499585,
+          "val_mse": 1.1059362888336182
+        },
+        {
+          "step": 50,
+          "seconds": 0.023780332994647324,
+          "val_mse": 1.0795177221298218
+        },
+        {
+          "step": 60,
+          "seconds": 0.028454332961700857,
+          "val_mse": 1.0688416957855225
+        },
+        {
+          "step": 70,
+          "seconds": 0.03313674998935312,
+          "val_mse": 1.0657366514205933
+        },
+        {
+          "step": 80,
+          "seconds": 0.03782487497664988,
+          "val_mse": 1.0638606548309326
+        },
+        {
+          "step": 90,
+          "seconds": 0.04249445802997798,
+          "val_mse": 1.0635430812835693
+        },
+        {
+          "step": 100,
+          "seconds": 0.04714579100254923,
+          "val_mse": 1.06368887424469
+        },
+        {
+          "step": 110,
+          "seconds": 0.05182195804081857,
+          "val_mse": 1.0671497583389282
+        },
+        {
+          "step": 120,
+          "seconds": 0.056455165962688625,
+          "val_mse": 1.067012906074524
+        },
+        {
+          "step": 130,
+          "seconds": 0.06110904098022729,
+          "val_mse": 1.0646672248840332
+        },
+        {
+          "step": 140,
+          "seconds": 0.06576116604264826,
+          "val_mse": 1.0598386526107788
+        },
+        {
+          "step": 150,
+          "seconds": 0.07042170804925263,
+          "val_mse": 1.0568199157714844
+        },
+        {
+          "step": 160,
+          "seconds": 0.07507912500295788,
+          "val_mse": 1.0545308589935303
+        }
+      ],
+      "validation_mse": 1.0545308589935303,
+      "probe_parameter_bytes": 0,
+      "test_mse": 1.0385503768920898,
+      "test_examples": 9671,
+      "ic_days": 335,
+      "rank_ic_95": [
+        -0.030429060561863702,
+        0.04422149006785354
+      ],
+      "ic": 0.000976881299969452,
+      "rank_ic": 0.005451434070852857,
+      "rank_ic_positive": 0.5194029850746269,
+      "rank_ic_std": 0.24692865439850986,
+      "rank_ic_ir": 0.022076960181603593,
+      "cost_stress": {
+        "0": {
+          "status": "unpriced_exit",
+          "affected_trades": 2
+        },
+        "5": {
+          "status": "unpriced_exit",
+          "affected_trades": 2
+        },
+        "10": {
+          "status": "unpriced_exit",
+          "affected_trades": 2
+        },
+        "25": {
+          "status": "unpriced_exit",
+          "affected_trades": 2
+        }
+      },
+      "time_budget_step": 160,
+      "time_budget_test_mse": 1.0385503768920898
+    },
+    {
+      "method": "mlp",
+      "seed": 41,
+      "rate": 0.0003,
+      "failed": false,
+      "seconds": 0.07507341704331338,
+      "parameters": 2065,
+      "threshold_seconds": null,
+      "threshold_step": null,
+      "trace": [
+        {
+          "step": 10,
+          "seconds": 0.005051292013376951,
+          "val_mse": 1.0834448337554932
+        },
+        {
+          "step": 20,
+          "seconds": 0.009801791980862617,
+          "val_mse": 1.0765401124954224
+        },
+        {
+          "step": 30,
+          "seconds": 0.014490833971649408,
+          "val_mse": 1.0717726945877075
+        },
+        {
+          "step": 40,
+          "seconds": 0.019198916968889534,
+          "val_mse": 1.0673668384552002
+        },
+        {
+          "step": 50,
+          "seconds": 0.023863499984145164,
+          "val_mse": 1.062556266784668
+        },
+        {
+          "step": 60,
+          "seconds": 0.028545084060169756,
+          "val_mse": 1.0612090826034546
+        },
+        {
+          "step": 70,
+          "seconds": 0.03321854199748486,
+          "val_mse": 1.0598762035369873
+        },
+        {
+          "step": 80,
+          "seconds": 0.03788141696713865,
+          "val_mse": 1.055688738822937
+        },
+        {
+          "step": 90,
+          "seconds": 0.04252891696523875,
+          "val_mse": 1.0509120225906372
+        },
+        {
+          "step": 100,
+          "seconds": 0.047169208992272615,
+          "val_mse": 1.051967978477478
+        },
+        {
+          "step": 110,
+          "seconds": 0.05177612497936934,
+          "val_mse": 1.050696849822998
+        },
+        {
+          "step": 120,
+          "seconds": 0.05639437504578382,
+          "val_mse": 1.0474168062210083
+        },
+        {
+          "step": 130,
+          "seconds": 0.06103812495712191,
+          "val_mse": 1.0460399389266968
+        },
+        {
+          "step": 140,
+          "seconds": 0.06571208394598216,
+          "val_mse": 1.0456690788269043
+        },
+        {
+          "step": 150,
+          "seconds": 0.07038562500383705,
+          "val_mse": 1.0471913814544678
+        },
+        {
+          "step": 160,
+          "seconds": 0.07501158397644758,
+          "val_mse": 1.052720069885254
+        }
+      ],
+      "validation_mse": 1.052720069885254,
+      "probe_parameter_bytes": 0,
+      "test_mse": 1.0349147319793701,
+      "test_examples": 9671,
+      "ic_days": 335,
+      "rank_ic_95": [
+        -0.06015905705717454,
+        0.016602765400973694
+      ],
+      "ic": -0.007451331242738688,
+      "rank_ic": -0.022410204706403355,
+      "rank_ic_positive": 0.45671641791044776,
+      "rank_ic_std": 0.2543961802288533,
+      "rank_ic_ir": -0.08809174998713923,
+      "cost_stress": {
+        "0": {
+          "status": "unpriced_exit",
+          "affected_trades": 1
+        },
+        "5": {
+          "status": "unpriced_exit",
+          "affected_trades": 1
+        },
+        "10": {
+          "status": "unpriced_exit",
+          "affected_trades": 1
+        },
+        "25": {
+          "status": "unpriced_exit",
+          "affected_trades": 1
+        }
+      },
+      "time_budget_step": 160,
+      "time_budget_test_mse": 1.0349147319793701
+    },
+    {
+      "method": "mlp",
+      "seed": 73,
+      "rate": 0.0003,
+      "failed": false,
+      "seconds": 0.07573683292139322,
+      "parameters": 2065,
+      "threshold_seconds": null,
+      "threshold_step": null,
+      "trace": [
+        {
+          "step": 10,
+          "seconds": 0.005072625004686415,
+          "val_mse": 1.362217664718628
+        },
+        {
+          "step": 20,
+          "seconds": 0.009843832929618657,
+          "val_mse": 1.2030092477798462
+        },
+        {
+          "step": 30,
+          "seconds": 0.014550708001479506,
+          "val_mse": 1.1381677389144897
+        },
+        {
+          "step": 40,
+          "seconds": 0.01922258292324841,
+          "val_mse": 1.1103136539459229
+        },
+        {
+          "step": 50,
+          "seconds": 0.023898957995697856,
+          "val_mse": 1.0821048021316528
+        },
+        {
+          "step": 60,
+          "seconds": 0.02854433294851333,
+          "val_mse": 1.0771125555038452
+        },
+        {
+          "step": 70,
+          "seconds": 0.03318949998356402,
+          "val_mse": 1.0769250392913818
+        },
+        {
+          "step": 80,
+          "seconds": 0.037880207994021475,
+          "val_mse": 1.0742107629776
+        },
+        {
+          "step": 90,
+          "seconds": 0.042656707926653326,
+          "val_mse": 1.0701466798782349
+        },
+        {
+          "step": 100,
+          "seconds": 0.047366665909066796,
+          "val_mse": 1.069973111152649
+        },
+        {
+          "step": 110,
+          "seconds": 0.05201912496704608,
+          "val_mse": 1.0722333192825317
+        },
+        {
+          "step": 120,
+          "seconds": 0.05677449994254857,
+          "val_mse": 1.0713940858840942
+        },
+        {
+          "step": 130,
+          "seconds": 0.061636207974515855,
+          "val_mse": 1.0657322406768799
+        },
+        {
+          "step": 140,
+          "seconds": 0.0663214159430936,
+          "val_mse": 1.0637933015823364
+        },
+        {
+          "step": 150,
+          "seconds": 0.0709988329326734,
+          "val_mse": 1.0644785165786743
+        },
+        {
+          "step": 160,
+          "seconds": 0.07567312498576939,
+          "val_mse": 1.0717544555664062
+        }
+      ],
+      "validation_mse": 1.0717544555664062,
+      "probe_parameter_bytes": 0,
+      "test_mse": 1.0348434448242188,
+      "test_examples": 9671,
+      "ic_days": 335,
+      "rank_ic_95": [
+        -0.026391492721396077,
+        0.04006817342893112
+      ],
+      "ic": 0.010975806590320459,
+      "rank_ic": 0.007612076437709954,
+      "rank_ic_positive": 0.5492537313432836,
+      "rank_ic_std": 0.25255500271090564,
+      "rank_ic_ir": 0.030140271845746556,
+      "cost_stress": {
+        "0": {
+          "status": "unpriced_exit",
+          "affected_trades": 1
+        },
+        "5": {
+          "status": "unpriced_exit",
+          "affected_trades": 1
+        },
+        "10": {
+          "status": "unpriced_exit",
+          "affected_trades": 1
+        },
+        "25": {
+          "status": "unpriced_exit",
+          "affected_trades": 1
+        }
+      },
+      "time_budget_step": 160,
+      "time_budget_test_mse": 1.0348434448242188
+    },
+    {
+      "method": "untied",
+      "seed": 17,
+      "rate": 0.003,
+      "failed": false,
+      "seconds": 0.2104744160315022,
+      "parameters": 7057,
+      "threshold_seconds": null,
+      "threshold_step": null,
+      "trace": [
+        {
+          "step": 10,
+          "seconds": 0.013490415993146598,
+          "val_mse": 1.0878732204437256
+        },
+        {
+          "step": 20,
+          "seconds": 0.026865874999202788,
+          "val_mse": 1.0424506664276123
+        },
+        {
+          "step": 30,
+          "seconds": 0.04017633304465562,
+          "val_mse": 1.0474140644073486
+        },
+        {
+          "step": 40,
+          "seconds": 0.053438875009305775,
+          "val_mse": 1.0480735301971436
+        },
+        {
+          "step": 50,
+          "seconds": 0.06672954105306417,
+          "val_mse": 1.067531943321228
+        },
+        {
+          "step": 60,
+          "seconds": 0.07994933298323303,
+          "val_mse": 1.0413695573806763
+        },
+        {
+          "step": 70,
+          "seconds": 0.09320383297745138,
+          "val_mse": 1.032623291015625
+        },
+        {
+          "step": 80,
+          "seconds": 0.10653524997178465,
+          "val_mse": 1.0322211980819702
+        },
+        {
+          "step": 90,
+          "seconds": 0.11975541606079787,
+          "val_mse": 1.0366160869598389
+        },
+        {
+          "step": 100,
+          "seconds": 0.1329808330629021,
+          "val_mse": 1.0321239233016968
+        },
+        {
+          "step": 110,
+          "seconds": 0.1459009579848498,
+          "val_mse": 1.0366688966751099
+        },
+        {
+          "step": 120,
+          "seconds": 0.1588179999962449,
+          "val_mse": 1.0397167205810547
+        },
+        {
+          "step": 130,
+          "seconds": 0.17174975003581494,
+          "val_mse": 1.0442363023757935
+        },
+        {
+          "step": 140,
+          "seconds": 0.18462466599885374,
+          "val_mse": 1.0431158542633057
+        },
+        {
+          "step": 150,
+          "seconds": 0.19756966608110815,
+          "val_mse": 1.0418829917907715
+        },
+        {
+          "step": 160,
+          "seconds": 0.21047262498177588,
+          "val_mse": 1.049068570137024
+        }
+      ],
+      "validation_mse": 1.049068570137024,
+      "probe_parameter_bytes": 0,
+      "test_mse": 1.045072078704834,
+      "test_examples": 9671,
+      "ic_days": 335,
+      "rank_ic_95": [
+        -0.059424350278099405,
+        0.024085249346665095
+      ],
+      "ic": -0.04183376861430592,
+      "rank_ic": -0.01591454696122109,
+      "rank_ic_positive": 0.4626865671641791,
+      "rank_ic_std": 0.2587922212568616,
+      "rank_ic_ir": -0.06149546104565975,
+      "cost_stress": {
+        "0": {
+          "status": "unpriced_exit",
+          "affected_trades": 2
+        },
+        "5": {
+          "status": "unpriced_exit",
+          "affected_trades": 2
+        },
+        "10": {
+          "status": "unpriced_exit",
+          "affected_trades": 2
+        },
+        "25": {
+          "status": "unpriced_exit",
+          "affected_trades": 2
+        }
+      },
+      "time_budget_step": 90,
+      "time_budget_test_mse": 1.0421264171600342
+    },
+    {
+      "method": "untied",
+      "seed": 41,
+      "rate": 0.003,
+      "failed": false,
+      "seconds": 0.21122833399567753,
+      "parameters": 7057,
+      "threshold_seconds": null,
+      "threshold_step": null,
+      "trace": [
+        {
+          "step": 10,
+          "seconds": 0.013667499995790422,
+          "val_mse": 1.086585521697998
+        },
+        {
+          "step": 20,
+          "seconds": 0.02717462496366352,
+          "val_mse": 1.0489293336868286
+        },
+        {
+          "step": 30,
+          "seconds": 0.040506709017790854,
+          "val_mse": 1.0535486936569214
+        },
+        {
+          "step": 40,
+          "seconds": 0.05384587496519089,
+          "val_mse": 1.0434013605117798
+        },
+        {
+          "step": 50,
+          "seconds": 0.06715170899406075,
+          "val_mse": 1.034981608390808
+        },
+        {
+          "step": 60,
+          "seconds": 0.08045866701286286,
+          "val_mse": 1.0359325408935547
+        },
+        {
+          "step": 70,
+          "seconds": 0.09385341696906835,
+          "val_mse": 1.036931037902832
+        },
+        {
+          "step": 80,
+          "seconds": 0.10714458406437188,
+          "val_mse": 1.038562536239624
+        },
+        {
+          "step": 90,
+          "seconds": 0.120434166979976,
+          "val_mse": 1.0504109859466553
+        },
+        {
+          "step": 100,
+          "seconds": 0.13344945898279548,
+          "val_mse": 1.0786161422729492
+        },
+        {
+          "step": 110,
+          "seconds": 0.1464168339734897,
+          "val_mse": 1.0339233875274658
+        },
+        {
+          "step": 120,
+          "seconds": 0.15937195904552937,
+          "val_mse": 1.030655860900879
+        },
+        {
+          "step": 130,
+          "seconds": 0.17230320896487683,
+          "val_mse": 1.0401161909103394
+        },
+        {
+          "step": 140,
+          "seconds": 0.18529604200739413,
+          "val_mse": 1.05186927318573
+        },
+        {
+          "step": 150,
+          "seconds": 0.19826283399015665,
+          "val_mse": 1.0342856645584106
+        },
+        {
+          "step": 160,
+          "seconds": 0.2112266250187531,
+          "val_mse": 1.0323084592819214
+        }
+      ],
+      "validation_mse": 1.0323084592819214,
+      "probe_parameter_bytes": 0,
+      "test_mse": 1.0284559726715088,
+      "test_examples": 9671,
+      "ic_days": 335,
+      "rank_ic_95": [
+        -0.06837114839755666,
+        0.03637912144898278
+      ],
+      "ic": -0.00030441387968702826,
+      "rank_ic": -0.01783354178869592,
+      "rank_ic_positive": 0.4746268656716418,
+      "rank_ic_std": 0.2862632199294965,
+      "rank_ic_ir": -0.06229770556304134,
+      "cost_stress": {
+        "0": {
+          "status": "unpriced_exit",
+          "affected_trades": 4
+        },
+        "5": {
+          "status": "unpriced_exit",
+          "affected_trades": 4
+        },
+        "10": {
+          "status": "unpriced_exit",
+          "affected_trades": 4
+        },
+        "25": {
+          "status": "unpriced_exit",
+          "affected_trades": 4
+        }
+      },
+      "time_budget_step": 80,
+      "time_budget_test_mse": 1.031232237815857
+    },
+    {
+      "method": "untied",
+      "seed": 73,
+      "rate": 0.003,
+      "failed": false,
+      "seconds": 0.20963712502270937,
+      "parameters": 7057,
+      "threshold_seconds": null,
+      "threshold_step": null,
+      "trace": [
+        {
+          "step": 10,
+          "seconds": 0.01353654102422297,
+          "val_mse": 1.1262606382369995
+        },
+        {
+          "step": 20,
+          "seconds": 0.02694283309392631,
+          "val_mse": 1.0487736463546753
+        },
+        {
+          "step": 30,
+          "seconds": 0.04024200001731515,
+          "val_mse": 1.034203052520752
+        },
+        {
+          "step": 40,
+          "seconds": 0.05346237507183105,
+          "val_mse": 1.0316442251205444
+        },
+        {
+          "step": 50,
+          "seconds": 0.06666233309078962,
+          "val_mse": 1.0636768341064453
+        },
+        {
+          "step": 60,
+          "seconds": 0.07987958309240639,
+          "val_mse": 1.0385020971298218
+        },
+        {
+          "step": 70,
+          "seconds": 0.09303991601336747,
+          "val_mse": 1.028563380241394
+        },
+        {
+          "step": 80,
+          "seconds": 0.1062531661009416,
+          "val_mse": 1.03946852684021
+        },
+        {
+          "step": 90,
+          "seconds": 0.11945304099936038,
+          "val_mse": 1.0318642854690552
+        },
+        {
+          "step": 100,
+          "seconds": 0.13260183308739215,
+          "val_mse": 1.0297749042510986
+        },
+        {
+          "step": 110,
+          "seconds": 0.14547583309467882,
+          "val_mse": 1.0298279523849487
+        },
+        {
+          "step": 120,
+          "seconds": 0.1583092500222847,
+          "val_mse": 1.0343406200408936
+        },
+        {
+          "step": 130,
+          "seconds": 0.17115912504959852,
+          "val_mse": 1.0466182231903076
+        },
+        {
+          "step": 140,
+          "seconds": 0.1839695000089705,
+          "val_mse": 1.0343114137649536
+        },
+        {
+          "step": 150,
+          "seconds": 0.19679775007534772,
+          "val_mse": 1.0284374952316284
+        },
+        {
+          "step": 160,
+          "seconds": 0.20963520801160485,
+          "val_mse": 1.0320669412612915
+        }
+      ],
+      "validation_mse": 1.0320669412612915,
+      "probe_parameter_bytes": 0,
+      "test_mse": 1.0304057598114014,
+      "test_examples": 9671,
+      "ic_days": 335,
+      "rank_ic_95": [
+        -0.05723468914449028,
+        0.041822945869148004
+      ],
+      "ic": 0.00014300907729559073,
+      "rank_ic": -0.008743616549165646,
+      "rank_ic_positive": 0.4537313432835821,
+      "rank_ic_std": 0.2675504876616203,
+      "rank_ic_ir": -0.03268024897126698,
+      "cost_stress": {
+        "0": {
+          "status": "ok",
+          "cohorts": 74,
+          "gross_return": -0.12691606888759055,
+          "net_return": -0.12691606888759055,
+          "net_sharpe_rf0": -0.759385760678319,
+          "max_drawdown": -0.13105806102457263,
+          "mean_traded_notional": 1.8371951485362126
+        },
+        "5": {
+          "status": "ok",
+          "cohorts": 74,
+          "gross_return": -0.12691606888759055,
+          "net_return": -0.18444270684427055,
+          "net_sharpe_rf0": -1.1671472363385211,
+          "max_drawdown": -0.1875045609601057,
+          "mean_traded_notional": 1.8371951485362126
+        },
+        "10": {
+          "status": "ok",
+          "cohorts": 74,
+          "gross_return": -0.12691606888759055,
+          "net_return": -0.23823111964975685,
+          "net_sharpe_rf0": -1.5736838475289754,
+          "max_drawdown": -0.24033554696933324,
+          "mean_traded_notional": 1.8371951485362126
+        },
+        "25": {
+          "status": "ok",
+          "cohorts": 74,
+          "gross_return": -0.12691606888759055,
+          "net_return": -0.3794875420797671,
+          "net_sharpe_rf0": -2.782436365077695,
+          "max_drawdown": -0.3794875420797671,
+          "mean_traded_notional": 1.8371951485362126
+        }
+      },
+      "time_budget_step": 90,
+      "time_budget_test_mse": 1.0342882871627808
+    },
+    {
+      "method": "shuffle",
+      "seed": 17,
+      "rate": 0.003,
+      "failed": false,
+      "seconds": 0.17272845900151879,
+      "parameters": 3313,
+      "threshold_seconds": null,
+      "threshold_step": null,
+      "trace": [
+        {
+          "step": 10,
+          "seconds": 0.011137333931401372,
+          "val_mse": 1.077409029006958
+        },
+        {
+          "step": 20,
+          "seconds": 0.02225349994841963,
+          "val_mse": 1.0498000383377075
+        },
+        {
+          "step": 30,
+          "seconds": 0.033987749950028956,
+          "val_mse": 1.0378737449645996
+        },
+        {
+          "step": 40,
+          "seconds": 0.04485624993685633,
+          "val_mse": 1.0563310384750366
+        },
+        {
+          "step": 50,
+          "seconds": 0.05562579201068729,
+          "val_mse": 1.0339469909667969
+        },
+        {
+          "step": 60,
+          "seconds": 0.06632400001399219,
+          "val_mse": 1.0280078649520874
+        },
+        {
+          "step": 70,
+          "seconds": 0.0770489169517532,
+          "val_mse": 1.0285942554473877
+        },
+        {
+          "step": 80,
+          "seconds": 0.08777149999514222,
+          "val_mse": 1.0405617952346802
+        },
+        {
+          "step": 90,
+          "seconds": 0.09844208392314613,
+          "val_mse": 1.0413663387298584
+        },
+        {
+          "step": 100,
+          "seconds": 0.10909095895476639,
+          "val_mse": 1.0422875881195068
+        },
+        {
+          "step": 110,
+          "seconds": 0.11973449995275587,
+          "val_mse": 1.031138300895691
+        },
+        {
+          "step": 120,
+          "seconds": 0.13040358398575336,
+          "val_mse": 1.0441193580627441
+        },
+        {
+          "step": 130,
+          "seconds": 0.14095008396543562,
+          "val_mse": 1.0339232683181763
+        },
+        {
+          "step": 140,
+          "seconds": 0.1516453749500215,
+          "val_mse": 1.036860466003418
+        },
+        {
+          "step": 150,
+          "seconds": 0.16222420893609524,
+          "val_mse": 1.0442759990692139
+        },
+        {
+          "step": 160,
+          "seconds": 0.17272658401634544,
+          "val_mse": 1.0335522890090942
+        }
+      ],
+      "validation_mse": 1.0335522890090942,
+      "probe_parameter_bytes": 0,
+      "test_mse": 1.0321705341339111,
+      "test_examples": 9671,
+      "ic_days": 335,
+      "rank_ic_95": [
+        -0.057191520051077506,
+        0.04661227987794217
+      ],
+      "ic": -0.007847216012336287,
+      "rank_ic": -0.0034187391237010356,
+      "rank_ic_positive": 0.47761194029850745,
+      "rank_ic_std": 0.27943213116277554,
+      "rank_ic_ir": -0.012234595604574704,
+      "cost_stress": {
+        "0": {
+          "status": "ok",
+          "cohorts": 74,
+          "gross_return": -0.07145465602833478,
+          "net_return": -0.07145465602833478,
+          "net_sharpe_rf0": -0.39705930879361245,
+          "max_drawdown": -0.1862628070650364,
+          "mean_traded_notional": 1.841506030262937
+        },
+        "5": {
+          "status": "ok",
+          "cohorts": 74,
+          "gross_return": -0.07145465602833478,
+          "net_return": -0.13271231818191986,
+          "net_sharpe_rf0": -0.8127509178881149,
+          "max_drawdown": -0.20413744367917785,
+          "mean_traded_notional": 1.841506030262937
+        },
+        "10": {
+          "status": "ok",
+          "cohorts": 74,
+          "gross_return": -0.07145465602833478,
+          "net_return": -0.18998426470427676,
+          "net_sharpe_rf0": -1.2279203525871478,
+          "max_drawdown": -0.22163691949534503,
+          "mean_traded_notional": 1.841506030262937
+        },
+        "25": {
+          "status": "ok",
+          "cohorts": 74,
+          "gross_return": -0.07145465602833478,
+          "net_return": -0.34036303714858573,
+          "net_sharpe_rf0": -2.4665139386685975,
+          "max_drawdown": -0.3493399031992386,
+          "mean_traded_notional": 1.841506030262937
+        }
+      },
+      "time_budget_step": 110,
+      "time_budget_test_mse": 1.0319116115570068
+    },
+    {
+      "method": "shuffle",
+      "seed": 41,
+      "rate": 0.003,
+      "failed": false,
+      "seconds": 0.1736391669837758,
+      "parameters": 3313,
+      "threshold_seconds": null,
+      "threshold_step": null,
+      "trace": [
+        {
+          "step": 10,
+          "seconds": 0.011303458944894373,
+          "val_mse": 1.0454562902450562
+        },
+        {
+          "step": 20,
+          "seconds": 0.0222559169633314,
+          "val_mse": 1.0400909185409546
+        },
+        {
+          "step": 30,
+          "seconds": 0.03316641692072153,
+          "val_mse": 1.048169493675232
+        },
+        {
+          "step": 40,
+          "seconds": 0.044032624922692776,
+          "val_mse": 1.0430524349212646
+        },
+        {
+          "step": 50,
+          "seconds": 0.05487779201939702,
+          "val_mse": 1.0493167638778687
+        },
+        {
+          "step": 60,
+          "seconds": 0.06573074997868389,
+          "val_mse": 1.0593693256378174
+        },
+        {
+          "step": 70,
+          "seconds": 0.0765775420004502,
+          "val_mse": 1.0463653802871704
+        },
+        {
+          "step": 80,
+          "seconds": 0.08742308395449072,
+          "val_mse": 1.0378540754318237
+        },
+        {
+          "step": 90,
+          "seconds": 0.09830508392769843,
+          "val_mse": 1.0493545532226562
+        },
+        {
+          "step": 100,
+          "seconds": 0.10914891702122986,
+          "val_mse": 1.035499930381775
+        },
+        {
+          "step": 110,
+          "seconds": 0.119955874979496,
+          "val_mse": 1.0322952270507812
+        },
+        {
+          "step": 120,
+          "seconds": 0.13086833397392184,
+          "val_mse": 1.0466681718826294
+        },
+        {
+          "step": 130,
+          "seconds": 0.14156508399173617,
+          "val_mse": 1.0319244861602783
+        },
+        {
+          "step": 140,
+          "seconds": 0.15221537498291582,
+          "val_mse": 1.0324792861938477
+        },
+        {
+          "step": 150,
+          "seconds": 0.16292554198298603,
+          "val_mse": 1.0324158668518066
+        },
+        {
+          "step": 160,
+          "seconds": 0.1736374170286581,
+          "val_mse": 1.034219741821289
+        }
+      ],
+      "validation_mse": 1.034219741821289,
+      "probe_parameter_bytes": 0,
+      "test_mse": 1.028586745262146,
+      "test_examples": 9671,
+      "ic_days": 335,
+      "rank_ic_95": [
+        -0.0486638694349526,
+        0.034482116547147786
+      ],
+      "ic": 0.000762123813460211,
+      "rank_ic": -0.008013020827541472,
+      "rank_ic_positive": 0.5104477611940299,
+      "rank_ic_std": 0.23345565609856228,
+      "rank_ic_ir": -0.034323524053572155,
+      "cost_stress": {
+        "0": {
+          "status": "unpriced_exit",
+          "affected_trades": 3
+        },
+        "5": {
+          "status": "unpriced_exit",
+          "affected_trades": 3
+        },
+        "10": {
+          "status": "unpriced_exit",
+          "affected_trades": 3
+        },
+        "25": {
+          "status": "unpriced_exit",
+          "affected_trades": 3
+        }
+      },
+      "time_budget_step": 110,
+      "time_budget_test_mse": 1.0294121503829956
+    },
+    {
+      "method": "shuffle",
+      "seed": 73,
+      "rate": 0.003,
+      "failed": false,
+      "seconds": 0.17338516609743237,
+      "parameters": 3313,
+      "threshold_seconds": null,
+      "threshold_step": null,
+      "trace": [
+        {
+          "step": 10,
+          "seconds": 0.011320541030727327,
+          "val_mse": 1.0473785400390625
+        },
+        {
+          "step": 20,
+          "seconds": 0.02228491601999849,
+          "val_mse": 1.0522218942642212
+        },
+        {
+          "step": 30,
+          "seconds": 0.033188333036378026,
+          "val_mse": 1.044230580329895
+        },
+        {
+          "step": 40,
+          "seconds": 0.04403341608121991,
+          "val_mse": 1.0491695404052734
+        },
+        {
+          "step": 50,
+          "seconds": 0.0548685829853639,
+          "val_mse": 1.0314127206802368
+        },
+        {
+          "step": 60,
+          "seconds": 0.06569437508005649,
+          "val_mse": 1.0384184122085571
+        },
+        {
+          "step": 70,
+          "seconds": 0.07654420798644423,
+          "val_mse": 1.0516427755355835
+        },
+        {
+          "step": 80,
+          "seconds": 0.08740808302536607,
+          "val_mse": 1.0321192741394043
+        },
+        {
+          "step": 90,
+          "seconds": 0.0982505000429228,
+          "val_mse": 1.0324938297271729
+        },
+        {
+          "step": 100,
+          "seconds": 0.1090780000668019,
+          "val_mse": 1.034925103187561
+        },
+        {
+          "step": 110,
+          "seconds": 0.11985858308617026,
+          "val_mse": 1.0403931140899658
+        },
+        {
+          "step": 120,
+          "seconds": 0.13069395802449435,
+          "val_mse": 1.0407408475875854
+        },
+        {
+          "step": 130,
+          "seconds": 0.14136504102498293,
+          "val_mse": 1.0392245054244995
+        },
+        {
+          "step": 140,
+          "seconds": 0.15206362504977733,
+          "val_mse": 1.0319689512252808
+        },
+        {
+          "step": 150,
+          "seconds": 0.16274454107042402,
+          "val_mse": 1.0325806140899658
+        },
+        {
+          "step": 160,
+          "seconds": 0.17338345805183053,
+          "val_mse": 1.036509394645691
+        }
+      ],
+      "validation_mse": 1.036509394645691,
+      "probe_parameter_bytes": 0,
+      "test_mse": 1.030516505241394,
+      "test_examples": 9671,
+      "ic_days": 335,
+      "rank_ic_95": [
+        -0.04249895048729085,
+        0.04055159060876313
+      ],
+      "ic": 0.004681207363780915,
+      "rank_ic": -0.0005567201546043517,
+      "rank_ic_positive": 0.5313432835820896,
+      "rank_ic_std": 0.2505448762700555,
+      "rank_ic_ir": -0.0022220376760140894,
+      "cost_stress": {
+        "0": {
+          "status": "unpriced_exit",
+          "affected_trades": 2
+        },
+        "5": {
+          "status": "unpriced_exit",
+          "affected_trades": 2
+        },
+        "10": {
+          "status": "unpriced_exit",
+          "affected_trades": 2
+        },
+        "25": {
+          "status": "unpriced_exit",
+          "affected_trades": 2
+        }
+      },
+      "time_budget_step": 110,
+      "time_budget_test_mse": 1.0352883338928223
+    },
+    {
+      "method": "noise",
+      "seed": 17,
+      "rate": 0.003,
+      "failed": false,
+      "seconds": 0.17433216702193022,
+      "parameters": 3313,
+      "threshold_seconds": null,
+      "threshold_step": null,
+      "trace": [
+        {
+          "step": 10,
+          "seconds": 0.011338333017192781,
+          "val_mse": 1.08303964138031
+        },
+        {
+          "step": 20,
+          "seconds": 0.02238070801831782,
+          "val_mse": 1.0649712085723877
+        },
+        {
+          "step": 30,
+          "seconds": 0.0333690830739215,
+          "val_mse": 1.0671290159225464
+        },
+        {
+          "step": 40,
+          "seconds": 0.044292083010077477,
+          "val_mse": 1.0534590482711792
+        },
+        {
+          "step": 50,
+          "seconds": 0.055225083022378385,
+          "val_mse": 1.0575133562088013
+        },
+        {
+          "step": 60,
+          "seconds": 0.06615562504157424,
+          "val_mse": 1.037222146987915
+        },
+        {
+          "step": 70,
+          "seconds": 0.07706162508111447,
+          "val_mse": 1.0362892150878906
+        },
+        {
+          "step": 80,
+          "seconds": 0.08798341709189117,
+          "val_mse": 1.0353416204452515
+        },
+        {
+          "step": 90,
+          "seconds": 0.09888841700740159,
+          "val_mse": 1.0506137609481812
+        },
+        {
+          "step": 100,
+          "seconds": 0.10979679203592241,
+          "val_mse": 1.03556227684021
+        },
+        {
+          "step": 110,
+          "seconds": 0.12072537501808256,
+          "val_mse": 1.035916805267334
+        },
+        {
+          "step": 120,
+          "seconds": 0.13145920808892697,
+          "val_mse": 1.0331681966781616
+        },
+        {
+          "step": 130,
+          "seconds": 0.14216391707304865,
+          "val_mse": 1.0380102396011353
+        },
+        {
+          "step": 140,
+          "seconds": 0.15288041706662625,
+          "val_mse": 1.0397242307662964
+        },
+        {
+          "step": 150,
+          "seconds": 0.16358987509738654,
+          "val_mse": 1.0350431203842163
+        },
+        {
+          "step": 160,
+          "seconds": 0.17433033301495016,
+          "val_mse": 1.0445172786712646
+        }
+      ],
+      "validation_mse": 1.0445172786712646,
+      "probe_parameter_bytes": 0,
+      "test_mse": 1.0389422178268433,
+      "test_examples": 9671,
+      "ic_days": 335,
+      "rank_ic_95": [
+        -0.0243383350179076,
+        0.01278337599244608
+      ],
+      "ic": -0.0023445928667291563,
+      "rank_ic": -0.006039643562467951,
+      "rank_ic_positive": 0.48955223880597015,
+      "rank_ic_std": 0.1866828787744815,
+      "rank_ic_ir": -0.03235242354369316,
+      "cost_stress": {
+        "0": {
+          "status": "ok",
+          "cohorts": 74,
+          "gross_return": -0.0295069097873093,
+          "net_return": -0.0295069097873093,
+          "net_sharpe_rf0": -0.23192094380282569,
+          "max_drawdown": -0.12298792805121195,
+          "mean_traded_notional": 1.8370461426000388
+        },
+        "5": {
+          "status": "ok",
+          "cohorts": 74,
+          "gross_return": -0.0295069097873093,
+          "net_return": -0.09334373237445326,
+          "net_sharpe_rf0": -0.8430595705170093,
+          "max_drawdown": -0.1449164485097687,
+          "mean_traded_notional": 1.8370461426000388
+        },
+        "10": {
+          "status": "ok",
+          "cohorts": 74,
+          "gross_return": -0.0295069097873093,
+          "net_return": -0.15303927538708584,
+          "net_sharpe_rf0": -1.452239346299304,
+          "max_drawdown": -0.18918345323930075,
+          "mean_traded_notional": 1.8370461426000388
+        },
+        "25": {
+          "status": "ok",
+          "cohorts": 74,
+          "gross_return": -0.0295069097873093,
+          "net_return": -0.30984476833949526,
+          "net_sharpe_rf0": -3.2562179765474255,
+          "max_drawdown": -0.3274803441356562,
+          "mean_traded_notional": 1.8370461426000388
+        }
+      },
+      "time_budget_step": 100,
+      "time_budget_test_mse": 1.0350555181503296
+    },
+    {
+      "method": "noise",
+      "seed": 41,
+      "rate": 0.003,
+      "failed": false,
+      "seconds": 0.17179658298846334,
+      "parameters": 3313,
+      "threshold_seconds": null,
+      "threshold_step": null,
+      "trace": [
+        {
+          "step": 10,
+          "seconds": 0.011265374952927232,
+          "val_mse": 1.0807408094406128
+        },
+        {
+          "step": 20,
+          "seconds": 0.022148749907501042,
+          "val_mse": 1.0547200441360474
+        },
+        {
+          "step": 30,
+          "seconds": 0.032943708007223904,
+          "val_mse": 1.0654832124710083
+        },
+        {
+          "step": 40,
+          "seconds": 0.04371825000271201,
+          "val_mse": 1.0481785535812378
+        },
+        {
+          "step": 50,
+          "seconds": 0.054453832912258804,
+          "val_mse": 1.0392104387283325
+        },
+        {
+          "step": 60,
+          "seconds": 0.0652465409366414,
+          "val_mse": 1.0387802124023438
+        },
+        {
+          "step": 70,
+          "seconds": 0.07595845800824463,
+          "val_mse": 1.0399458408355713
+        },
+        {
+          "step": 80,
+          "seconds": 0.08670404099393636,
+          "val_mse": 1.0388487577438354
+        },
+        {
+          "step": 90,
+          "seconds": 0.09739654092118144,
+          "val_mse": 1.0414257049560547
+        },
+        {
+          "step": 100,
+          "seconds": 0.10812137497123331,
+          "val_mse": 1.0422719717025757
+        },
+        {
+          "step": 110,
+          "seconds": 0.11884354089852422,
+          "val_mse": 1.0411827564239502
+        },
+        {
+          "step": 120,
+          "seconds": 0.12957904092036188,
+          "val_mse": 1.0382541418075562
+        },
+        {
+          "step": 130,
+          "seconds": 0.14013866591267288,
+          "val_mse": 1.040209174156189
+        },
+        {
+          "step": 140,
+          "seconds": 0.15066908299922943,
+          "val_mse": 1.0538313388824463
+        },
+        {
+          "step": 150,
+          "seconds": 0.16123241593595594,
+          "val_mse": 1.039446473121643
+        },
+        {
+          "step": 160,
+          "seconds": 0.17179495794698596,
+          "val_mse": 1.0328665971755981
+        }
+      ],
+      "validation_mse": 1.0328665971755981,
+      "probe_parameter_bytes": 0,
+      "test_mse": 1.0281623601913452,
+      "test_examples": 9671,
+      "ic_days": 335,
+      "rank_ic_95": [
+        -0.025564370809676593,
+        0.015461392147592491
+      ],
+      "ic": 0.0005784386957243881,
+      "rank_ic": -0.00583916379701652,
+      "rank_ic_positive": 0.4925373134328358,
+      "rank_ic_std": 0.1921862936852387,
+      "rank_ic_ir": -0.03038283160077929,
+      "cost_stress": {
+        "0": {
+          "status": "unpriced_exit",
+          "affected_trades": 1
+        },
+        "5": {
+          "status": "unpriced_exit",
+          "affected_trades": 1
+        },
+        "10": {
+          "status": "unpriced_exit",
+          "affected_trades": 1
+        },
+        "25": {
+          "status": "unpriced_exit",
+          "affected_trades": 1
+        }
+      },
+      "time_budget_step": 110,
+      "time_budget_test_mse": 1.0363339185714722
+    },
+    {
+      "method": "noise",
+      "seed": 73,
+      "rate": 0.003,
+      "failed": false,
+      "seconds": 0.17325433401856571,
+      "parameters": 3313,
+      "threshold_seconds": null,
+      "threshold_step": null,
+      "trace": [
+        {
+          "step": 10,
+          "seconds": 0.011271708994172513,
+          "val_mse": 1.0887993574142456
+        },
+        {
+          "step": 20,
+          "seconds": 0.022214625030755997,
+          "val_mse": 1.0634357929229736
+        },
+        {
+          "step": 30,
+          "seconds": 0.03307999996468425,
+          "val_mse": 1.042238473892212
+        },
+        {
+          "step": 40,
+          "seconds": 0.04392070905305445,
+          "val_mse": 1.0417273044586182
+        },
+        {
+          "step": 50,
+          "seconds": 0.05471558403223753,
+          "val_mse": 1.04673171043396
+        },
+        {
+          "step": 60,
+          "seconds": 0.06550295895431191,
+          "val_mse": 1.0356378555297852
+        },
+        {
+          "step": 70,
+          "seconds": 0.0763232089811936,
+          "val_mse": 1.0337207317352295
+        },
+        {
+          "step": 80,
+          "seconds": 0.08711508405394852,
+          "val_mse": 1.0359550714492798
+        },
+        {
+          "step": 90,
+          "seconds": 0.09793087502475828,
+          "val_mse": 1.0347696542739868
+        },
+        {
+          "step": 100,
+          "seconds": 0.10874579194933176,
+          "val_mse": 1.0414867401123047
+        },
+        {
+          "step": 110,
+          "seconds": 0.11948558397125453,
+          "val_mse": 1.0389751195907593
+        },
+        {
+          "step": 120,
+          "seconds": 0.13028162496630102,
+          "val_mse": 1.0393348932266235
+        },
+        {
+          "step": 130,
+          "seconds": 0.14115962502546608,
+          "val_mse": 1.0445034503936768
+        },
+        {
+          "step": 140,
+          "seconds": 0.15187454200349748,
+          "val_mse": 1.0479727983474731
+        },
+        {
+          "step": 150,
+          "seconds": 0.16250858397688717,
+          "val_mse": 1.038464069366455
+        },
+        {
+          "step": 160,
+          "seconds": 0.17324666702188551,
+          "val_mse": 1.034293293952942
+        }
+      ],
+      "validation_mse": 1.034293293952942,
+      "probe_parameter_bytes": 0,
+      "test_mse": 1.0345048904418945,
+      "test_examples": 9671,
+      "ic_days": 335,
+      "rank_ic_95": [
+        -0.023238436101496337,
+        0.014182774246891308
+      ],
+      "ic": -0.006277374957108725,
+      "rank_ic": -0.005707624625301597,
+      "rank_ic_positive": 0.46865671641791046,
+      "rank_ic_std": 0.19349470670454832,
+      "rank_ic_ir": -0.029497575011272554,
+      "cost_stress": {
+        "0": {
+          "status": "unpriced_exit",
+          "affected_trades": 1
+        },
+        "5": {
+          "status": "unpriced_exit",
+          "affected_trades": 1
+        },
+        "10": {
+          "status": "unpriced_exit",
+          "affected_trades": 1
+        },
+        "25": {
+          "status": "unpriced_exit",
+          "affected_trades": 1
+        }
+      },
+      "time_budget_step": 110,
+      "time_budget_test_mse": 1.0364375114440918
+    },
+    {
+      "method": "momentum",
+      "test_examples": 9671,
+      "ic_days": 335,
+      "rank_ic_95": [
+        -0.021313201061768185,
+        0.05441412694711196
+      ],
+      "ic": 0.01567012206107059,
+      "rank_ic": 0.016381651969218657,
+      "rank_ic_positive": 0.5313432835820896,
+      "rank_ic_std": 0.24007670452447843,
+      "rank_ic_ir": 0.06823507512595155,
+      "cost_stress": {
+        "0": {
+          "status": "unpriced_exit",
+          "affected_trades": 1
+        },
+        "5": {
+          "status": "unpriced_exit",
+          "affected_trades": 1
+        },
+        "10": {
+          "status": "unpriced_exit",
+          "affected_trades": 1
+        },
+        "25": {
+          "status": "unpriced_exit",
+          "affected_trades": 1
+        }
+      }
+    }
+  ]
+}

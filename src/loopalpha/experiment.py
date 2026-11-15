@@ -13,7 +13,7 @@ import pandas as pd
 import torch
 import yaml
 
-from .data import market_samples, read_panel, synthetic_panel, toy_samples, validate_panel
+from .data import market_samples, read_panel, read_sessions, synthetic_panel, toy_samples, validate_panel
 from .evaluation import block_interval, correlations, cost_metrics, portfolio
 from .training import fit
 
@@ -144,9 +144,12 @@ def main(argv=None):
     parser.add_argument("--config", default="configs/research.yaml", type=Path)
     parser.add_argument("--out", required=True, type=Path, help="New output directory")
     parser.add_argument("--csv", type=Path)
+    parser.add_argument("--calendar", type=Path, help="Optional market CSV with ordered date column")
     parser.add_argument("--source", help="Market-data provenance and license")
     parser.add_argument("--prices", choices=["adjusted", "unadjusted"])
     args = parser.parse_args(argv)
+    if args.calendar and args.task != "market":
+        parser.error("--calendar is supported for the market task")
     config_bytes = args.config.read_bytes()
     config = yaml.safe_load(config_bytes)
     torch.set_num_threads(1)
@@ -162,10 +165,13 @@ def main(argv=None):
             panel, audit = read_panel(args.csv, source=args.source, adjusted=args.prices == "adjusted")
         else:
             panel = validate_panel(synthetic_panel(seed, sessions, assets))
-        samples = market_samples(panel, config["lookback"], config["horizon"])
+        sessions, calendar = None, {"calendar": "union of supplied sessions"}
+        if args.calendar:
+            sessions, calendar = read_sessions(args.calendar, panel)
+        samples = market_samples(panel, config["lookback"], config["horizon"], sessions=sessions)
         audit.update({"raw_rows": len(panel), "eligible_feature_rows": len(samples.x),
                       "valid_labeled_rows": int(np.isfinite(samples.y).sum()),
-                      "sessions": samples.sessions, "calendar": "union of supplied sessions",
+                      "sessions": samples.sessions, **calendar,
                       "point_in_time_eligibility_field": "eligible" in panel})
     args.out.mkdir(parents=True)
     source_files = sorted(Path(__file__).parent.glob("*.py"))

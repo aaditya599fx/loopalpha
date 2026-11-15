@@ -1,0 +1,105 @@
+{
+  "task": "market",
+  "data": {
+    "source": "Quandl WIKI/PRICES public-domain archive via marketneutral Kaggle mirror; vendor split/dividend-adjusted OHLCV",
+    "adjusted": true,
+    "sha256": "b00dcb2f294ff20ade044369ba8e0e19891052b41e1a9bbd2ee50fbbce746e0c",
+    "rows": 44627,
+    "assets": 30,
+    "first_session": "2012-02-01",
+    "last_session": "2017-12-29",
+    "raw_rows": 44627,
+    "eligible_feature_rows": 42425,
+    "valid_labeled_rows": 42221,
+    "sessions": 1489,
+    "calendar": "explicit session dates",
+    "calendar_sha256": "f40d7953c6c4e7ef002da482948299be9896585853088efc0239b3284e4a945f",
+    "sessions_without_bars": [
+      "2017-11-08"
+    ],
+    "point_in_time_eligibility_field": false
+  },
+  "config": {
+    "data_seed": 431,
+    "seeds": [
+      17,
+      41,
+      73
+    ],
+    "sessions": 420,
+    "assets": 24,
+    "lookback": 12,
+    "horizon": 5,
+    "width": 24,
+    "depth": 4,
+    "steps": 160,
+    "eval_every": 10,
+    "batch": 96,
+    "time_budget": 0.12,
+    "threshold": 0.2,
+    "weight_decay": 0.01,
+    "clip": 0.2,
+    "global_clip": 5.0,
+    "cost_bps": [
+      0,
+      5,
+      10,
+      25
+    ],
+    "grids": {
+      "sgd": [
+        0.003,
+        0.01,
+        0.03
+      ],
+      "adamw": [
+        0.0003,
+        0.001,
+        0.003
+      ],
+      "muon": [
+        0.001,
+        0.003,
+        0.01
+      ],
+      "depth": [
+        0.0003,
+        0.001,
+        0.003
+      ],
+      "depth_clip": [
+        0.0003,
+        0.001,
+        0.003
+      ],
+      "depth_late": [
+        0.0003,
+        0.001,
+        0.003
+      ],
+      "depth_moments": [
+        0.0003,
+        0.001,
+        0.003
+      ]
+    }
+  },
+  "config_sha256": "c66628fdb6037ee4a8ad7c742cd9b17c9fd36a4738e61baeec52c2d686f3c794",
+  "code_sha256": {
+    "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "data.py": "a458906e34b55a677f653a35d8a96fb4fd8145f1127e086b8be92f6fe71a2476",
+    "evaluation.py": "79952ec74417ff89d6261a59d362de3b35d5b15ae006f8611061a4630efc07db",
+    "experiment.py": "308ab3d70c10489a35235586bb1a5d2e89a8c70cf679ae64a7757e31674fe8fe",
+    "models.py": "4c9f66e346dd0087d8b179233a858de7b13686edab0568e1f5a250d24122e781",
+    "optim.py": "46e2df460528c7519c610eb678b464bb46525238244c0667f877401c13f3b38b",
+    "training.py": "f263b8f0cc48ee935e82825ea4f3511f7c17c89942cc6a4bc6a5f13a0d45b9fc"
+  },
+  "utc": "2026-11-15T06:37:02.090362+00:00",
+  "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+  "python": "3.13.7",
+  "torch": "2.9.1",
+  "numpy": "2.4.2",
+  "pandas": "2.3.3",
+  "device": "cpu",
+  "threads": 1
+}

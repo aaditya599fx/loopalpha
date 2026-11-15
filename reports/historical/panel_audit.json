@@ -1,0 +1,233 @@
+{
+  "formation_start": "2012-01-01",
+  "formation_end_exclusive": "2012-02-01",
+  "formation_min_positive_volume_days": 18,
+  "formation_rule": "Top 30 by median raw close times raw volume; ticker breaks ties",
+  "universe": [
+    "BRK_A",
+    "AAPL",
+    "GOOGL",
+    "BAC",
+    "MSFT",
+    "C",
+    "INTC",
+    "XOM",
+    "JPM",
+    "NFLX",
+    "ORCL",
+    "WFC",
+    "IBM",
+    "AMZN",
+    "GE",
+    "T",
+    "CVX",
+    "ABT",
+    "GS",
+    "PFE",
+    "COP",
+    "CAT",
+    "CSCO",
+    "FCX",
+    "BIDU",
+    "PG",
+    "QCOM",
+    "JNJ",
+    "F",
+    "HAL"
+  ],
+  "first_bar": "2012-02-01",
+  "last_bar": "2017-12-29",
+  "rows": 44627,
+  "sessions": 1488,
+  "minimum_daily_assets": 25,
+  "missing_date_symbol_bars": 13,
+  "zero_volume_bars": 0,
+  "rejected_invalid_bars": [
+    {
+      "date": "2016-11-16",
+      "symbol": "AMZN"
+    },
+    {
+      "date": "2016-11-17",
+      "symbol": "NFLX"
+    },
+    {
+      "date": "2016-11-23",
+      "symbol": "F"
+    },
+    {
+      "date": "2016-11-29",
+      "symbol": "INTC"
+    },
+    {
+      "date": "2016-11-30",
+      "symbol": "INTC"
+    },
+    {
+      "date": "2016-11-30",
+      "symbol": "T"
+    },
+    {
+      "date": "2016-12-02",
+      "symbol": "BRK_A"
+    }
+  ],
+  "per_ticker": {
+    "AAPL": {
+      "min": "2012-02-01",
+      "max": "2017-12-29",
+      "size": 1487
+    },
+    "ABT": {
+      "min": "2012-02-01",
+      "max": "2017-12-29",
+      "size": 1487
+    },
+    "AMZN": {
+      "min": "2012-02-01",
+      "max": "2017-12-29",
+      "size": 1486
+    },
+    "BAC": {
+      "min": "2012-02-01",
+      "max": "2017-12-29",
+      "size": 1488
+    },
+    "BIDU": {
+      "min": "2012-02-01",
+      "max": "2017-12-29",
+      "size": 1487
+    },
+    "BRK_A": {
+      "min": "2012-02-01",
+      "max": "2017-12-29",
+      "size": 1487
+    },
+    "C": {
+      "min": "2012-02-01",
+      "max": "2017-12-29",
+      "size": 1488
+    },
+    "CAT": {
+      "min": "2012-02-01",
+      "max": "2017-12-29",
+      "size": 1488
+    },
+    "COP": {
+      "min": "2012-02-01",
+      "max": "2017-12-29",
+      "size": 1488
+    },
+    "CSCO": {
+      "min": "2012-02-01",
+      "max": "2017-12-29",
+      "size": 1488
+    },
+    "CVX": {
+      "min": "2012-02-01",
+      "max": "2017-12-29",
+      "size": 1488
+    },
+    "F": {
+      "min": "2012-02-01",
+      "max": "2017-12-29",
+      "size": 1487
+    },
+    "FCX": {
+      "min": "2012-02-01",
+      "max": "2017-12-29",
+      "size": 1488
+    },
+    "GE": {
+      "min": "2012-02-01",
+      "max": "2017-12-29",
+      "size": 1488
+    },
+    "GOOGL": {
+      "min": "2012-02-01",
+      "max": "2017-12-29",
+      "size": 1488
+    },
+    "GS": {
+      "min": "2012-02-01",
+      "max": "2017-12-29",
+      "size": 1488
+    },
+    "HAL": {
+      "min": "2012-02-01",
+      "max": "2017-12-29",
+      "size": 1488
+    },
+    "IBM": {
+      "min": "2012-02-01",
+      "max": "2017-12-29",
+      "size": 1488
+    },
+    "INTC": {
+      "min": "2012-02-01",
+      "max": "2017-12-29",
+      "size": 1485
+    },
+    "JNJ": {
+      "min": "2012-02-01",
+      "max": "2017-12-29",
+      "size": 1488
+    },
+    "JPM": {
+      "min": "2012-02-01",
+      "max": "2017-12-29",
+      "size": 1488
+    },
+    "MSFT": {
+      "min": "2012-02-01",
+      "max": "2017-12-29",
+      "size": 1488
+    },
+    "NFLX": {
+      "min": "2012-02-01",
+      "max": "2017-12-29",
+      "size": 1487
+    },
+    "ORCL": {
+      "min": "2012-02-01",
+      "max": "2017-12-29",
+      "size": 1488
+    },
+    "PFE": {
+      "min": "2012-02-01",
+      "max": "2017-12-29",
+      "size": 1488
+    },
+    "PG": {
+      "min": "2012-02-01",
+      "max": "2017-12-29",
+      "size": 1488
+    },
+    "QCOM": {
+      "min": "2012-02-01",
+      "max": "2017-12-29",
+      "size": 1487
+    },
+    "T": {
+      "min": "2012-02-01",
+      "max": "2017-12-29",
+      "size": 1487
+    },
+    "WFC": {
+      "min": "2012-02-01",
+      "max": "2017-12-29",
+      "size": 1488
+    },
+    "XOM": {
+      "min": "2012-02-01",
+      "max": "2017-12-29",
+      "size": 1488
+    }
+  },
+  "prices": "vendor split/dividend-adjusted OHLC and vendor adjusted volume",
+  "source": "https://data.nasdaq.com/databases/WIKIP",
+  "archive": "https://www.kaggle.com/datasets/marketneutral/quandl-wiki-prices-us-equites",
+  "archive_sha256": "adfd226694c6f3ec2c56b585d973764180a39a3ec516601721e90096dc1de94f",
+  "csv_sha256": "b00dcb2f294ff20ade044369ba8e0e19891052b41e1a9bbd2ee50fbbce746e0c",
+  "prepared_utc": "2026-11-15T06:35:28.892395+00:00"
+}
